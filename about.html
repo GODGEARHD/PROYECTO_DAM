@@ -25,6 +25,15 @@
           if ((w == "") || (x == "") || (y == "") || (z == "")) {
             alert("Every field must be filled out");
             return false;
+          }else {
+              $.ajax({
+                method: "POST",
+                url: "start.php",
+                data: { text: $("input#formulario").text() }
+              })
+              .done(function( response ) {
+                $("textarea.formulario").html(response);
+              });
           }
         }
     </script>
@@ -107,13 +116,13 @@
                         Tell Me your ideas for future trips, photos, and also for helping me to improve my Web Page!
                     </h2>
                     <br>
-                    <form class="text-black" name="myForm" method="GET" onsubmit="return validateForm()">
-                        <label for="name" class="text-black">Name:</label><br>
-                        <input name="name" id="formulario" class="text-black" type="text" maxlength="75" placeholder="Carlos Maristegui"><br><br>
+                    <form class="text-black" name="myForm" method="POST" onsubmit="validateForm()" action="start.php">
+                        <label for="nombre" class="text-black">Name:</label><br>
+                        <input name="nombre" id="formulario" class="text-black" type="text" maxlength="75" placeholder="Carlos Maristegui"><br><br>
                         <label for="email" class="text-black">E-mail:</label><br>
                         <input name="email" id="formulario" class="text-black" type="email" maxlength="75" placeholder="notcarlosxd@gmail.com"><br><br>
-                        <label for="telephone" class="text-black">Telephone (Optional):</label><br>
-                        <input name="telephone" type="tel" class="text-black" id="formulario" maxlength="9" placeholder="635 44 08 14"><br><br>
+                        <label for="telefono" class="text-black">Telephone (Optional):</label><br>
+                        <input name="telefono" type="tel" class="text-black" id="formulario" maxlength="9" placeholder="635 44 08 14"><br><br>
                         <label for="resumen" class="text-black">Tell me what you think:</label><br>
                         <textarea class="form-control" id="formulario" class="text-black" maxlength="500" cols="30" rows="10" name="resumen" placeholder="Write here your thoughts"></textarea><br>
                         <input type="submit" class="text-black" value="Submit">
