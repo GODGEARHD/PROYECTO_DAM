@@ -13,6 +13,7 @@
 
     if ($stmt->execute()) {
       $message = 'Successfully created new user';
+      header('Location: /login');
     } else {
       $message = 'Sorry there must have been an issue creating your account';
     }
@@ -35,9 +36,9 @@
     <?php endif; ?>
 
     <h1>SignUp</h1>
-    <span>or <a href="login.php">Login</a></span>
+    <span>or <a href="login">Login</a></span>
 
-    <form action="signup.php" method="POST">
+    <form action="signup" method="POST">
       <input name="email" type="text" placeholder="Enter your email">
       <input name="password" type="password" placeholder="Enter your Password">
       <input name="confirm_password" type="password" placeholder="Confirm Password">

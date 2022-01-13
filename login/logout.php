@@ -5,5 +5,8 @@
 
   session_destroy();
 
-  header('Location: /php-login');
+  unset($_COOKIE['PHPSESSID']);
+  setcookie(PHPSESSID, null, -1 , '/');
+
+  header('Location: /index');
 ?>
