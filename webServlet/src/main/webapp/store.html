@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Summer Trips - Store</title>
+    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css'>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validateForm() {
+            var w = document.forms["myForm"]["name"].value;
+            var x = document.forms["myForm"]["email"].value;
+            var y = document.forms["myForm"]["paypal"].value;
+          if ((w == "") || (x == "") || (y == "")) {
+            alert("Every field must be filled out");
+            return false;
+          }
+        }
+    </script>
+</head>
+
+<body id="inicio">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header animated fadeInRight slow">
+                    <h1 class="display-3">My Summer <small>Trips</small></h1>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">You are in:</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" id="semi-transparente">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Store <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    More
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="404.html">Photo Slieshow</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="about.html">About</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search <i class="fa fa-search my-2 my-sm-0 btn-outline-success"></i></button>
+                        </form>
+                    </div>
+                </nav>
+                <hr>
+                <h1>
+                    Featured:
+                </h1>
+                <center>
+                    <div class="row2">
+                        <center>
+                            <div class="col-md-8" style="margin-left: 0;">
+                                <div class="mySlides">
+                                    <div class="jumbotron2" style="margin-left: 0; margin-right: 1rem; width: 100%; text-align: left;" id="semi-transparente">
+                                        <div style="height: 372px;"><img src="img/newyork.jpg" style="height: 100%; width: 100%;"></div>
+                                        <br>
+                                        <br>
+                                        <ul>
+                                            <li class="list-item text-black">
+                                                Photo from New York
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Taken from the upper part of a building
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Lorem ipsum dolor sit amet
+                                            </li>
+                                            <li class="list-item text-black">
+                                                consectetur adipiscing elit
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Praesent sem ante
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Faucibus porta lacus fringilla vel
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Aenean sit amet erat nunc
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Eget porttitor lorem
+                                            </li>
+                                        </ul>
+                                        <h2 id="precio">Price: 5.99$</h2>
+                                        <button onclick="document.getElementById('modal6').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                                    </div>
+                                </div>
+                                <div class="mySlides">
+                                    <div class="jumbotron2" style="margin-left: 0; margin-right: 1rem; width: 100%; text-align: left;" id="semi-transparente">
+                                        <div style="height: 372px;"><img src="img/sanfran.jpg" style="width: 100%;"></div>
+                                        <br>
+                                        <ul>
+                                            <li class="invisible">
+                                                Texto Invisible
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Photo from San Francisco
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Taken in the air (again, with the help of a drone)
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Lorem ipsum dolor sit amet
+                                            </li>
+                                            <li class="list-item text-black">
+                                                consectetur adipiscing elit
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Praesent sem ante
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Faucibus porta lacus fringilla vel
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Aenean sit amet erat nunc
+                                            </li>
+                                            <li class="list-item text-black">
+                                                Eget porttitor lorem
+                                            </li>
+                                        </ul>
+                                        <h2 id="precio">Price: 19.99$</h2>
+                                        <button onclick="document.getElementById('modal6').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </center>
+                <div id="modal6" class="jumbotron" style="display: none;">
+                    <header>
+                        <span onclick="document.getElementById('modal6').style.display='none'" class="btn btn-warning hvr-grow-rotate text-black button" style="float: right;">X</span>
+                        <h2 class="text-black">
+                            <i class="fa fa-suitcase text-black"></i>
+                             Thanks For Buying This Photo!
+                        </h2>
+                    </header>
+                    <div class="container">
+                        <br>
+                        <form class="text-black" name="myForm" method="GET" onsubmit="return validateForm()">
+                            <label for="name" class="text-black">Please, introduce your Name:</label><br>
+                            <input name="name" id="formulario" type="text" class="text-black" maxlength="75" placeholder="Carlos Maristegui"><br><br>
+                            <label for="email" class="text-black">Please, introduce your E-mail:</label><br>
+                            <input name="email" id="formulario" type="email" class="text-black" maxlength="75" placeholder="notcarlosxd@gmail.com"><br><br>
+                            <label for="paypal" class="text-black">Please, introduce your PayPal*:</label><br>
+                            <input name="paypal" id="formulario" type="text" class="text-black" maxlength="100" placeholder="Your PayPal Here"><br><br>
+                            <input type="submit" class="text-black" value="Submit">
+                        </form>
+                        <small><i class="text-black">*Note: We will send you a request for the corresponding money to your PayPal account before you can access to the photo</i></small>
+                    </div>
+                </div>
+                <hr>
+                <h3>
+                    More:
+                </h3>
+                <div class="row">
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/newyork.jpg" style="width: 100%;">
+                        <ul>
+                            <li class="list-item text-black">
+                                Photo from New York
+                            </li>
+                            <li class="list-item text-black">
+                                Taken from the upper part of a &nbsp; building
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 5.99$</h2>
+                        <button onclick="document.getElementById('modal5').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/eiffel_tower.jpg" style="width: 100%;">
+                        <ul>
+                            <li class="list-item text-black">
+                                Photo from Paris
+                            </li>
+                            <li class="list-item text-black">
+                                Taken in the air (with the help of a drone)
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 15.99$</h2>
+                        <button onclick="document.getElementById('modal5').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/sanfran.jpg" style="width: 100%;">
+                        <br>
+                        <ul>
+                            <li class="invisible">
+                                Texto Invisible
+                            </li>
+                            <li class="list-item text-black">
+                                Photo from San Francisco
+                            </li>
+                            <li class="list-item text-black">
+                                Taken in the air (again, with the help of a drone)
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 19.99$</h2>
+                        <button onclick="document.getElementById('modal5').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div id="modal5" class="jumbotron" style="display: none; width: 100%;">
+                        <header>
+                            <span onclick="document.getElementById('modal5').style.display='none'" class="btn btn-warning hvr-grow-rotate text-black button" style="float: right;">X</span>
+                            <h2 class="text-black">
+                                <i class="fa fa-suitcase text-black"></i>
+                                 Thanks For Buying This Photo!
+                            </h2>
+                        </header>
+                        <div class="container">
+                            <br>
+                            <form class="text-black" name="myForm" method="GET" onsubmit="return validateForm()">
+                                <label for="name" class="text-black">Please, introduce your Name:</label><br>
+                                <input name="name" id="formulario" type="text" class="text-black" maxlength="75" placeholder="Carlos Maristegui"><br><br>
+                                <label for="email" class="text-black">Please, introduce your E-mail:</label><br>
+                                <input name="email" id="formulario" type="email" class="text-black" maxlength="75" placeholder="notcarlosxd@gmail.com"><br><br>
+                                <label for="paypal" class="text-black">Please, introduce your PayPal*:</label><br>
+                                <input name="paypal" id="formulario" type="text" class="text-black" maxlength="100" placeholder="Your PayPal Here"><br><br>
+                                <input type="submit" class="text-black" value="Submit">
+                            </form>
+                            <small><i class="text-black">*Note: We will send you a request for the corresponding money to your PayPal account before you can access to the photo</i></small>
+                        </div>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/newyork.jpg" style="width: 100%;">
+                        <ul>
+                            <li class="list-item text-black">
+                                Photo from New York
+                            </li>
+                            <li class="list-item text-black">
+                                Taken from the upper part of a &nbsp; building
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 5.99$</h2>
+                        <button onclick="document.getElementById('modal4').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/eiffel_tower.jpg" style="width: 100%;">
+                        <ul>
+                            <li class="list-item text-black">
+                                Photo from Paris
+                            </li>
+                            <li class="list-item text-black">
+                                Taken in the air (with the help of a drone)
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 15.99$</h2>
+                        <button onclick="document.getElementById('modal4').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/sanfran.jpg" style="width: 100%;">
+                        <br>
+                        <ul>
+                            <li class="invisible">
+                                Texto Invisible
+                            </li>
+                            <li class="list-item text-black">
+                                Photo from San Francisco
+                            </li>
+                            <li class="list-item text-black">
+                                Taken in the air (again, with the help of a drone)
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 19.99$</h2>
+                        <button onclick="document.getElementById('modal4').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div id="modal4" class="jumbotron" style="display: none; width: 100%;">
+                        <header>
+                            <span onclick="document.getElementById('modal4').style.display='none'" class="btn btn-warning hvr-grow-rotate text-black button" style="float: right;">X</span>
+                            <h2 class="text-black">
+                                <i class="fa fa-suitcase text-black"></i>
+                                 Thanks For Buying This Photo!
+                            </h2>
+                        </header>
+                        <div class="container">
+                            <br>
+                            <form class="text-black" name="myForm" method="GET" onsubmit="return validateForm()">
+                                <label for="name" class="text-black">Please, introduce your Name:</label><br>
+                                <input name="name" id="formulario" type="text" class="text-black" maxlength="75" placeholder="Carlos Maristegui"><br><br>
+                                <label for="email" class="text-black">Please, introduce your E-mail:</label><br>
+                                <input name="email" id="formulario" type="email" class="text-black" maxlength="75" placeholder="notcarlosxd@gmail.com"><br><br>
+                                <label for="paypal" class="text-black">Please, introduce your PayPal*:</label><br>
+                                <input name="paypal" id="formulario" type="text" class="text-black" maxlength="100" placeholder="Your PayPal Here"><br><br>
+                                <input type="submit" class="text-black" value="Submit">
+                            </form>
+                            <small><i class="text-black">*Note: We will send you a request for the corresponding money to your PayPal account before you can access to the photo</i></small>
+                        </div>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/newyork.jpg" style="width: 100%;">
+                        <ul>
+                            <li class="list-item text-black">
+                                Photo from New York
+                            </li>
+                            <li class="list-item text-black">
+                                Taken from the upper part of a &nbsp; building
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 5.99$</h2>
+                        <button onclick="document.getElementById('modal3').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/eiffel_tower.jpg" style="width: 100%;">
+                        <ul>
+                            <li class="list-item text-black">
+                                Photo from Paris
+                            </li>
+                            <li class="list-item text-black">
+                                Taken in the air (with the help of a drone)
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 15.99$</h2>
+                        <button onclick="document.getElementById('modal3').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/sanfran.jpg" style="width: 100%;">
+                        <br>
+                        <ul>
+                            <li class="invisible">
+                                Texto Invisible
+                            </li>
+                            <li class="list-item text-black">
+                                Photo from San Francisco
+                            </li>
+                            <li class="list-item text-black">
+                                Taken in the air (again, with the help of a drone)
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 19.99$</h2>
+                        <button onclick="document.getElementById('modal3').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div id="modal3" class="jumbotron" style="display: none; width: 100%;">
+                        <header>
+                            <span onclick="document.getElementById('modal3').style.display='none'" class="btn btn-warning hvr-grow-rotate text-black button" style="float: right;">X</span>
+                            <h2 class="text-black">
+                                <i class="fa fa-suitcase text-black"></i>
+                                 Thanks For Buying This Photo!
+                            </h2>
+                        </header>
+                        <div class="container">
+                            <br>
+                            <form class="text-black" name="myForm" method="GET" onsubmit="return validateForm()">
+                                <label for="name" class="text-black">Please, introduce your Name:</label><br>
+                                <input name="name" id="formulario" type="text" class="text-black" maxlength="75" placeholder="Carlos Maristegui"><br><br>
+                                <label for="email" class="text-black">Please, introduce your E-mail:</label><br>
+                                <input name="email" id="formulario" type="email" class="text-black" maxlength="75" placeholder="notcarlosxd@gmail.com"><br><br>
+                                <label for="paypal" class="text-black">Please, introduce your PayPal*:</label><br>
+                                <input name="paypal" id="formulario" type="text" class="text-black" maxlength="100" placeholder="Your PayPal Here"><br><br>
+                                <input type="submit" class="text-black" value="Submit">
+                            </form>
+                            <small><i class="text-black">*Note: We will send you a request for the corresponding money to your PayPal account before you can access to the photo</i></small>
+                        </div>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/newyork.jpg" style="width: 100%;">
+                        <ul>
+                            <li class="list-item text-black">
+                                Photo from New York
+                            </li>
+                            <li class="list-item text-black">
+                                Taken from the upper part of a &nbsp; building
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 5.99$</h2>
+                        <button onclick="document.getElementById('modal2').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/eiffel_tower.jpg" style="width: 100%;">
+                        <ul>
+                            <li class="list-item text-black">
+                                Photo from Paris
+                            </li>
+                            <li class="list-item text-black">
+                                Taken in the air (with the help of a drone)
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 15.99$</h2>
+                        <button onclick="document.getElementById('modal2').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/sanfran.jpg" style="width: 100%;">
+                        <br>
+                        <ul>
+                            <li class="invisible">
+                                Texto Invisible
+                            </li>
+                            <li class="list-item text-black">
+                                Photo from San Francisco
+                            </li>
+                            <li class="list-item text-black">
+                                Taken in the air (again, with the help of a drone)
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 19.99$</h2>
+                        <button onclick="document.getElementById('modal2').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div id="modal2" class="jumbotron" style="display: none; width: 100%;">
+                        <header>
+                            <span onclick="document.getElementById('modal2').style.display='none'" class="btn btn-warning hvr-grow-rotate text-black button" style="float: right;">X</span>
+                            <h2 class="text-black">
+                                <i class="fa fa-suitcase text-black"></i>
+                                 Thanks For Buying This Photo!
+                            </h2>
+                        </header>
+                        <div class="container">
+                            <br>
+                            <form class="text-black" name="myForm" method="GET" onsubmit="return validateForm()">
+                                <label for="name" class="text-black">Please, introduce your Name:</label><br>
+                                <input name="name" id="formulario" type="text" class="text-black" maxlength="75" placeholder="Carlos Maristegui"><br><br>
+                                <label for="email" class="text-black">Please, introduce your E-mail:</label><br>
+                                <input name="email" id="formulario" type="email" class="text-black" maxlength="75" placeholder="notcarlosxd@gmail.com"><br><br>
+                                <label for="paypal" class="text-black">Please, introduce your PayPal*:</label><br>
+                                <input name="paypal" id="formulario" type="text" class="text-black" maxlength="100" placeholder="Your PayPal Here"><br><br>
+                                <input type="submit" class="text-black" value="Submit">
+                            </form>
+                            <small><i class="text-black">*Note: We will send you a request for the corresponding money to your PayPal account before you can access to the photo</i></small>
+                        </div>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/newyork.jpg" style="width: 100%;">
+                        <ul>
+                            <li class="list-item text-black">
+                                Photo from New York
+                            </li>
+                            <li class="list-item text-black">
+                                Taken from the upper part of a &nbsp; building
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 5.99$</h2>
+                        <button onclick="document.getElementById('modal').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/eiffel_tower.jpg" style="width: 100%;">
+                        <ul>
+                            <li class="list-item text-black">
+                                Photo from Paris
+                            </li>
+                            <li class="list-item text-black">
+                                Taken in the air (with the help of a drone)
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 15.99$</h2>
+                        <button onclick="document.getElementById('modal').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                    <div class="jumbotron2 margin-left" style="margin-right: 1rem;" id="semi-transparente">
+                        <img src="img/sanfran.jpg" style="width: 100%;">
+                        <br>
+                        <ul>
+                            <li class="invisible">
+                                Texto Invisible
+                            </li>
+                            <li class="list-item text-black">
+                                Photo from San Francisco
+                            </li>
+                            <li class="list-item text-black">
+                                Taken in the air (again, with the help of a drone)
+                            </li>
+                            <li class="list-item text-black">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item text-black">
+                                consectetur adipiscing elit
+                            </li>
+                            <li class="list-item text-black">
+                                Praesent sem ante
+                            </li>
+                            <li class="list-item text-black">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item text-black">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item text-black">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <h2 id="precio">Price: 19.99$</h2>
+                        <button onclick="document.getElementById('modal').style.display='block'" class="btn btn-warning hvr-grow-rotate">Buy!</button>
+                    </div>
+                </div>
+                <div id="modal" class="jumbotron" style="display: none;">
+                    <header>
+                        <span onclick="document.getElementById('modal').style.display='none'" class="btn btn-warning hvr-grow-rotate text-black button" style="float: right;">X</span>
+                        <h2 class="text-black">
+                            <i class="fa fa-suitcase text-black"></i>
+                             Thanks For Buying This Photo!
+                        </h2>
+                    </header>
+                    <div class="container">
+                        <br>
+                        <form class="text-black" name="myForm" method="GET" onsubmit="return validateForm()">
+                            <label for="name" class="text-black">Please, introduce your Name:</label><br>
+                            <input name="name" id="formulario" type="text" class="text-black" maxlength="75" placeholder="Carlos Maristegui"><br><br>
+                            <label for="email" class="text-black">Please, introduce your E-mail:</label><br>
+                            <input name="email" id="formulario" type="email" class="text-black" maxlength="75" placeholder="notcarlosxd@gmail.com"><br><br>
+                            <label for="paypal" class="text-black">Please, introduce your PayPal*:</label><br>
+                            <input name="paypal" id="formulario" type="text" class="text-black" maxlength="100" placeholder="Your PayPal Here"><br><br>
+                            <input type="submit" class="text-black" value="Submit">
+                        </form>
+                        <small><i class="text-black">*Note: We will send you a request for the corresponding money to your PayPal account before you can access to the photo</i></small>
+                    </div>
+                </div>
+                <br>
+                <div class="jumbotron text-black" id="semi-transparente">
+                    <div class="text-black">
+                        &copy; My Summer
+                        <small class="text-black">Trips</small> <i class="fa fa-facebook text-black"></i> <i
+                        class="fa fa-twitter text-black"></i> <i class="fa fa-instagram text-black"></i>
+                        <div style="float: right;"><a class="btn btn-primary btn-large"
+                            href="#inicio">Inicio</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "none";
+            setTimeout(carousel, 4000);
+        }
+    </script>
+</body>
+
+</html>
