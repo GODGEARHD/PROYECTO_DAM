@@ -18,6 +18,8 @@
 
 <?php
 
+    require 'database.php';
+
     if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['telefono']) && !empty($_POST['resumen'])) {
         $sql = "INSERT INTO feedback (name, email, telephone, opinion) VALUES (:nombre, :email, :telefono, :resumen)";
         $stmt = $conn->prepare($sql);
