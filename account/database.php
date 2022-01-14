@@ -2,7 +2,7 @@
 
 $server = 'localhost:3306';
 $username = 'root';
-$password = 'ghd2020lolxd';
+$password = password_verify('/root/php', $results['password']);
 $database = 'login';
 
 try {
@@ -12,3 +12,4 @@ try {
 }
 
 ?>
+<!---->

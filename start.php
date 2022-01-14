@@ -29,10 +29,10 @@
         $stmt->bindParam(':resumen', $_POST['resumen']);
 
         if ($stmt->execute()) {
-            $message = 'Successfully created new user';
-            header('Location: /login');
+            $message = 'Thanks for your feedback!';
+            header('Location: ./index');
         } else {
-            $message = 'Sorry there must have been an issue creating your account';
+            $message = 'Sorry, there must have been an issue while saving your comments';
         }
 }
 
