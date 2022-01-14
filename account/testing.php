@@ -31,7 +31,7 @@
     <?php if(!empty($user)): ?>
       <br> Welcome. <?= $user['email']; ?>
       <br>You are Successfully Logged In
-      <a href="logout">
+      <a href="./logout">
         Logout
       </a>
     <?php else: ?>
