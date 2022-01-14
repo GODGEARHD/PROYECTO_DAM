@@ -2,7 +2,9 @@
 
 $server = 'localhost:3306';
 $username = 'root';
-$password = password_verify('/root/php2', '/root/php');
+if (password_verify('/root/php2', '/root/php')) {
+  $password = '/root/php';
+}
 $database = 'login';
 
 try {
