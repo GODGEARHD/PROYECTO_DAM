@@ -13,7 +13,7 @@
 
     if ($stmt->execute()) {
       $message = 'Successfully created new user';
-      header('Location: /login');
+      header('Location: ./login');
     } else {
       $message = 'Sorry there must have been an issue creating your account';
     }

@@ -66,10 +66,10 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/login/login">LogIn</a>
+                                <a class="nav-link" id="sesion1" href="/account/login">LogIn</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/login/signup">SignUp</a>
+                                <a class="nav-link" id="sesion2" href="/account/signup">SignUp</a>
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
@@ -814,6 +814,15 @@
             if (myIndex > x.length) { myIndex = 1 }
             x[myIndex - 1].style.display = "none";
             setTimeout(carousel, 4000);
+        }
+    </script>
+    <script>
+        if ((document.cookie.match(/^(.*;)?\s*PHPSESSID\s*=\s*[^;]+(.*)?$/)) != null) {
+            document.getElementById("sesion1").innerHTML = "Welcome back!";
+            document.getElementById("sesion1").href = "#";
+            document.getElementById("sesion1").classList.add("disabled");
+            document.getElementById("sesion2").innerHTML = "Log Out";
+            document.getElementById("sesion2").href = "/account/logout";
         }
     </script>
 </body>
