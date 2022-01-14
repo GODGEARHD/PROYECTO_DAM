@@ -34,6 +34,9 @@
       <a href="../index">
         Go Home
       </a>
+      <form action="../index" method="POST">
+        <input type="submit" value="Go Home">
+      </form>
     <?php else: ?>
       <h1>Please Login or SignUp</h1>
 
