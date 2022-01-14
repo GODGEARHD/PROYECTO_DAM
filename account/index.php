@@ -32,6 +32,7 @@
       <br> Welcome. <?= $user['email']; ?>
       <br>You are Successfully Logged In
       <br>
+      <br>
       <form action="../index" method="POST">
         <input type="submit" value="Go Home">
       </form>
