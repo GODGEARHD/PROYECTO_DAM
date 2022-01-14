@@ -31,9 +31,7 @@
     <?php if(!empty($user)): ?>
       <br> Welcome. <?= $user['email']; ?>
       <br>You are Successfully Logged In
-      <a href="../index">
-        Go Home
-      </a>
+      <br>
       <form action="../index" method="POST">
         <input type="submit" value="Go Home">
       </form>
