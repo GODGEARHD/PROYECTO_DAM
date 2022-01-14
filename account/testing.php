@@ -31,14 +31,14 @@
     <?php if(!empty($user)): ?>
       <br> Welcome. <?= $user['email']; ?>
       <br>You are Successfully Logged In
-      <a href="logout.php">
+      <a href="logout">
         Logout
       </a>
     <?php else: ?>
       <h1>Please Login or SignUp</h1>
 
-      <a href="login.php">Login</a> or
-      <a href="signup.php">SignUp</a>
+      <a href="./login">Login</a> or
+      <a href="./signup">SignUp</a>
     <?php endif; ?>
   </body>
 </html>
