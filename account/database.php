@@ -1,10 +1,8 @@
 <?php
 
 $server = 'localhost:3306';
-$username = 'root';
-if (password_verify('/root/php2', '/root/php')) {
-  $password = '/root/php';
-}
+$username = 'mysql';
+$password = 'MySqlTfgP@$$w0rd!';
 $database = 'login';
 
 try {
