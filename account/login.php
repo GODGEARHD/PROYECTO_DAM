@@ -44,7 +44,7 @@
     <span>or <a href="signup">SignUp</a></span>
 
     <form action="login" method="POST">
-      <input name="email" type="text" placeholder="Enter your email">
+      <input name="email" type="email" placeholder="Enter your email">
       <input name="password" type="password" placeholder="Enter your Password">
       <input type="submit" value="Submit">
     </form>
