@@ -1,21 +1,3 @@
-<!--<?php
-    $nombre = $_POST['nombre'];
-    $email = $_POST['email'];
-    $telefono = $_POST['telefono'];
-    $resumen = $_POST['resumen'];
-    if ($nombre == ''){
-        echo 'Hay algún campo vacío';
-    }else {
-        echo $nombre;
-        echo ' ';
-        echo $email;
-        echo ' ';
-        echo $telefono;
-        echo ' ';
-        echo $resumen;
-    }
-?>-->
-
 <?php
 
     require './account/database.php';
