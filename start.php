@@ -18,7 +18,7 @@
 
 <?php
 
-    require 'database.php';
+    require './account/database.php';
 
     $message = '';
 
@@ -32,7 +32,6 @@
 
         if ($stmt->execute()) {
             $message = 'Thanks for your feedback!';
-            header('Location: ./start');
         } else {
             $message = 'Sorry, there must have been an issue while saving your comments';
         }
@@ -46,12 +45,11 @@
     <meta charset="utf-8">
     <title>Welcome to you WebApp</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./account/assets/css/style.css">
   </head>
   <body>
-    <?php require 'partials/header.php' ?>
+    <?php require './account/partials/header.php' ?>
       <br> <?= $message ?>
-      <br>You are Successfully Logged In
       <br>
       <br>
       <form action="../index" method="POST">
