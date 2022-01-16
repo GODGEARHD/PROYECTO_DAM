@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>PCMR World - About Page</title>
+    <title>PCMR World - Sobre Nosotros</title>
     <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -55,8 +55,8 @@
                                     Más
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="non-existent">Galería de Fotos</a>
-                                    <a class="dropdown-item" href="does-not-exist-either">Contáctanos</a>
+                                    <a class="dropdown-item" href="news">Foro de Noticias</a>
+                                    <a class="dropdown-item" href="non-existent">Contáctanos</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item active" href="#">Sobre Nosotros</a>
                                 </div>
@@ -95,18 +95,18 @@
                 <hr>
                 <div class="jumbotron" id="semi-transparente">
                     <h2 class="text-black">
-                        Tell Me your ideas for future trips, photos, and also for helping me to improve my Web Page!
+                        Escribe en este formulario cómo crees que podría mejorar la web:
                     </h2>
                     <br>
                     <form class="text-black" name="myForm" method="POST" onsubmit="return validateForm()" action="./account/feedback">
-                        <label for="nombre" class="text-black">Name:</label><br>
+                        <label for="nombre" class="text-black">Nombre:</label><br>
                         <input name="nombre" id="formulario" class="text-black" type="text" maxlength="75" placeholder="Carlos Maristegui"><br><br>
                         <label for="email" class="text-black">E-mail:</label><br>
                         <input name="email" id="formulario" class="text-black" type="email" maxlength="75" placeholder="notcarlosxd@gmail.com"><br><br>
-                        <label for="telefono" class="text-black">Telephone:</label><br>
+                        <label for="telefono" class="text-black">Teléfono:</label><br>
                         <input name="telefono" type="tel" class="text-black" id="formulario" maxlength="9" placeholder="635 44 08 14"><br><br>
-                        <label for="resumen" class="text-black">Tell me what you think:</label><br>
-                        <textarea class="form-control" id="formulario" class="text-black" maxlength="500" cols="30" rows="10" name="resumen" placeholder="Write here your thoughts"></textarea><br>
+                        <label for="resumen" class="text-black">Opinión:</label><br>
+                        <textarea class="form-control" id="formulario" class="text-black" maxlength="500" cols="30" rows="10" name="resumen" placeholder="Escribe aquí tus comentarios y/o consejos..."></textarea><br>
                         <input type="submit" class="text-black" value="Submit">
                     </form>
                 </div>

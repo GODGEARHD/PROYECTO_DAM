@@ -28,7 +28,7 @@
                     <h1 class="display-3">PCMR <small>World</small></h1>
                 </div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">You are in:</a>
+                    <a class="navbar-brand" href="#">Estás en:</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -40,38 +40,38 @@
                             <li class="nav-item dropdown active">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    More
+                                    Más
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="non-existent">Photo Slideshow</a>
-                                    <a class="dropdown-item" href="does-not-exist-either">Trip Stories</a>
+                                    <a class="dropdown-item" href="news">Foro de Noticias</a>
+                                    <a class="dropdown-item" href="non-existent">Contáctanos</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="about">About</a>
+                                    <a class="dropdown-item" href="about">Sobre Nosotros</a>
                                 </div>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="index">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index">Inicio<span class="sr-only">(actual)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="store">Store</a>
+                                <a class="nav-link" href="store">Tienda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="sesion1" href="/account/login">LogIn</a>
+                                <a class="nav-link" id="sesion1" href="/account/login">Iniciar Sesión</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="sesion2" href="/account/signup">SignUp</a>
+                                <a class="nav-link" id="sesion2" href="/account/signup">Registrarse</a>
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search <i class="fa fa-search my-2 my-sm-0 btn-outline-success"></i></button>
+                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar <i class="fa fa-search my-2 my-sm-0 btn-outline-success"></i></button>
                         </form>
                     </div>
                 </nav>
                 <hr>
                 <div class="jumbotron" id="semi-transparente">
                     <h1 class="text-black display-3">
-                        404 Page Not Found
+                        404 Página No Encontrada
                     </h1>
                 </div>
             </div>
@@ -80,27 +80,11 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
     <script>
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "block";
-            }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "none";
-            setTimeout(carousel, 4000);
-        }
-    </script>
-    <script>
         if ((document.cookie.match(/^(.*;)?\s*PHPSESSID\s*=\s*[^;]+(.*)?$/)) != null) {
-            document.getElementById("sesion1").innerHTML = "Welcome back!";
+            document.getElementById("sesion1").innerHTML = "¡Bienvenid@ de vuelta!";
             document.getElementById("sesion1").href = "#";
             document.getElementById("sesion1").classList.add("disabled");
-            document.getElementById("sesion2").innerHTML = "Log Out";
+            document.getElementById("sesion2").innerHTML = "Cerrar Sesión";
             document.getElementById("sesion2").href = "/account/logout";
         }
     </script>
