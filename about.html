@@ -39,7 +39,7 @@
                     <h1 class="display-3">PCMR <small>World</small></h1>
                 </div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">You are in:</a>
+                    <a class="navbar-brand" href="#">Estás en:</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -52,56 +52,44 @@
                             <li class="nav-item dropdown active">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    More
+                                    Más
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="non-existent">Photo Slideshow</a>
-                                    <a class="dropdown-item" href="does-not-exist-either">Trip Stories</a>
+                                    <a class="dropdown-item" href="non-existent">Galería de Fotos</a>
+                                    <a class="dropdown-item" href="does-not-exist-either">Contáctanos</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item active" href="#">About</a>
+                                    <a class="dropdown-item active" href="#">Sobre Nosotros</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index">Inicio <span class="sr-only">(actual)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="store">Store</a>
+                                <a class="nav-link" href="store">Tienda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="sesion1" href="/account/login">LogIn</a>
+                                <a class="nav-link" id="sesion1" href="/account/login">Iniciar Sesión</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="sesion2" href="/account/signup">SignUp</a>
+                                <a class="nav-link" id="sesion2" href="/account/signup">Registrarse</a>
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search <i class="fa fa-search my-2 my-sm-0 btn-outline-success"></i></button>
+                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar <i class="fa fa-search my-2 my-sm-0 btn-outline-success"></i></button>
                         </form>
                     </div>
                 </nav>
                 <hr>
                 <div class="jumbotron" id="semi-transparente">
                     <h2 class="text-black">
-                        About Me
+                        Sobre Nosotros
                     </h2>
                     <p class="text-black">
-                        This is my personal summer trips website, where you can also buy my best photos (from those trips, and more). Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
+                        En realidad, es solo un "Sobre Mi". Solo hay una persona trabajando en esta página web y su correspondiente base de datos. 
+                        Aún lo estoy desarrollando todo. Tengo planeadas muchas cosas pero, como diría Jack el Destripador, vamos por partes, así que 
+                        voy desarrollandolo poco a poco. Si tienes alguna idea sobre cómo podría mejorar en este proyecto, te dejo debajo de este texto 
+                        un formulario que puedes rellenar para darme ideas (solo si quieres).
                     </p>
                 </div>
                 <hr>
@@ -129,10 +117,10 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
     <script>
         if ((document.cookie.match(/^(.*;)?\s*PHPSESSID\s*=\s*[^;]+(.*)?$/)) != null) {
-            document.getElementById("sesion1").innerHTML = "Welcome back!";
+            document.getElementById("sesion1").innerHTML = "¡Bienvenid@ de vuelta!";
             document.getElementById("sesion1").href = "#";
             document.getElementById("sesion1").classList.add("disabled");
-            document.getElementById("sesion2").innerHTML = "Log Out";
+            document.getElementById("sesion2").innerHTML = "Cerrar Sesión";
             document.getElementById("sesion2").href = "/account/logout";
         }
     </script>
