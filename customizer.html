@@ -73,25 +73,72 @@
                 <hr>
                 <div class="jumbotron" id="semi-transparente">
                     <h2 class="text-black">
-                        Escribe en este formulario cómo crees que podría mejorar la web:
+                        Selecciona los componentes que deseas para tu PC:
                     </h2>
                     <br>
                     <form class="text-black" name="myForm" method="POST" onsubmit="return validateForm()"
                         action="./account/feedback">
-                        <label for="nombre" class="text-black">Nombre:</label><br>
-                        <input name="nombre" id="formulario" class="text-black" type="text" maxlength="75"
-                            placeholder="Carlos Maristegui"><br><br>
-                        <label for="email" class="text-black">E-mail:</label><br>
-                        <input name="email" id="formulario" class="text-black" type="email" maxlength="75"
-                            placeholder="notcarlosxd@gmail.com"><br><br>
-                        <label for="telefono" class="text-black">Teléfono:</label><br>
-                        <input name="telefono" type="tel" class="text-black" id="formulario" maxlength="9"
-                            placeholder="635 44 08 14"><br><br>
-                        <label for="resumen" class="text-black">Opinión:</label><br>
-                        <textarea class="form-control" id="formulario" class="text-black" maxlength="500" cols="30"
-                            rows="10" name="resumen"
-                            placeholder="Escribe aquí tus comentarios y/o consejos..."></textarea><br>
-                        <input type="submit" class="text-black" value="Submit">
+                        <label for="cpu" class="text-black">CPU:</label><br>
+                        <input name="cpu" id="formulario" class="text-black" type="text" maxlength="75"
+                            placeholder="Elige CPU"><br><br>
+                        <label for="refri" class="text-black">Refrigeración de CPU:</label><br>
+                        <input name="refri" id="formulario" class="text-black" type="text" maxlength="75"
+                            placeholder="Elige Refrigeración"><br><br>
+                        <label for="ram" class="text-black">Memoria RAM:</label><br>
+                        <input name="ram" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige RAM"><br><br>
+                        <label for="placa" class="text-black">Placa Base:</label><br>
+                        <input name="placa" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Placa Base"><br><br>
+                        <label for="disco1" class="text-black">Disco Duro 1:</label><br>
+                        <input name="disco1" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Disco Duro"><br><br>
+                        <label for="disco2" class="text-black">Disco Duro 2:</label><br>
+                        <input name="disco2" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Disco Duro"><br><br>
+                        <label for="caja" class="text-black">Caja:</label><br>
+                        <input name="caja" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Caja"><br><br>
+                        <label for="psu" class="text-black">Fuente de Alimentación:</label><br>
+                        <input name="psu" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Fuente de Alimentación"><br><br>
+                        <label for="gpu" class="text-black">Tarjeta Gráfica:</label><br>
+                        <input name="gpu" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Tarjeta Gráfica"><br><br>
+                        <label for="audio" class="text-black">Tarjeta de Audio:</label><br>
+                        <input name="audio" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Tarjeta de Audio"><br><br>
+                        <label for="lector" class="text-black">Lector de Tarjetas:</label><br>
+                        <input name="lector" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Lector de Tarjetas"><br><br>
+                        <label for="dvd" class="text-black">DVD:</label><br>
+                        <input name="dvd" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige DVD"><br><br>
+                        <label for="monitor" class="text-black">Monitor:</label><br>
+                        <input name="monitor" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Monitor"><br><br>
+                        <label for="teclado" class="text-black">Teclado:</label><br>
+                        <input name="teclado" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Teclado"><br><br>
+                        <label for="raton" class="text-black">Ratón:</label><br>
+                        <input name="raton" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Ratón"><br><br>
+                        <label for="altavoces" class="text-black">Altavoces:</label><br>
+                        <input name="altavoces" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Altavoces"><br><br>
+                        <label for="tv" class="text-black">Tarjeta de TV:</label><br>
+                        <input name="tv" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Tarjeta de TV"><br><br>
+                        <label for="eth_wifi" class="text-black">Adaptador de Red/Wi-Fi:</label><br>
+                        <input name="eth_wifi" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Adaptador de Red/Wi-Fi"><br><br>
+                        <label for="montaje" class="text-black">Montaje:</label><br>
+                        <input name="montaje" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Montaje"><br><br>
+                        <label for="so" class="text-black">Sistema Operativo:</label><br>
+                        <input name="so" type="text" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Sistema Operativo"><br><br>
+                        <input type="submit" class="text-black" value="Enviar">
                     </form>
                 </div>
             </div>

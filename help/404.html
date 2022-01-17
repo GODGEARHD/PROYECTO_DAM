@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PCMR World - 404 Not Found</title>
-    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="../img/favicon.png" type="image/gif" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../styles.css">
 
 </head>
 
@@ -43,24 +43,24 @@
                                     Más
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="news">Foro de Noticias</a>
-                                    <a class="dropdown-item" href="customizer">Customiza tu PC</a>
+                                    <a class="dropdown-item" href="../news">Foro de Noticias</a>
+                                    <a class="dropdown-item" href="../customizer">Customiza tu PC</a>
                                     <a class="dropdown-item" href="non-existent">Contáctanos</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="about">Sobre Nosotros</a>
+                                    <a class="dropdown-item" href="../about">Sobre Nosotros</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index">Inicio</a>
+                                <a class="nav-link" href="../index">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="store">Tienda</a>
+                                <a class="nav-link" href="../store">Tienda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="sesion1" href="/account/login">Iniciar Sesión</a>
+                                <a class="nav-link" id="sesion1" href="../account/login">Iniciar Sesión</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="sesion2" href="/account/signup">Registrarse</a>
+                                <a class="nav-link" id="sesion2" href="../account/signup">Registrarse</a>
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
@@ -87,7 +87,7 @@
             document.getElementById("sesion1").href = "#";
             document.getElementById("sesion1").classList.add("disabled");
             document.getElementById("sesion2").innerHTML = "Cerrar Sesión";
-            document.getElementById("sesion2").href = "/account/logout";
+            document.getElementById("sesion2").href = "../account/logout";
         }
     </script>
 </body>
