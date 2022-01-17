@@ -44,6 +44,7 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="news">Foro de Noticias</a>
+                                    <a class="dropdown-item" href="customizer">Customiza tu PC</a>
                                     <a class="dropdown-item" href="non-existent">Contáctanos</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="about">Sobre Nosotros</a>
@@ -71,9 +72,27 @@
                 </nav>
                 <hr>
                 <div class="jumbotron" id="semi-transparente">
-                    <h1 class="text-black display-3">
-                        404 Página No Encontrada
-                    </h1>
+                    <h2 class="text-black">
+                        Escribe en este formulario cómo crees que podría mejorar la web:
+                    </h2>
+                    <br>
+                    <form class="text-black" name="myForm" method="POST" onsubmit="return validateForm()"
+                        action="./account/feedback">
+                        <label for="nombre" class="text-black">Nombre:</label><br>
+                        <input name="nombre" id="formulario" class="text-black" type="text" maxlength="75"
+                            placeholder="Carlos Maristegui"><br><br>
+                        <label for="email" class="text-black">E-mail:</label><br>
+                        <input name="email" id="formulario" class="text-black" type="email" maxlength="75"
+                            placeholder="notcarlosxd@gmail.com"><br><br>
+                        <label for="telefono" class="text-black">Teléfono:</label><br>
+                        <input name="telefono" type="tel" class="text-black" id="formulario" maxlength="9"
+                            placeholder="635 44 08 14"><br><br>
+                        <label for="resumen" class="text-black">Opinión:</label><br>
+                        <textarea class="form-control" id="formulario" class="text-black" maxlength="500" cols="30"
+                            rows="10" name="resumen"
+                            placeholder="Escribe aquí tus comentarios y/o consejos..."></textarea><br>
+                        <input type="submit" class="text-black" value="Submit">
+                    </form>
                 </div>
             </div>
         </div>
