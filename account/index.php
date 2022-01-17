@@ -36,7 +36,7 @@
       <br>You are Successfully Logged In
       <br>
       <br>
-      <form action="../index" method="POST">
+      <form action="../" method="POST">
         <input type="submit" value="Go Home">
       </form>
     <?php else: ?>

@@ -15,9 +15,9 @@
         $stmt->bindParam(':resumen', $_POST['resumen']);
 
         if ($stmt->execute()) {
-            $message = 'Thanks for your feedback!';
+            $message = '¡Gracias por tus comentarios!';
         } else {
-            $message = 'Sorry, there must have been an issue while saving your comments';
+            $message = 'Lo sentimos, se ha debido de producir algun error al procesar tus comentarios';
         }
 }
 
@@ -27,7 +27,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Thank You!</title>
+    <title>¡Gracias!</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
@@ -36,8 +36,8 @@
       <br> <?= $message ?>
       <br>
       <br>
-      <form action="../index" method="POST">
-        <input type="submit" value="Go Home">
+      <form action="../" method="POST">
+        <input type="submit" value="Ir a Inicio">
       </form>
   </body>
 </html>

@@ -1,3 +1,3 @@
 <header>
-  <a href="../index">PCMR World</a>
+  <a href="../">PCMR World</a>
 </header>
