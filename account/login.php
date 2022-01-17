@@ -1,5 +1,7 @@
 <?php
 
+  error_reporting(0);
+
   session_start();
 
   if (isset($_SESSION['user_id'])) {
@@ -19,7 +21,7 @@
       $_SESSION['user_id'] = $results['id'];
       header("Location: ./index");
     } else {
-      $message = 'Sorry, those credentials do not match';
+      $message = 'Lo sentimos, pero las credenciales que has proporcionade no existen o no son correctas.';
     }
   }
 

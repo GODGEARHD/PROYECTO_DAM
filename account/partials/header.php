@@ -1,3 +1,3 @@
 <header>
-  <a href="../index">My Summer Trips</a>
+  <a href="../index">PCMR World</a>
 </header>
