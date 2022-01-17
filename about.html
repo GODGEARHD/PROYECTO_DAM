@@ -22,10 +22,10 @@
             var x = document.forms["myForm"]["email"].value;
             var y = document.forms["myForm"]["telefono"].value;
             var z = document.forms["myForm"]["resumen"].value;
-          if ((w == "") || (x == "") || (y == "") || (z == "")) {
-            alert("Every field must be filled out");
-            return false;
-          }
+            if ((w == "") || (x == "") || (y == "") || (z == "")) {
+                alert("Every field must be filled out");
+                return false;
+            }
         }
     </script>
 </head>
@@ -48,7 +48,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent" id="semi-transparente">
                         <ul class="navbar-nav mr-auto">
-                            
+
                             <li class="nav-item dropdown active">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -76,7 +76,8 @@
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
                             <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar <i class="fa fa-search my-2 my-sm-0 btn-outline-success"></i></button>
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar <i
+                                    class="fa fa-search my-2 my-sm-0 btn-outline-success"></i></button>
                         </form>
                     </div>
                 </nav>
@@ -86,9 +87,12 @@
                         Sobre Nosotros
                     </h2>
                     <p class="text-black">
-                        En realidad, es solo un "Sobre Mi". Solo hay una persona trabajando en esta página web y su correspondiente base de datos. 
-                        Aún lo estoy desarrollando todo. Tengo planeadas muchas cosas pero, como diría Jack el Destripador, vamos por partes, así que 
-                        voy desarrollandolo poco a poco. Si tienes alguna idea sobre cómo podría mejorar en este proyecto, te dejo debajo de este texto 
+                        En realidad, es solo un "Sobre Mi". Solo hay una persona trabajando en esta página web y su
+                        correspondiente base de datos.
+                        Aún lo estoy desarrollando todo. Tengo planeadas muchas cosas pero, como diría Jack el
+                        Destripador, vamos por partes, así que
+                        voy desarrollandolo poco a poco. Si tienes alguna idea sobre cómo podría mejorar en este
+                        proyecto, te dejo debajo de este texto
                         un formulario que puedes rellenar para darme ideas (solo si quieres).
                     </p>
                 </div>
@@ -98,15 +102,21 @@
                         Escribe en este formulario cómo crees que podría mejorar la web:
                     </h2>
                     <br>
-                    <form class="text-black" name="myForm" method="POST" onsubmit="return validateForm()" action="./account/feedback">
+                    <form class="text-black" name="myForm" method="POST" onsubmit="return validateForm()"
+                        action="./account/feedback">
                         <label for="nombre" class="text-black">Nombre:</label><br>
-                        <input name="nombre" id="formulario" class="text-black" type="text" maxlength="75" placeholder="Carlos Maristegui"><br><br>
+                        <input name="nombre" id="formulario" class="text-black" type="text" maxlength="75"
+                            placeholder="Carlos Maristegui"><br><br>
                         <label for="email" class="text-black">E-mail:</label><br>
-                        <input name="email" id="formulario" class="text-black" type="email" maxlength="75" placeholder="notcarlosxd@gmail.com"><br><br>
+                        <input name="email" id="formulario" class="text-black" type="email" maxlength="75"
+                            placeholder="notcarlosxd@gmail.com"><br><br>
                         <label for="telefono" class="text-black">Teléfono:</label><br>
-                        <input name="telefono" type="tel" class="text-black" id="formulario" maxlength="9" placeholder="635 44 08 14"><br><br>
+                        <input name="telefono" type="tel" class="text-black" id="formulario" maxlength="9"
+                            placeholder="635 44 08 14"><br><br>
                         <label for="resumen" class="text-black">Opinión:</label><br>
-                        <textarea class="form-control" id="formulario" class="text-black" maxlength="500" cols="30" rows="10" name="resumen" placeholder="Escribe aquí tus comentarios y/o consejos..."></textarea><br>
+                        <textarea class="form-control" id="formulario" class="text-black" maxlength="500" cols="30"
+                            rows="10" name="resumen"
+                            placeholder="Escribe aquí tus comentarios y/o consejos..."></textarea><br>
                         <input type="submit" class="text-black" value="Submit">
                     </form>
                 </div>
