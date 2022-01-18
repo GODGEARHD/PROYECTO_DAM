@@ -27,6 +27,18 @@
             }
         }
     </script>
+    <script>
+        function lol() {
+            var so = document.getElementById('so');
+            var z = document.querySelector("#checkit");
+            var selectedOption = so.options[so.selectedIndex];
+            if (selectedOption.value == "-") {
+                z.checked = false;
+            } else {
+                z.checked = true;
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -104,14 +116,31 @@
                             </optgroup>
                         </select><br><br>
                         <label for="refri" class="text-black">Refrigeración de CPU:</label><br>
-                        <select id="formulario" name="cpu" class="text-black" style="width: 378px;">
+                        <select id="formulario" name="refri" class="text-black" style="width: 378px;">
+                            <optgroup label="Sin Selección" class="text-black">
+                                <option value="-">-</option>
+                            </optgroup>
                             <optgroup label="Refrigeración Líquida para Intel" class="text-black">
-                                <option value="Core i5-10600K - 268.36€" class="text-black">Core i5-10600K - 268.36€
+                                <option value="Asus ROG Ryujin 360 - 238.85€" class="text-black">Asus ROG Ryujin 360 -
+                                    238.85€
                                 </option>
-                                <option value="Core i7-11800H - 346.49€" class="text-black">Core i7-11800H - 346.49€
+                                <option value="Cooler Master MasterLiquid ML240L RGB - 65.91€" class="text-black">Cooler
+                                    Master MasterLiquid ML240L RGB - 65.91€
                                 </option>
                             </optgroup>
                             <optgroup label="Refrigeración Líquida para AMD" class="text-black">
+                                <option value="Nfortec Hydrus V2 - 54.51€" class="text-black">Nfortec Hydrus V2 - 54.51€
+                                </option>
+                                <option value="Ryzen 7 5800X - 375.00€" class="text-black">Ryzen 7 5800X - 375.00€
+                                </option>
+                            </optgroup>
+                            <optgroup label="Refrigeración por Aire para Intel" class="text-black">
+                                <option value="Ryzen 5 3600 - 310.00€" class="text-black">Ryzen 5 3600 - 310.00€
+                                </option>
+                                <option value="Ryzen 7 5800X - 375.00€" class="text-black">Ryzen 7 5800X - 375.00€
+                                </option>
+                            </optgroup>
+                            <optgroup label="Refrigeración por Aire para AMD" class="text-black">
                                 <option value="Ryzen 5 3600 - 310.00€" class="text-black">Ryzen 5 3600 - 310.00€
                                 </option>
                                 <option value="Ryzen 7 5800X - 375.00€" class="text-black">Ryzen 7 5800X - 375.00€
@@ -207,13 +236,28 @@
                         <input name="eth_wifi" type="text" class="text-black" id="formulario" maxlength="9"
                             placeholder="Elige Adaptador de Red/Wi-Fi"><br><br>
                         <label for="montaje" class="text-black">Montaje:</label><br>
-                        <input name="montaje" type="checkbox" class="text-black" id="formulario" maxlength="9"
+                        <input name="montaje" type="checkbox" class="text-black" id="checkit" maxlength="9"
                             placeholder="Elige Montaje">&nbsp;<small class="text-black">(Elige si quieres que te
                             montemos el PC nosotros o si
                             prefieres los componentes por separado)</small><br><br>
                         <label for="so" class="text-black">Sistema Operativo:</label><br>
-                        <input name="so" type="text" class="text-black" id="formulario" maxlength="9"
-                            placeholder="Elige Sistema Operativo"><br><br>
+                        <select id="so" name="so" class="text-black" style="width: 378px;" onchange="return lol()">
+                            <optgroup label="Sin Selección" class="text-black">
+                                <option value="-">-</option>
+                            </optgroup>
+                            <optgroup label="Windows 10" class="text-black">
+                                <option value="Windows 10 Home - 100.00€" class="text-black">Windows 10 Home - 145.00€
+                                </option>
+                                <option value="Windows 10 Pro - 200.00€" class="text-black">Windows 10 Pro - 259.00€
+                                </option>
+                            </optgroup>
+                            <optgroup label="Windows 11" class="text-black">
+                                <option value="Windows 11 Home - 100.00€" class="text-black">Windows 11 Home - 100.00€
+                                </option>
+                                <option value="Windows 11 Pro - 200.00€" class="text-black">Windows 11 Pro - 200.00€
+                                </option>
+                            </optgroup>
+                        </select><br><br>
                         <hr>
                         <br>
                         <p class="text-black">Por último, necesitamos que introduzcas tus datos para dar tu pedido por
