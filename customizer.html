@@ -138,6 +138,9 @@
                             placeholder="Elige DVD"><br><br>
                         <label for="monitor" class="text-black">Monitor:</label><br>
                         <select id="formulario" name="monitor" class="text-black" style="width: 251px;">
+                            <optgroup label="Sin Selección" class="text-black">
+                                <option value="-">-</option>
+                            </optgroup>
                             <optgroup label="Móviles" class="text-black">
                                 <option value="Xiaomi Poco X3 NFC - 230.00€" class="text-black">Xiaomi Poco X3 NFC
                                 </option>
@@ -149,6 +152,9 @@
                         </select><br><br>
                         <label for="teclado" class="text-black">Teclado:</label><br>
                         <select id="formulario" name="teclado" class="text-black" style="width: 251px;">
+                            <optgroup label="Sin Selección" class="text-black">
+                                <option value="-">-</option>
+                            </optgroup>
                             <optgroup label="Logitech" class="text-black">
                                 <option value="Logitech 920G Pro - 60.75€" class="text-black">Logitech 920G Pro - 60.75€
                                 </option>
@@ -200,17 +206,19 @@
                         <br>
                         <p class="text-black">Por último, necesitamos que introduzcas tus datos para dar tu pedido por
                             válido:</p>
-                        <label for="nombre" class="text-black">Tu nombre:</label><br>
+                        <label for="nombre" class="text-black">Tu nombre: <b style="color: red;">*</b></label><br>
                         <input name="nombre" type="text" class="text-black" id="formulario" maxlength="100"
                             placeholder="Escribe tu nombre..."><br><br>
-                        <label for="email" class="text-black">Tu email:</label><br>
+                        <label for="email" class="text-black">Tu email: <b style="color: red;">*</b></label><br>
                         <input name="email" type="text" class="text-black" id="formulario" maxlength="100"
                             placeholder="Escribe tu email..."><br><br>
-                        <label for="paypal" class="text-black">Tu PayPal:</label><br>
+                        <label for="paypal" class="text-black">Tu PayPal: <b style="color: red;">*</b></label><br>
                         <input name="paypal" type="text" class="text-black" id="formulario" maxlength="100"
                             placeholder="Escribe tu nombre..."><br><br>
                         <input type="submit" class="text-black" value="Enviar">
                     </form>
+                    <hr>
+                    <b style="color: red;">*: Campos OBLIGATORIOS</b>
                 </div>
             </div>
         </div>
