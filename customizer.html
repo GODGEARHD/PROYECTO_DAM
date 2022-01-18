@@ -28,14 +28,14 @@
         }
     </script>
     <script>
-        function lol() {
+        function checkIt() {
             var so = document.getElementById('so');
             var z = document.querySelector("#checkit");
             var selectedOption = so.options[so.selectedIndex];
-            if (selectedOption.value == "-") {
-                z.checked = false;
-            } else {
+            if ((selectedOption.value == "Windows 11 Home - 170.00€") || (selectedOption.value == "Windows 11 Pro - 280.00€")) {
                 z.checked = true;
+            } else {
+                z.checked = false;
             }
         }
     </script>
@@ -101,7 +101,10 @@
                     <form class="text-black" name="myForm" method="POST" onsubmit="return validateForm()"
                         action="./account/feedback">
                         <label for="cpu" class="text-black">CPU:</label><br>
-                        <select id="formulario" name="cpu" class="text-black" style="width: 378px;">
+                        <select name="cpu" class="text-black" style="width: 378px;">
+                            <optgroup label="Sin Selección" class="text-black">
+                                <option value="-" class="text-black">-</option>
+                            </optgroup>
                             <optgroup label="Intel" class="text-black">
                                 <option value="Core i5-10600K - 268.36€" class="text-black">Core i5-10600K - 268.36€
                                 </option>
@@ -116,9 +119,13 @@
                             </optgroup>
                         </select><br><br>
                         <label for="refri" class="text-black">Refrigeración de CPU:</label><br>
-                        <select id="formulario" name="refri" class="text-black" style="width: 378px;">
+                        <select name="refri" class="text-black" style="width: 378px;">
                             <optgroup label="Sin Selección" class="text-black">
-                                <option value="-">-</option>
+                                <option value="-" class="text-black">-</option>
+                            </optgroup>
+                            <optgroup label="De Serie" class="text-black">
+                                <option value="De Serie" class="text-black">Disipador de Serie (incluido con CPU) -
+                                    0.00€</option>
                             </optgroup>
                             <optgroup label="Refrigeración Líquida para Intel" class="text-black">
                                 <option value="Asus ROG Ryujin 360 - 238.85€" class="text-black">Asus ROG Ryujin 360 -
@@ -131,19 +138,24 @@
                             <optgroup label="Refrigeración Líquida para AMD" class="text-black">
                                 <option value="Nfortec Hydrus V2 - 54.51€" class="text-black">Nfortec Hydrus V2 - 54.51€
                                 </option>
-                                <option value="Ryzen 7 5800X - 375.00€" class="text-black">Ryzen 7 5800X - 375.00€
+                                <option value="Arctic Liquid Freezer II - 119.99€" class="text-black">Arctic Liquid
+                                    Freezer II - 119.99€
                                 </option>
                             </optgroup>
                             <optgroup label="Refrigeración por Aire para Intel" class="text-black">
-                                <option value="Ryzen 5 3600 - 310.00€" class="text-black">Ryzen 5 3600 - 310.00€
+                                <option value="Nfortec Sculptor Black - 42.34€" class="text-black">Nfortec Sculptor
+                                    Black - 42.34€
                                 </option>
-                                <option value="Ryzen 7 5800X - 375.00€" class="text-black">Ryzen 7 5800X - 375.00€
+                                <option value="HidiTec C12 ARGB PWM 120mm - 31.73€" class="text-black">HidiTec C12 ARGB
+                                    PWM 120mm - 31.73€
                                 </option>
                             </optgroup>
                             <optgroup label="Refrigeración por Aire para AMD" class="text-black">
-                                <option value="Ryzen 5 3600 - 310.00€" class="text-black">Ryzen 5 3600 - 310.00€
+                                <option value="Nfortec Sculptor Black - 42.34€" class="text-black">Nfortec Sculptor
+                                    Black - 42.34€
                                 </option>
-                                <option value="Ryzen 7 5800X - 375.00€" class="text-black">Ryzen 7 5800X - 375.00€
+                                <option value="HidiTec C12 ARGB PWM 120mm - 31.73€" class="text-black">HidiTec C12 ARGB
+                                    PWM 120mm - 31.73€
                                 </option>
                             </optgroup>
                         </select><br><br>
@@ -178,9 +190,9 @@
                         <input name="dvd" type="text" class="text-black" id="formulario" maxlength="9"
                             placeholder="Elige DVD"><br><br>
                         <label for="monitor" class="text-black">Monitor:</label><br>
-                        <select id="formulario" name="monitor" class="text-black" style="width: 378px;">
+                        <select name="monitor" class="text-black" style="width: 378px;">
                             <optgroup label="Sin Selección" class="text-black">
-                                <option value="-">-</option>
+                                <option value="-" class="text-black">-</option>
                             </optgroup>
                             <optgroup label="Móviles" class="text-black">
                                 <option value="Xiaomi Poco X3 NFC - 230.00€" class="text-black">Xiaomi Poco X3 NFC
@@ -192,9 +204,9 @@
                             </optgroup>
                         </select><br><br>
                         <label for="teclado" class="text-black">Teclado:</label><br>
-                        <select id="formulario" name="teclado" class="text-black" style="width: 378px;">
+                        <select name="teclado" class="text-black" style="width: 378px;">
                             <optgroup label="Sin Selección" class="text-black">
-                                <option value="-">-</option>
+                                <option value="-" class="text-black">-</option>
                             </optgroup>
                             <optgroup label="Logitech" class="text-black">
                                 <option value="Logitech 920G Pro - 60.75€" class="text-black">Logitech 920G Pro - 60.75€
@@ -210,9 +222,9 @@
                             </optgroup>
                         </select><br><br>
                         <label for="raton" class="text-black">Ratón:</label><br>
-                        <select id="formulario" name="raton" class="text-black" style="width: 378px;">
+                        <select name="raton" class="text-black" style="width: 378px;">
                             <optgroup label="Sin Selección" class="text-black">
-                                <option value="-">-</option>
+                                <option value="-" class="text-black">-</option>
                             </optgroup>
                             <optgroup label="Razer" class="text-black">
                                 <option value="Razer Deathadder Essential 2021 - 19.99€" class="text-black">Razer
@@ -238,12 +250,12 @@
                         <label for="montaje" class="text-black">Montaje:</label><br>
                         <input name="montaje" type="checkbox" class="text-black" id="checkit" maxlength="9"
                             placeholder="Elige Montaje">&nbsp;<small class="text-black">(Elige si quieres que te
-                            montemos el PC nosotros o si
+                            montemos el PC nosotros (+25€) o si
                             prefieres los componentes por separado)</small><br><br>
                         <label for="so" class="text-black">Sistema Operativo:</label><br>
-                        <select id="so" name="so" class="text-black" style="width: 378px;" onchange="return lol()">
+                        <select id="so" name="so" class="text-black" style="width: 378px;" onchange="return checkIt()">
                             <optgroup label="Sin Selección" class="text-black">
-                                <option value="-">-</option>
+                                <option value="-" class="text-black">-</option>
                             </optgroup>
                             <optgroup label="Windows 10" class="text-black">
                                 <option value="Windows 10 Home - 100.00€" class="text-black">Windows 10 Home - 145.00€
@@ -252,12 +264,16 @@
                                 </option>
                             </optgroup>
                             <optgroup label="Windows 11" class="text-black">
-                                <option value="Windows 11 Home - 100.00€" class="text-black">Windows 11 Home - 100.00€
+                                <option value="Windows 11 Home - 170.00€" class="text-black">Windows 11 Home - 170.00€
                                 </option>
-                                <option value="Windows 11 Pro - 200.00€" class="text-black">Windows 11 Pro - 200.00€
+                                <option value="Windows 11 Pro - 280.00€" class="text-black">Windows 11 Pro - 280.00€
                                 </option>
                             </optgroup>
                         </select><br><br>
+                        <small><i class="text-black">NOTA: Cuando seleccionas como sistema operativo alguna de las
+                                versiones de Windows 11,<br>
+                                el montaje del equipo es OBLIGATORIO, ya que requiere configuración extra que Windows 10
+                                no.</i></small>
                         <hr>
                         <br>
                         <p class="text-black">Por último, necesitamos que introduzcas tus datos para dar tu pedido por
