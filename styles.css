@@ -194,3 +194,8 @@ body {
 #formulario {
     border: 1px solid grey;
 }
+
+#invertir-color {
+    -webkit-filter: invert(100%);
+   filter: invert(100%);
+}

@@ -16,7 +16,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="./styles.css">
-
+    <script>
+        function validateForm() {
+            var w = document.forms["myForm"]["nombre"].value;
+            var x = document.forms["myForm"]["email"].value;
+            var y = document.forms["myForm"]["paypal"].value;
+            if ((w == "") || (x == "") || (y == "")) {
+                alert("Asegúrate de rellenar todos los campos necesarios (marcados con *)");
+                return false;
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -79,8 +89,20 @@
                     <form class="text-black" name="myForm" method="POST" onsubmit="return validateForm()"
                         action="./account/feedback">
                         <label for="cpu" class="text-black">CPU:</label><br>
-                        <input name="cpu" id="formulario" class="text-black" type="text" maxlength="75"
-                            placeholder="Elige CPU"><br><br>
+                        <select id="formulario" name="cpu" class="text-black" style="width: 251px;">
+                            <optgroup label="Intel" class="text-black">
+                                <option value="Core i5-10600K - 268.36€" class="text-black">Core i5-10600K - 268.36€
+                                </option>
+                                <option value="Core i7-11800H - 346.49€" class="text-black">Core i7-11800H - 346.49€
+                                </option>
+                            </optgroup>
+                            <optgroup label="AMD" class="text-black">
+                                <option value="Ryzen 5 3600 - 310.00€" class="text-black">Ryzen 5 3600 - 310.00€
+                                </option>
+                                <option value="Ryzen 7 5800X - 375.00€" class="text-black">Ryzen 7 5800X - 375.00€
+                                </option>
+                            </optgroup>
+                        </select><br><br>
                         <label for="refri" class="text-black">Refrigeración de CPU:</label><br>
                         <input name="refri" id="formulario" class="text-black" type="text" maxlength="75"
                             placeholder="Elige Refrigeración"><br><br>
@@ -115,14 +137,48 @@
                         <input name="dvd" type="text" class="text-black" id="formulario" maxlength="9"
                             placeholder="Elige DVD"><br><br>
                         <label for="monitor" class="text-black">Monitor:</label><br>
-                        <input name="monitor" type="text" class="text-black" id="formulario" maxlength="9"
-                            placeholder="Elige Monitor"><br><br>
+                        <select id="formulario" name="monitor" class="text-black" style="width: 251px;">
+                            <optgroup label="Móviles" class="text-black">
+                                <option value="Xiaomi Poco X3 NFC - 230.00€" class="text-black">Xiaomi Poco X3 NFC
+                                </option>
+                                <option value="Realme GT Master Edition - 299.99€" class="text-black">Realme GT
+                                    Master Edition</option>
+                                <option value="Oppo Find X3 Pro - 969.00€" class="text-black">Oppo Find X3 Pro
+                                </option>
+                            </optgroup>
+                        </select><br><br>
                         <label for="teclado" class="text-black">Teclado:</label><br>
-                        <input name="teclado" type="text" class="text-black" id="formulario" maxlength="9"
-                            placeholder="Elige Teclado"><br><br>
+                        <select id="formulario" name="teclado" class="text-black" style="width: 251px;">
+                            <optgroup label="Logitech" class="text-black">
+                                <option value="Logitech 920G Pro - 60.75€" class="text-black">Logitech 920G Pro - 60.75€
+                                </option>
+                            </optgroup>
+                            <optgroup label="Redragon" class="text-black">
+                                <option value="Redragon K552 - 31.28€" class="text-black">Redragon K552 - 31.28€
+                                </option>
+                            </optgroup>
+                            <optgroup label="XTRFY" class="text-black">
+                                <option value="XTRFY K4 TKL RGB - 99.00€" class="text-black">XTRFY K4 TKL RGB - 99.00€
+                                </option>
+                            </optgroup>
+                        </select><br><br>
                         <label for="raton" class="text-black">Ratón:</label><br>
-                        <input name="raton" type="text" class="text-black" id="formulario" maxlength="9"
-                            placeholder="Elige Ratón"><br><br>
+                        <select id="formulario" name="raton" class="text-black" style="width: 251px;">
+                            <optgroup label="Sin Selección" class="text-black">
+                                <option value="-">-</option>
+                            </optgroup>
+                            <optgroup label="Razer" class="text-black">
+                                <option value="Razer Deathadder Essential 2021 - 19.99€" class="text-black">Razer
+                                    Deathadder Essential 2021 - 19.99€</option>
+                                <option value="Razer Deathadder Essential White Edition - 19.99€" class="text-black">
+                                    Razer Deathadder Essential White Edition - 19.99€</option>
+                            </optgroup>
+                            <optgroup label="Logitech" class="text-black">
+                                <option value="Logitech G502 Hero - 39.90€" class="text-black">Logitech G502 Hero -
+                                    39.90€
+                                </option>
+                            </optgroup>
+                        </select><br><br>
                         <label for="altavoces" class="text-black">Altavoces:</label><br>
                         <input name="altavoces" type="text" class="text-black" id="formulario" maxlength="9"
                             placeholder="Elige Altavoces"><br><br>
@@ -133,11 +189,26 @@
                         <input name="eth_wifi" type="text" class="text-black" id="formulario" maxlength="9"
                             placeholder="Elige Adaptador de Red/Wi-Fi"><br><br>
                         <label for="montaje" class="text-black">Montaje:</label><br>
-                        <input name="montaje" type="text" class="text-black" id="formulario" maxlength="9"
-                            placeholder="Elige Montaje"><br><br>
+                        <input name="montaje" type="checkbox" class="text-black" id="formulario" maxlength="9"
+                            placeholder="Elige Montaje">&nbsp;<small class="text-black">(Elige si quieres que te
+                            montemos el PC nosotros o si
+                            prefieres los componentes por separado)</small><br><br>
                         <label for="so" class="text-black">Sistema Operativo:</label><br>
                         <input name="so" type="text" class="text-black" id="formulario" maxlength="9"
                             placeholder="Elige Sistema Operativo"><br><br>
+                        <hr>
+                        <br>
+                        <p class="text-black">Por último, necesitamos que introduzcas tus datos para dar tu pedido por
+                            válido:</p>
+                        <label for="nombre" class="text-black">Tu nombre:</label><br>
+                        <input name="nombre" type="text" class="text-black" id="formulario" maxlength="100"
+                            placeholder="Escribe tu nombre..."><br><br>
+                        <label for="email" class="text-black">Tu email:</label><br>
+                        <input name="email" type="text" class="text-black" id="formulario" maxlength="100"
+                            placeholder="Escribe tu email..."><br><br>
+                        <label for="paypal" class="text-black">Tu PayPal:</label><br>
+                        <input name="paypal" type="text" class="text-black" id="formulario" maxlength="100"
+                            placeholder="Escribe tu nombre..."><br><br>
                         <input type="submit" class="text-black" value="Enviar">
                     </form>
                 </div>
