@@ -1,7 +1,15 @@
 <?php
 
-    $test = isset($_POST['montaje']);
+    $test = $_POST['montaje'];
 
-    echo $test;
+    if ($test == 'on') {
+
+        echo "1";
+
+    }else {
+
+        echo $test;
+
+    }
 
 ?>
