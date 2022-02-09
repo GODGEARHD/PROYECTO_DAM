@@ -4,6 +4,20 @@
 
     require 'database.php';
 
+    $montaje = 0;
+
+    $checkbox = $_POST['montaje'];
+
+    if ($checkbox == 'on') {
+
+      $montaje = 1;
+
+    }else {
+
+      $montaje = 0;
+
+    }
+
     $message = '';
 
     if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['paypal'])) {
