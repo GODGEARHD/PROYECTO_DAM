@@ -1,6 +1,6 @@
 <?php
 
-    $test = $_POST['montaje'];
+    $test = $_POST['checkit'];
 
     echo $test;
 
