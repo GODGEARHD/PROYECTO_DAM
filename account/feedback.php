@@ -33,7 +33,8 @@
   </head>
   <body>
     <?php require 'partials/header.php' ?>
-      <br> <?= $message ?>
+      <br>
+      <p><?= $message ?></p>
       <br>
       <br>
       <form action="../" method="POST">

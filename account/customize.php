@@ -6,8 +6,8 @@
 
     $message = '';
 
-    if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['telefono']) && !empty($_POST['resumen'])) {
-        $sql = "INSERT INTO custom_cfg (name, email, telephone, opinion) VALUES (:nombre, :email, :telefono, :resumen)";
+    if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['paypal'])) {
+        $sql = "INSERT INTO custom_cfg (nombre_usuario, email, paypal, precio_total, cpu, refri_cpu, ram, placa_base, disco_duro_1, disco_duro_2, caja, psu, gpu, tarjeta_sonido, lector_tarjetas, dvd, monitor, teclado, raton, altavoces, tarjeta_tv, adaptador_eth_wifi, montaje, sistema_operativo) VALUES (:nombre, :email, :telefono, :resumen)";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':nombre', $_POST['nombre']);
         $stmt->bindParam(':email', $_POST['email']);
@@ -33,7 +33,8 @@
   </head>
   <body>
     <?php require 'partials/header.php' ?>
-      <br> <?= $message ?>
+      <br>
+      <p><?= $message ?></p>
       <br>
       <br>
       <form action="../" method="POST">
