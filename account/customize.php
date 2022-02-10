@@ -21,11 +21,11 @@
     $message = '';
 
     if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['paypal'])) {
-        $sql = "INSERT INTO custom_cfg (nombre_usuario, email, paypal, precio_total, cpu, refri_cpu, ram, placa_base, disco_duro_1, disco_duro_2, caja, psu, gpu, tarjeta_sonido, lector_tarjetas, dvd, monitor, teclado, raton, altavoces, tarjeta_tv, adaptador_eth_wifi, montaje, sistema_operativo) VALUES (:nombre, :email, :telefono, :resumen)";
+        $sql = "INSERT INTO custom_cfg (nombre_usuario, email, paypal, precio_total, cpu, refri_cpu, ram, placa_base, disco_duro_1, disco_duro_2, caja, psu, gpu, tarjeta_sonido, lector_tarjetas, dvd, monitor, teclado, raton, altavoces, tarjeta_tv, adaptador_eth_wifi, montaje, sistema_operativo) VALUES (:nombre, :email, :paypal, :resumen)";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':nombre', $_POST['nombre']);
         $stmt->bindParam(':email', $_POST['email']);
-        $stmt->bindParam(':telefono', $_POST['telefono']);
+        $stmt->bindParam(':paypal', $_POST['paypal']);
         $stmt->bindParam(':resumen', $_POST['resumen']);
 
         if ($stmt->execute()) {
