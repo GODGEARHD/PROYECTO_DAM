@@ -99,7 +99,7 @@
                         Selecciona los componentes que deseas para tu PC:
                     </h2>
                     <br>
-                    <form class="text-black" name="myForm" method="POST" onsubmit="return validateForm()"
+                    <form class="text-black" name="myForm" method="POST" onsubmit="validateForm()"
                         action="./account/customize">
                         <label for="cpu" class="text-black">CPU:</label><br>
                         <select name="cpu" class="text-black form">
@@ -522,7 +522,7 @@
                             montemos el PC nosotros (+25€) o si
                             prefieres los componentes por separado)</small><br><br>
                         <label for="so" class="text-black">Sistema Operativo:</label><br>
-                        <select id="so" name="so" class="text-black form" onchange="return checkIt()">
+                        <select id="so" name="so" class="text-black form" onchange="checkIt()">
                             <optgroup label="Sin Selección" class="text-black">
                                 <option value="-" class="text-black">-</option>
                             </optgroup>
