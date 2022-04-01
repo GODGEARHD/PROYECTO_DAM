@@ -5,7 +5,7 @@
   $server = 'localhost:3306';
   $username = 'mysql';
   $password = 'MySqlTfgP@$$w0rd!';
-  $database = 'login';
+  $database = 'pcmr-world';
 
   try {
     $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
