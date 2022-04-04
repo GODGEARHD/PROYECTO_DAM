@@ -84,7 +84,9 @@ body {
 }
 
 .form {
-    width: 378px;
+    /*width: 378px;*/
+    width: 75%;
+    height: 50px;
 }
 
 @media only screen and (max-width: 1080px) {
