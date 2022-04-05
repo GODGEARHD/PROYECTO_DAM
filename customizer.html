@@ -39,7 +39,7 @@
             }
         }
     </script>
-    <script type="text/javascript" src="script/customizerImg.js"></script>
+    <script type="text/javascript" src="customizerImg.js"></script>
 </head>
 
 <body id="inicio">
@@ -560,7 +560,7 @@
                         <hr><br>
                         <div style="float: right;"><img src="img/transparent.png"></div>
                         <label for="so" class="text-black">Sistema Operativo:</label><br>
-                        <select id="so" name="so" class="text-black form" onchange="cpu()">
+                        <select id="so" name="so" class="text-black form" onchange="checkIt(), sistema()">
                             <optgroup label="Sin Selección" class="text-black">
                                 <option value="-" class="text-black">-</option>
                             </optgroup>

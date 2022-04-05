@@ -1,5 +1,5 @@
-function cpu() {
-    console.log("works");
+function procesador() {
+    console.log("works")
 }
 
 function refri() {
@@ -70,6 +70,6 @@ function red() {
     console.log("works");
 }
 
-function so() {
+function sistema() {
     console.log("works");
 }
