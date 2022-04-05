@@ -27,18 +27,7 @@
             }
         }
     </script>
-    <script>
-        function checkIt() {
-            var so = document.getElementById('so');
-            var z = document.querySelector("#checkit");
-            var selectedOption = so.options[so.selectedIndex];
-            if ((selectedOption.value == "Windows 11 Home - 170.00€") || (selectedOption.value == "Windows 11 Pro - 280.00€")) {
-                z.checked = true;
-            } else {
-                z.checked = false;
-            }
-        }
-    </script>
+    <script type="text/javascript" src="script/forms.js"></script>9
     <script type="text/javascript" src="script/customizerImg.js"></script>
 </head>
 
@@ -560,7 +549,7 @@
                         <hr><br>
                         <div style="float: right;"><img src="img/transparent.png"></div>
                         <label for="so" class="text-black">Sistema Operativo:</label><br>
-                        <select id="so" name="so" class="text-black form" onchange="checkIt(), sistema()">
+                        <select id="so" name="so" class="text-black form" onchange="checkIt(), teclas()">
                             <optgroup label="Sin Selección" class="text-black">
                                 <option value="-" class="text-black">-</option>
                             </optgroup>
