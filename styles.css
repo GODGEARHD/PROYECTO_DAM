@@ -234,7 +234,7 @@ body {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: 5;
+    z-index: 6;
 }
 
 /*#navbar-expand-lg2 {
