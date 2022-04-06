@@ -4,11 +4,11 @@ error_reporting(0);
 
 $resultado = 'No Existe';
 
+session_start();
+
 if (isset($_SESSION['user_id'])) {
     $resultado = 'Existe';
 }
-
-session_start();
 
 require 'database.php';
 
