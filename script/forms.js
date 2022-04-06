@@ -28,3 +28,14 @@ function validateForm() {
         document.getElementById("custom").action = "./account/customize";
     }
 }
+
+function validateForm2() {
+    var w = document.forms["myForm"]["nombre"].value;
+    var x = document.forms["myForm"]["email"].value;
+    var y = document.forms["myForm"]["telefono"].value;
+    var z = document.forms["myForm"]["resumen"].value;
+    if ((w == "") || (x == "") || (y == "") || (z == "")) {
+        alert("Every field must be filled out");
+        return false;
+    }
+}
