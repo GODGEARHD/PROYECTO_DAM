@@ -1,5 +1,3 @@
-
-
 <?php
 
 error_reporting(0);
@@ -25,6 +23,14 @@ if (isset($_SESSION['user_id'])) {
     }
 }
 ?>
+
+<script>
+    function test() {
+        if ((document.cookie.match(/^(.*;)?\s*PHPSESSID\s*=\s*[^;]+(.*)?$/)) != null) {
+            return true;
+        }
+    }
+</script>
 
 <!DOCTYPE html>
 <html>
@@ -52,12 +58,5 @@ if (isset($_SESSION['user_id'])) {
 <a href='./login'>Iniciar Sesión</a> o
 <a href='./signup'>Registrarse</a>
 <?php endif; ?>
-<script>
-    function test() {
-        if ((document.cookie.match(/^(.*;)?\s*PHPSESSID\s*=\s*[^;]+(.*)?$/)) != null) {
-            return true;
-        }
-    }
-</script>
 </body>
 </html>
