@@ -36,6 +36,8 @@ if (isset($_SESSION['user_id'])) {
 <body>
 <?php require 'partials/header.php' ?>
 
+<p> <?= $message ?></p>
+
 <?php if (!empty($user)) : ?>
 <br> Bienvenido, <?= $user['email'] ?>
 <br>Has iniciado sesión correctamente.
