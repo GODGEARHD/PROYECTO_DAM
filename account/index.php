@@ -2,13 +2,7 @@
 
 error_reporting(0);
 
-/*$resultado = 'No Existe';
-
 session_start();
-
-if (isset($_SESSION['user_id'])) {
-    $resultado = 'Existe';
-}*/
 
 include 'login.php';
 
@@ -39,8 +33,6 @@ if (isset($_SESSION['user_id'])) {
 </head>
 <body>
 <?php require 'partials/header.php' ?>
-
-<p> <?= $resultado ?></p>
 
 <?php if (!empty($user)) : ?>
 <br> Bienvenido, <?= $user['email']; ?>
