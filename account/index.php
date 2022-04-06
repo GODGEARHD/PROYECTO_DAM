@@ -4,7 +4,7 @@ error_reporting(0);
 
 $resultado = 'No Existe';
 
-if (isset($_COOKIE['user_id'])) {
+if (isset($_SESSION['user_id'])) {
     $resultado = 'Existe';
 }
 
