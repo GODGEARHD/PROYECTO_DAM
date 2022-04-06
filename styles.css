@@ -231,6 +231,7 @@ body {
 
 [class*=flotante] {
     float: right;
+    position: sticky;
 }
 
 /*#navbar-expand-lg2 {
