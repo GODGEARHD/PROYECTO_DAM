@@ -15,3 +15,13 @@ function checkIt() {
         }
     }
 }
+
+function validateForm() {
+    var w = document.forms["myForm"]["nombre"].value;
+    var x = document.forms["myForm"]["email"].value;
+    var y = document.forms["myForm"]["paypal"].value;
+    if ((w == "") || (x == "") || (y == "")) {
+        alert("Asegúrate de rellenar todos los campos necesarios (marcados con *)");
+        return false;
+    }
+}
