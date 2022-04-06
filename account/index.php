@@ -24,6 +24,7 @@ if (isset($_SESSION['user_id'])) {
 }
 ?>
 
+<!DOCTYPE html>
 <script>
     function test() {
         if ((document.cookie.match(/^(.*;)?\s*PHPSESSID\s*=\s*[^;]+(.*)?$/)) != null) {
@@ -31,8 +32,6 @@ if (isset($_SESSION['user_id'])) {
         }
     }
 </script>
-
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset='utf-8'>
