@@ -39,7 +39,7 @@ if (isset($_SESSION['user_id'])) {
 <p> <?= $resultado ?></p>
 
 <?php if (!empty($user)) : ?>
-<br> Bienvenido, <?= $user['email'] ?>
+<br> Bienvenido, <?= $user['email']; ?>
 <br>Has iniciado sesión correctamente.
 <br>
 <br>
