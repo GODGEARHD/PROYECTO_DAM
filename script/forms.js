@@ -35,7 +35,10 @@ function validateForm2() {
     var y = document.forms["myForm"]["telefono"].value;
     var z = document.forms["myForm"]["resumen"].value;
     if ((w == "") || (x == "") || (y == "") || (z == "")) {
-        alert("Every field must be filled out");
+        alert("Asegúrate de rellenar todos los campos");
+        document.getElementById("feed").action = "#";
         return false;
+    } else {
+        document.getElementById("feed").action = "./account/feedback";
     }
 }
