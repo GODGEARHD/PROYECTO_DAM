@@ -235,7 +235,14 @@ body {
     position: -webkit-sticky;
     top: 0;
     z-index: 6;
-    margin-top: 16.5%;
+}
+
+[class*=alineadorCentro] {
+    height: 27px;
+}
+
+[class*=alineadorLateral] {
+    height: 60px;
 }
 
 /*#navbar-expand-lg2 {
