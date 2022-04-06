@@ -2,8 +2,6 @@
 
   error_reporting(0);
 
-  session_start();
-
   if (isset($_SESSION['user_id'])) {
     header('Location: ./index');
   }
@@ -18,6 +16,7 @@
     $message = '';
 
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
+      session_start();
       $_SESSION['user_id'] = $results['id'];
       header("Location: ./index");
     } else {
