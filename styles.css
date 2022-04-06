@@ -236,10 +236,6 @@ body {
     top: 0;
     z-index: 6;
 }
-[class*=lateral] {
-    padding-left: 0px;
-    padding-right: 0px;
-}
 
 /*#navbar-expand-lg2 {
     position: sticky;
