@@ -2,8 +2,10 @@
 
 error_reporting(0);
 
+$resultado = '';
+
 if (isset($_COOKIE['user_id'])) {
-    echo 'Existe';
+    $resultado = 'Existe';
 }
 
 require 'database.php';
@@ -34,8 +36,8 @@ if (isset($_SESSION['user_id'])) {
 <body>
 <?php require 'partials/header.php' ?>
 
-<?php if (!empty($user)): ?>
-<br> Bienvenido, <?= $user['email']; ?>
+<?php if (!empty($user)) : ?>
+<br> Bienvenido, <?= $user['email'] ?>
 <br>Has iniciado sesión correctamente.
 <br>
 <br>
