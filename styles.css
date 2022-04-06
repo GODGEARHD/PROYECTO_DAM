@@ -236,6 +236,9 @@ body {
     top: 0;
     z-index: 6;
 }
+[class*=lateral] {
+    margin: 0px;
+}
 
 /*#navbar-expand-lg2 {
     position: sticky;
