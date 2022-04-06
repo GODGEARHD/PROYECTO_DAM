@@ -22,6 +22,9 @@ function validar() {
     var y = document.forms["myForm"]["paypal"].value;
     if ((w == "") || (x == "") || (y == "")) {
         alert("Asegúrate de rellenar todos los campos necesarios (marcados con *)");
+        document.getElementById("custom").action = "#";
         return false;
+    } else {
+        document.getElementById("custom").action = "./account/customize";
     }
 }
