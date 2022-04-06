@@ -32,19 +32,19 @@ if ( isset( $_SESSION[ 'user_id' ] ) ) {
 <?php require 'partials/header.php' ?>
 
 <?php if ( !empty( $user ) ): ?>
-<br> Welcome. < ?= $user[ 'email' ];
+<br> Bienvenido, < ?= $user[ 'email' ];
 ?>
-<br>You are Successfully Logged In
+<br>Has iniciado sesión correctamente.
 <br>
 <br>
 <form action = '../' method = 'POST'>
 <input type = 'submit' value = 'Go Home'>
 </form>
 <?php else: ?>
-<h1>Please Login or SignUp</h1>
+<h1>Por favor, inicia sesión o regístrate</h1>
 
-<a href = './login'>Login</a> or
-<a href = './signup'>SignUp</a>
+<a href = './login'>Iniciar Sesión</a> o
+<a href = './signup'>Registrarse</a>
 <?php endif;
 ?>
 </body>
