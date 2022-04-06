@@ -2,9 +2,7 @@
 
 error_reporting(0);
 
-$sesion = test();
-
-if ($sesion) {
+if (isset($_SESSION['user_id'])) {
     session_start();
 }
 
@@ -25,13 +23,6 @@ if (isset($_SESSION['user_id'])) {
 ?>
 
 <!DOCTYPE html>
-<script>
-    function test() {
-        if ((document.cookie.match(/^(.*;)?\s*PHPSESSID\s*=\s*[^;]+(.*)?$/)) != null) {
-            return true;
-        }
-    }
-</script>
 <html>
 <head>
 <meta charset='utf-8'>
