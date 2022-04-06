@@ -1,75 +1,75 @@
-function cpu() {
+function procesador() {
     console.log("works");
 }
 
-function refri() {
+function ventilador() {
     console.log("works");
 }
 
-function ram() {
+function memoria() {
     console.log("works");
 }
 
-function placa() {
+function placaBase() {
     console.log("works");
 }
 
-function disco1() {
+function hdd1() {
     console.log("works");
 }
 
-function disco2() {
+function hdd2() {
     console.log("works");
 }
 
-function caja() {
+function gabinete() {
     console.log("works");
 }
 
-function psu() {
+function fuente() {
     console.log("works");
 }
 
-function gpu() {
+function grafica() {
     console.log("works");
 }
 
-function audio() {
+function tarjeta() {
     console.log("works");
 }
 
-function lector() {
+function leer() {
     console.log("works");
 }
 
-function dvd() {
+function cds() {
     console.log("works");
 }
 
-function monitor() {
+function pantalla() {
     console.log("works");
 }
 
-function teclado() {
+function teclas() {
     console.log("works");
 }
 
-function mouse() {
+function raton() {
     console.log("works");
 }
 
-function altavoces() {
+function altavoz() {
     console.log("works");
 }
 
-function tv() {
+function television() {
     console.log("works");
 }
 
-function red() {
+function antena() {
     console.log("works");
 }
 
-function so() {
+function sistema() {
     console.log("works");
 }
