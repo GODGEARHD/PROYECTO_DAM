@@ -295,5 +295,5 @@ function calc() {
         total+=0;
     }
 
-    document.getElementById("precio").innerHTML ="Precio total: " + total + "€";
+    document.getElementById("precio").innerHTML =total + "€";
 }
