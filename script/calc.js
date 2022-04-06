@@ -276,7 +276,7 @@ function calc() {
 
     //CheckBox de Montaje
     if (montaje.checked == true) {
-        total+=25.50;
+        total+=25;
     } else if (montaje.checked == false) {
         total+=0;
     }
