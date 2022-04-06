@@ -39,7 +39,7 @@ if ( !empty( $_POST[ 'nombre' ] ) && !empty( $_POST[ 'email' ] ) && !empty( $_PO
 
 <head>
 <meta charset = 'utf-8'>
-<title>¡Gracias!</title>
+<title>PCMR World - ¡Gracias!</title>
 <link href = 'https://fonts.googleapis.com/css?family=Roboto' rel = 'stylesheet'>
 <link rel = 'stylesheet' href = 'assets/css/style.css'>
 </head>

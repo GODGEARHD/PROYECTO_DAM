@@ -2,7 +2,7 @@
 
 error_reporting( 0 );
 
-session_start();
+//session_start();
 
 require 'database.php';
 
@@ -38,7 +38,7 @@ if ( isset( $_SESSION[ 'user_id' ] ) ) {
 <br>
 <br>
 <form action = '../' method = 'POST'>
-<input type = 'submit' value = 'Go Home'>
+<input type = 'submit' value = 'Volver'>
 </form>
 <?php else: ?>
 <h1>Por favor, inicia sesión o regístrate</h1>

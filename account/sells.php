@@ -28,7 +28,7 @@ if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['paypal']
 
 <head>
   <meta charset="utf-8">
-  <title>Thank You!</title>
+  <title>PCMR World - ¡Gracias!</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -39,7 +39,7 @@ if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['paypal']
   <br>
   <br>
   <form action="../store" method="POST">
-    <input type="submit" value="Go to Store">
+    <input type="submit" value="Volver">
   </form>
 </body>
 

@@ -39,7 +39,7 @@ if ( !empty( $_POST[ 'email' ] ) && !empty( $_POST[ 'password' ] ) ) {
 
 <head>
 <meta charset = 'utf-8'>
-<title>Registro</title>
+<title>PCMR World - Registro</title>
 <link href = 'https://fonts.googleapis.com/css?family=Roboto' rel = 'stylesheet'>
 <link rel = 'stylesheet' href = 'assets/css/style.css'>
 </head>
