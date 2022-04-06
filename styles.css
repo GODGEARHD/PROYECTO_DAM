@@ -237,7 +237,7 @@ body {
     z-index: 6;
 }
 [class*=lateral] {
-    margin: 0px;
+    padding: 0px;
 }
 
 /*#navbar-expand-lg2 {
