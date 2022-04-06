@@ -16,7 +16,7 @@ function checkIt() {
     }
 }
 
-function validar() {
+function validateForm() {
     var w = document.forms["myForm"]["nombre"].value;
     var x = document.forms["myForm"]["email"].value;
     var y = document.forms["myForm"]["paypal"].value;
