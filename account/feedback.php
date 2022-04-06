@@ -17,7 +17,7 @@
         if ($stmt->execute()) {
             $message = '¡Gracias por tus comentarios!';
         } else {
-            $message = 'Lo sentimos, se ha debido de producir algun error al procesar tus comentarios';
+            $message = 'Lo sentimos, se ha debido de producir algun error al procesar tus comentarios. Comprueba que has escrito bien todos los datos en el formulario.';
         }
 }
 
