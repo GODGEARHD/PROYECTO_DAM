@@ -8,6 +8,10 @@ body {
   background-image: url(../../../img/bg.jpg);
 }
 
+a {
+  color: #fff;
+}
+
 /* Input Forms*/
 input[type="email"], input[type="password"]{
   outline: none;
