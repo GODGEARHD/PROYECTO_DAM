@@ -49,7 +49,7 @@ if ( !empty( $_POST[ 'email' ] ) && !empty( $_POST[ 'password' ] ) ) {
 <?php require 'partials/header.php' ?>
 
 <?php if ( !empty( $message ) ) : ?>
-<p> < ?= $message ?><a href = 'login'> < ?= $message2 ?></a></p>
+<p> <?= $message ?><a href = 'login'> <?= $message2 ?></a></p>
 <?php endif;
 ?>
 

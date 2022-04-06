@@ -47,7 +47,7 @@ if ( !empty( $_POST[ 'nombre' ] ) && !empty( $_POST[ 'email' ] ) && !empty( $_PO
 <body>
 <?php require 'partials/header.php' ?>
 <br>
-<p>< ?= $message ?></p>
+<p><?= $message ?></p>
 <br>
 <br>
 <form action = '../about' method = 'POST'>
