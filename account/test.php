@@ -1,16 +1,14 @@
 <?php
 
-    $test = $_POST['montaje'];
+$test = $_POST['montaje'];
 
-    if ($test == 'on') {
+if ($test == 'on') {
 
-        echo "1";
+    echo "1";
+} else {
 
-    }else {
-
-        echo $test;
-
-    }
+    echo $test;
+}
 
 ?>
 
