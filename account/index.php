@@ -2,13 +2,15 @@
 
 error_reporting(0);
 
-$resultado = 'No Existe';
+/*$resultado = 'No Existe';
 
 session_start();
 
 if (isset($_SESSION['user_id'])) {
     $resultado = 'Existe';
-}
+}*/
+
+include 'login.php';
 
 require 'database.php';
 
