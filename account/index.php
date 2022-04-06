@@ -4,8 +4,6 @@ error_reporting(0);
 
 session_start();
 
-include 'login.php';
-
 require 'database.php';
 
 if (isset($_SESSION['user_id'])) {
