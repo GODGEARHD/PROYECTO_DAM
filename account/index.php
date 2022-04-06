@@ -1,10 +1,4 @@
-<script>
-    function test() {
-        if ((document.cookie.match(/^(.*;)?\s*PHPSESSID\s*=\s*[^;]+(.*)?$/)) != null) {
-            return true;
-        }
-    }
-</script>
+
 
 <?php
 
@@ -58,5 +52,12 @@ if (isset($_SESSION['user_id'])) {
 <a href='./login'>Iniciar Sesión</a> o
 <a href='./signup'>Registrarse</a>
 <?php endif; ?>
+<script>
+    function test() {
+        if ((document.cookie.match(/^(.*;)?\s*PHPSESSID\s*=\s*[^;]+(.*)?$/)) != null) {
+            return true;
+        }
+    }
+</script>
 </body>
 </html>
