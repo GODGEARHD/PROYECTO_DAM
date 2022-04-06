@@ -25,7 +25,7 @@ function validateForm() {
         document.getElementById("custom").action = "#";
         return false;
     } else {
-        document.getElementById("custom").action = "./account/customize";
+        document.getElementById("custom").action = "/account/customize";
     }
 }
 
@@ -39,6 +39,6 @@ function validateForm2() {
         document.getElementById("feed").action = "#";
         return false;
     } else {
-        document.getElementById("feed").action = "./account/feedback";
+        document.getElementById("feed").action = "/account/feedback";
     }
 }
