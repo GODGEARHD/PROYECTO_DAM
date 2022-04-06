@@ -16,17 +16,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function validateForm() {
-            var w = document.forms["myForm"]["name"].value;
-            var x = document.forms["myForm"]["email"].value;
-            var y = document.forms["myForm"]["paypal"].value;
-            if ((w == "") || (x == "") || (y == "")) {
-                alert("Every field must be filled out");
-                return false;
-            }
-        }
-    </script>
+    <script src="script/forms.js"></script>
 </head>
 
 <body id="inicio">
@@ -186,8 +176,8 @@
                         <br>
                         <form class="text-black" name="myForm" method="POST" onsubmit="validateForm()"
                             action="/account/sells">
-                            <label for="name" class="text-black">Por favor, introduce tu nombre:</label><br>
-                            <input name="name" id="formulario" type="text" class="text-black" maxlength="75"
+                            <label for="nombre" class="text-black">Por favor, introduce tu nombre:</label><br>
+                            <input name="nombre" id="formulario" type="text" class="text-black" maxlength="75"
                                 placeholder="Carlos Maristegui" style="width: 251px;"><br><br>
                             <label for="email" class="text-black">Por favor, introduce tu E-mail:</label><br>
                             <input name="email" id="formulario" type="email" class="text-black" maxlength="75"
@@ -348,8 +338,8 @@
                             <br>
                             <form class="text-black" name="myForm" method="POST" onsubmit="validateForm()"
                                 action="/account/sells">
-                                <label for="name" class="text-black">Por favor, introduce tu nombre:</label><br>
-                                <input name="name" id="formulario" type="text" class="text-black" maxlength="75"
+                                <label for="nombre" class="text-black">Por favor, introduce tu nombre:</label><br>
+                                <input name="nombre" id="formulario" type="text" class="text-black" maxlength="75"
                                     placeholder="Carlos Maristegui" style="width: 251px;"><br><br>
                                 <label for="email" class="text-black">Por favor, introduce tu E-mail:</label><br>
                                 <input name="email" id="formulario" type="email" class="text-black" maxlength="75"
@@ -364,7 +354,6 @@
                                     <optgroup label="PC Sobremesa" class="text-black">
                                         <option value="Starter PC - 560.89$" class="text-black">Starter PC</option>
                                         <option value="Beast PC - 4739.80€" class="text-black">Beast PC</option>
-
                                     </optgroup>
                                     <optgroup label="Portátiles" class="text-black">
                                         <option value="Acer Aspire A515-51 - 513.80€" class="text-black">Acer Aspire 5
@@ -408,8 +397,7 @@
                                 <input type="submit" class="text-black" value="Comprar">
                             </form>
                             <small><i class="text-black">*Nota: Te enviaremos un mensaje a tu correo para que verifiques
-                                    la
-                                    compra antes de formalizar tu pedido</i></small>
+                                    la compra antes de formalizar tu pedido</i></small>
                         </div>
                     </div>
                     <div class="jumbotron2" style="margin-right: 1rem;" id="semi-transparente">
@@ -531,8 +519,8 @@
                             <br>
                             <form class="text-black" name="myForm" method="POST" onsubmit="validateForm()"
                                 action="/account/sells">
-                                <label for="name" class="text-black">Por favor, introduce tu nombre:</label><br>
-                                <input name="name" id="formulario" type="text" class="text-black" maxlength="75"
+                                <label for="nombre" class="text-black">Por favor, introduce tu nombre:</label><br>
+                                <input name="nombre" id="formulario" type="text" class="text-black" maxlength="75"
                                     placeholder="Carlos Maristegui" style="width: 251px;"><br><br>
                                 <label for="email" class="text-black">Por favor, introduce tu E-mail:</label><br>
                                 <input name="email" id="formulario" type="email" class="text-black" maxlength="75"
@@ -728,8 +716,8 @@
                             <br>
                             <form class="text-black" name="myForm" method="POST" onsubmit="validateForm()"
                                 action="/account/sells">
-                                <label for="name" class="text-black">Por favor, introduce tu nombre:</label><br>
-                                <input name="name" id="formulario" type="text" class="text-black" maxlength="75"
+                                <label for="nombre" class="text-black">Por favor, introduce tu nombre:</label><br>
+                                <input name="nombre" id="formulario" type="text" class="text-black" maxlength="75"
                                     placeholder="Carlos Maristegui" style="width: 251px;"><br><br>
                                 <label for="email" class="text-black">Por favor, introduce tu E-mail:</label><br>
                                 <input name="email" id="formulario" type="email" class="text-black" maxlength="75"
@@ -919,8 +907,8 @@
                             <br>
                             <form class="text-black" name="myForm" method="POST" onsubmit="validateForm()"
                                 action="/account/sells">
-                                <label for="name" class="text-black">Por favor, introduce tu nombre:</label><br>
-                                <input name="name" id="formulario" type="text" class="text-black" maxlength="75"
+                                <label for="nombre" class="text-black">Por favor, introduce tu nombre:</label><br>
+                                <input name="nombre" id="formulario" type="text" class="text-black" maxlength="75"
                                     placeholder="Carlos Maristegui" style="width: 251px;"><br><br>
                                 <label for="email" class="text-black">Por favor, introduce tu E-mail:</label><br>
                                 <input name="email" id="formulario" type="email" class="text-black" maxlength="75"
@@ -1111,8 +1099,8 @@
                         <br>
                         <form class="text-black" name="myForm" method="POST" onsubmit="validateForm()"
                             action="/account/sells">
-                            <label for="name" class="text-black">Por favor, introduce tu nombre:</label><br>
-                            <input name="name" id="formulario" type="text" class="text-black" maxlength="75"
+                            <label for="nombre" class="text-black">Por favor, introduce tu nombre:</label><br>
+                            <input name="nombre" id="formulario" type="text" class="text-black" maxlength="75"
                                 placeholder="Carlos Maristegui" style="width: 251px;"><br><br>
                             <label for="email" class="text-black">Por favor, introduce tu E-mail:</label><br>
                             <input name="email" id="formulario" type="email" class="text-black" maxlength="75"
@@ -1203,15 +1191,7 @@
             setTimeout(carousel, 4000);
         }
     </script>
-    <script>
-        if ((document.cookie.match(/^(.*;)?\s*PHPSESSID\s*=\s*[^;]+(.*)?$/)) != null) {
-            document.getElementById("sesion1").innerHTML = "¡Bienvenid@ de vuelta!";
-            document.getElementById("sesion1").href = "#";
-            document.getElementById("sesion1").classList.add("disabled");
-            document.getElementById("sesion2").innerHTML = "Cerrar Sesión";
-            document.getElementById("sesion2").href = "/account/logout";
-        }
-    </script>
+    <script src="script/ses.js"></script>
 </body>
 
 </html>

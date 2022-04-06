@@ -593,15 +593,7 @@
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
-    <script>
-        if ((document.cookie.match(/^(.*;)?\s*PHPSESSID\s*=\s*[^;]+(.*)?$/)) != null) {
-            document.getElementById("sesion1").innerHTML = "¡Bienvenid@ de vuelta!";
-            document.getElementById("sesion1").href = "#";
-            document.getElementById("sesion1").classList.add("disabled");
-            document.getElementById("sesion2").innerHTML = "Cerrar Sesión";
-            document.getElementById("sesion2").href = "/account/logout";
-        }
-    </script>
+    <script src="script/ses.js"></script>
 </body>
 
 </html>
