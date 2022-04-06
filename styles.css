@@ -229,6 +229,10 @@ body {
     z-index: 6;
 }
 
+[class*=flotante] {
+    float: right;
+}
+
 /*#navbar-expand-lg2 {
     position: sticky;
     position: -webkit-sticky;
