@@ -2,7 +2,7 @@
 
 error_reporting(0);
 
-$resultado = '';
+$resultado = 'No Existe';
 
 if (isset($_COOKIE['user_id'])) {
     $resultado = 'Existe';
