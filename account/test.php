@@ -1,6 +1,6 @@
 <?php
 
-$test = $_POST['montaje'];
+/*$test = $_POST['montaje'];
 
 if ($test == 'on') {
 
@@ -8,7 +8,9 @@ if ($test == 'on') {
 } else {
 
     echo $test;
-}
+}*/
+
+echo 'hola';
 
 ?>
 

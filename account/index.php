@@ -1,8 +1,20 @@
+<script>
+    function test() {
+        if ((document.cookie.match(/^(.*;)?\s*PHPSESSID\s*=\s*[^;]+(.*)?$/)) != null) {
+            return true;
+        }
+    }
+</script>
+
 <?php
 
 error_reporting(0);
 
-session_start();
+$sesion = test();
+
+if ($sesion) {
+    session_start();
+}
 
 require 'database.php';
 
