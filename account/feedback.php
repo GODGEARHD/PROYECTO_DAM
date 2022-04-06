@@ -12,22 +12,18 @@ if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['telefo
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
 
-    if (count($results) > 0) {
-        $message = '¡Vaya, parece que ya se ha dejado una reseña con ese número de teléfono! ¿Estás seguro de que está bien escrito?';
-    } else {
-        if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['telefono']) && !empty($_POST['resumen'])) {
-            $sql = 'INSERT INTO feedback (name, email, telephone, opinion) VALUES (:nombre, :email, :telefono, :resumen)';
-            $stmt = $conn->prepare($sql);
-            $stmt->bindParam(':nombre', $_POST['nombre']);
-            $stmt->bindParam(':email', $_POST['email']);
-            $stmt->bindParam(':telefono', $_POST['telefono']);
-            $stmt->bindParam(':resumen', $_POST['resumen']);
+    if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['telefono']) && !empty($_POST['resumen'])) {
+        $sql = 'INSERT INTO feedback (name, email, telephone, opinion) VALUES (:nombre, :email, :telefono, :resumen)';
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(':nombre', $_POST['nombre']);
+        $stmt->bindParam(':email', $_POST['email']);
+        $stmt->bindParam(':telefono', $_POST['telefono']);
+        $stmt->bindParam(':resumen', $_POST['resumen']);
 
-            if ($stmt->execute()) {
-                $message = '¡Gracias por tus comentarios!';
-            } else {
-                $message = 'Lo sentimos, se ha debido de producir algun error al procesar tus comentarios. Comprueba que has escrito bien todos los datos en el formulario.';
-            }
+        if ($stmt->execute()) {
+            $message = '¡Gracias por tus comentarios!';
+        } else {
+            $message = 'Lo sentimos, se ha debido de producir algun error al procesar tus comentarios. Comprueba que has escrito bien todos los datos en el formulario.';
         }
     }
 }
