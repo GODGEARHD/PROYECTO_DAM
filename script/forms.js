@@ -22,7 +22,7 @@ function validateForm() {
     var y = document.forms["myForm"]["paypal"].value;
     if ((w == "") || (x == "") || (y == "")) {
         alert("Asegúrate de rellenar todos los campos necesarios (marcados con *)");
-        document.getElementById("custom").action = "#";
+        document.getElementById("custom").action = "/customizer";
         return false;
     } else {
         //document.getElementById("custom").action = "/account/customize";
