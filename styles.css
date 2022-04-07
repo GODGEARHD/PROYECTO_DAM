@@ -117,6 +117,10 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+#semi-transparente#solido {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 [id*="principal"] {
     display: block;
 }
@@ -143,7 +147,7 @@ body {
         height: 0px;
     }
 
-    .jumbotron#semi-transparente#solido {
+    #semi-transparente#solido {
         margin-bottom: 0%;
         background-color: #f8f9fa;
     }
