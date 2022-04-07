@@ -235,7 +235,7 @@ body {
     position: -webkit-sticky;
     top: 0;
     z-index: 6;
-    width: fit-content;
+    width: auto;
 }
 
 [class*=alineadorCentro] {
