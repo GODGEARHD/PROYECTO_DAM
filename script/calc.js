@@ -1,25 +1,25 @@
 function calc() {
     var total = 0;
-    var procesador = document.getElementsByName('cpu');
-    var ventilador = document.getElementsByName('refri');
-    var memoria = document.getElementsByName('ram');
-    var placaBase = document.getElementsByName('placa');
-    var hdd1 = document.getElementsByName('disco1');
-    var hdd2 = document.getElementsByName('disco2');
-    var gabinete = document.getElementsByName('caja');
-    var fuente = document.getElementsByName('psu');
-    var grafica = document.getElementsByName('gpu');
-    var tarjeta = document.getElementsByName('audio');
-    var leer = document.getElementsByName('lector');
-    var cds = document.getElementsByName('dvd');
-    var pantalla = document.getElementsByName('monitor');
-    var teclas = document.getElementsByName('teclado');
-    var raton = document.getElementsByName('raton');
-    var altavoz = document.getElementsByName('altavoces');
-    var television = document.getElementsByName('tv');
-    var antena = document.getElementsByName('red');
+    var procesador = document.getElementById('cpu');
+    var ventilador = document.getElementById('refri');
+    var memoria = document.getElementById('ram');
+    var placaBase = document.getElementById('placa');
+    var hdd1 = document.getElementById('disco1');
+    var hdd2 = document.getElementById('disco2');
+    var gabinete = document.getElementById('caja');
+    var fuente = document.getElementById('psu');
+    var grafica = document.getElementById('gpu');
+    var tarjeta = document.getElementById('audio');
+    var leer = document.getElementById('lector');
+    var cds = document.getElementById('dvd');
+    var pantalla = document.getElementById('monitor');
+    var teclas = document.getElementById('teclado');
+    var raton = document.getElementById('raton');
+    var altavoz = document.getElementById('altavoces');
+    var television = document.getElementById('tv');
+    var antena = document.getElementById('red');
     var montaje = document.querySelector("#checkit");
-    var sistema = document.getElementsByName('so');
+    var sistema = document.getElementById('so');
     
 
     /*//Select de Procesador
