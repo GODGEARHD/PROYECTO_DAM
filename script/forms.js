@@ -3,7 +3,7 @@ function checkIt() {
     var so = document.getElementById('so');
     var z = document.querySelector("#checkit");
     var selectedOption = so.options[so.selectedIndex];
-    if ((selectedOption.value == "Windows 11 Home - 170.00€") || (selectedOption.value == "Windows 11 Pro - 280.00€")) {
+    if ((selectedOption.value == "Windows 11 Home") || (selectedOption.value == "Windows 11 Pro")) {
         check = 1;
         z.checked = true;
     } else {

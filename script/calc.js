@@ -283,13 +283,13 @@ function calc() {
 
     //Select de Sistema
     var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
+    if (selectedSistema.value == "Windows 10 Home") {
         total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
+    } else if (selectedSistema.value == "Windows 10 Pro") {
         total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
+    } else if (selectedSistema.value == "Windows 11 Home") {
         total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
+    } else if (selectedSistema.value == "Windows 11 Pro") {
         total+=280;
     } else if (selectedSistema.value == "-") {
         total+=0;
