@@ -301,41 +301,41 @@ body {
 }
 
 @media (min-width: 1081px) {
-    .navbar-expand-lg {
+    .navbar-expand-xl {
         -ms-flex-flow: row nowrap!important;
         flex-flow: row nowrap!important;
         -ms-flex-pack: start!important;
         justify-content: flex-start!important
     }
 
-    .navbar-expand-lg .navbar-nav {
+    .navbar-expand-xl .navbar-nav {
         -ms-flex-direction: row!important;
         flex-direction: row!important
     }
 
-    .navbar-expand-lg .navbar-nav .dropdown-menu {
+    .navbar-expand-xl .navbar-nav .dropdown-menu {
         position: absolute!important
     }
 
-    .navbar-expand-lg .navbar-nav .nav-link {
+    .navbar-expand-xl .navbar-nav .nav-link {
         padding-right: .5rem!important;
         padding-left: .5rem!important
     }
 
-    .navbar-expand-lg>.container,
-    .navbar-expand-lg>.container-fluid {
+    .navbar-expand-xl>.container,
+    .navbar-expand-xl>.container-fluid {
         -ms-flex-wrap: nowrap!important;
         flex-wrap: nowrap!important
     }
 
-    .navbar-expand-lg .navbar-collapse {
+    .navbar-expand-xl .navbar-collapse {
         display: -ms-flexbox !important;
         display: flex !important;
         -ms-flex-preferred-size: auto!important;
         flex-basis: auto!important
     }
 
-    .navbar-expand-lg .navbar-toggler {
+    .navbar-expand-xl .navbar-toggler {
         display: none!important
     }
 }
