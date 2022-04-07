@@ -71,8 +71,8 @@ if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['paypal
   <p><?= $message ?></p>
   <br>
   <br>
-  <form action="../" method="POST">
-    <input type="submit" value="Ir a Inicio">
+  <form action="../customizer" method="POST">
+    <input type="submit" value="Volver">
   </form>
 </body>
 
