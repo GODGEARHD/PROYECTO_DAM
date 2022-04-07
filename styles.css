@@ -113,12 +113,12 @@ body {
     color: transparent;
 }
 
-.jumbotron#semi-transparente#solido {
+#semi-transparente#solido {
     margin-bottom: 0%;
     background-color: #f8f9fa;
 }
 
-[id*="semi-transparente"] {
+#semi-transparente {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
