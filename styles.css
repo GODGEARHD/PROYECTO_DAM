@@ -113,11 +113,7 @@ body {
     color: transparent;
 }
 
-#semi-transparente#solido {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-#semi-transparente {
+[id*="semi-transparente"] {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
