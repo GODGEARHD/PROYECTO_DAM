@@ -121,7 +121,7 @@ body {
     display: block;
 }
 
-[id*="secundario"] {
+#secundario {
     display: none;
 }
 
