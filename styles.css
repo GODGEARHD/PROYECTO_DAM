@@ -136,7 +136,7 @@ body {
     }
 
     [id*="terciario"] {
-        float: none;
+        float: inherit;
     }
 }
 
