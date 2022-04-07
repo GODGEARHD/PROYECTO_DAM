@@ -147,7 +147,7 @@ body {
         height: 0px;
     }
 
-    #semi-transparente#solido {
+    [id*="semi-transparente solido"] {
         margin-bottom: 0%;
         background-color: #f8f9fa;
     }
