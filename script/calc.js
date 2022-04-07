@@ -295,6 +295,6 @@ function calc() {
         total+=0;
     }
 
-    document.getElementById("totalMuestra").innerHTML ="Precio total: " + total + "€";
+    document.getElementById("totalMuestra").innerHTML =total + "€";
     document.getElementById("totalOculto").value =total;
 }
