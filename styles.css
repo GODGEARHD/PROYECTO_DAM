@@ -91,7 +91,7 @@ body {
 
 .form2 {
     /*width: 378px;*/
-    width: fit-content;
+    width: auto;
     height: 50px;
 }
 
