@@ -12,7 +12,7 @@ if ($test == 'on') {
 
 //echo 'hola';
 
-$test = $_POST['total'];
+$test = $_POST['totalOculto'];
 
 echo $test;
 

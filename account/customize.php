@@ -24,7 +24,7 @@ if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['paypal
   $stmt->bindParam(':nombre', $_POST['nombre']);
   $stmt->bindParam(':email', $_POST['email']);
   $stmt->bindParam(':paypal', $_POST['paypal']);
-  $stmt->bindParam(':precio', $_POST['total']);
+  $stmt->bindParam(':precio', $_POST['totalOculto']);
   $stmt->bindParam(':cpu', $_POST['cpu']);
   $stmt->bindParam(':refri', $_POST['refri']);
   $stmt->bindParam(':ram', $_POST['ram']);
