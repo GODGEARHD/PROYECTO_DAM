@@ -138,6 +138,15 @@ body {
     #terciario {
         float: none;
     }
+
+    [class*=alineadorCentro] {
+        height: 0px;
+    }
+
+    .jumbotron#semi-transparente#solido {
+        margin-bottom: 0%;
+        background-color: #f8f9fa;
+    }
 }
 
 .modal {
