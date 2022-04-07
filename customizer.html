@@ -80,7 +80,7 @@
                         <p class="navbar-brand text-black" id="totalMuestra" style="float: right;">0€</p>
                     </center>
                 </div>
-                <div class="jumbotron" id="semi-transparente">
+                <div class="jumbotron" id="semi-transparente principal">
                     <p class="text-black">Por último, necesitamos que introduzcas<br>tus datos para dar tu pedido por
                         válido:</p>
                     <label for="nombre" class="text-black">Tu nombre: <b style="color: red;">*</b></label><br>
@@ -105,7 +105,7 @@
                         Selecciona los componentes que deseas para tu PC:
                     </h2>
                     <br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgCPU" src="img/transparent.png"></div>
                     <label for="cpu" class="text-black">CPU:</label><br>
                     <select name="cpu" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -126,7 +126,7 @@
                     </select>
                     <br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgRefri" src="img/transparent.png"></div>
                     <label for="refri" class="text-black">Refrigeración de CPU:</label><br>
                     <select name="refri" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -169,7 +169,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgRAM" src="img/transparent.png"></div>
                     <label for="ram" class="text-black">Memoria RAM:</label><br>
                     <select name="ram" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -191,7 +191,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgPlaca" src="img/transparent.png"></div>
                     <label for="placa" class="text-black">Placa Base:</label><br>
                     <select name="placa" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -216,7 +216,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgHDD1" src="img/transparent.png"></div>
                     <label for="disco1" class="text-black">Disco Duro 1:</label><br>
                     <select name="disco1" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -244,7 +244,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgHDD2" src="img/transparent.png"></div>
                     <label for="disco2" class="text-black">Disco Duro 2:</label><br>
                     <select name="disco2" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -272,7 +272,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgCaja" src="img/transparent.png"></div>
                     <label for="caja" class="text-black">Caja:</label><br>
                     <select name="caja" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -301,7 +301,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgPSU" src="img/transparent.png"></div>
                     <label for="psu" class="text-black">Fuente de Alimentación:</label><br>
                     <select name="psu" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -324,7 +324,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgGPU" src="img/transparent.png"></div>
                     <label for="gpu" class="text-black">Tarjeta Gráfica:</label><br>
                     <select name="gpu" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -361,7 +361,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgAudio" src="img/transparent.png"></div>
                     <label for="audio" class="text-black">Tarjeta de Audio:</label><br>
                     <select name="audio" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -395,7 +395,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgLector" src="img/transparent.png"></div>
                     <label for="lector" class="text-black">Lector de Tarjetas:</label><br>
                     <select name="lector" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -414,7 +414,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgDVD" src="img/transparent.png"></div>
                     <label for="dvd" class="text-black">DVD:</label><br>
                     <select name="dvd" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -436,7 +436,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgMonitor" src="img/transparent.png"></div>
                     <label for="monitor" class="text-black">Monitor:</label><br>
                     <select name="monitor" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -459,7 +459,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgTeclado" src="img/transparent.png"></div>
                     <label for="teclado" class="text-black">Teclado:</label><br>
                     <select name="teclado" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -479,7 +479,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgRaton" src="img/transparent.png"></div>
                     <label for="raton" class="text-black">Ratón:</label><br>
                     <select name="raton" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -498,7 +498,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgAltavoces" src="img/transparent.png"></div>
                     <label for="altavoces" class="text-black">Altavoces:</label><br>
                     <select name="altavoces" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -519,7 +519,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgTV" src="img/transparent.png"></div>
                     <label for="tv" class="text-black">Tarjeta de TV:</label><br>
                     <select name="tv" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -531,7 +531,7 @@
                         </optgroup>
                     </select><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgRed" src="img/transparent.png"></div>
                     <label for="red" class="text-black">Adaptador de Red/Wi-Fi:</label><br>
                     <select name="red" class="text-black form">
                         <optgroup label="Sin Selección" class="text-black">
@@ -562,7 +562,7 @@
                         quieres que te montemos el PC nosotros (+25€) o si prefieres los componentes por
                         separado)</small><br><br>
                     <hr><br>
-                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <div style="float: right;"><img id="imgSO" src="img/transparent.png"></div>
                     <label for="so" class="text-black">Sistema Operativo:</label><br>
                     <select id="so" name="so" class="text-black form" onchange="checkIt(), sistema(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
@@ -581,7 +581,15 @@
                             </option>
                         </optgroup>
                     </select><br><br>
-                    <div>
+                    <hr>
+                    <small>
+                        <i class="text-black">NOTA: Cuando seleccionas como sistema operativo alguna de las
+                            versiones de Windows 11,<br>el montaje del equipo es OBLIGATORIO, ya que requiere
+                            configuración extra que Windows 10 no.
+                        </i>
+                    </small>
+                    <br>
+                    <div id="secundario">
                         <hr>
                         <p class="text-black">Por último, necesitamos que introduzcas tus datos para dar tu pedido
                             por válido:</p>
@@ -597,14 +605,6 @@
                         <input id="totalOculto" name="totalOculto" value="0" type="hidden">
                         <input type="submit" class="text-black" value="Enviar">
                     </div>
-                    <hr>
-                    <small>
-                        <i class="text-black">NOTA: Cuando seleccionas como sistema operativo alguna de las
-                            versiones de Windows 11,<br>el montaje del equipo es OBLIGATORIO, ya que requiere
-                            configuración extra que Windows 10 no.
-                        </i>
-                    </small>
-                    <br>
                     </form>
                     <hr>
                     <b style="color: red;">*: Campos OBLIGATORIOS</b>
