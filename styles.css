@@ -125,6 +125,17 @@ body {
     display: none;
 }
 
+@media only screen and (min-width: 1080px) {
+
+    [id*="principal"] {
+       display: none;
+    }
+
+    #secundario {
+        display: block;
+    }
+}
+
 .modal {
     z-index: 3;
     display: none;
