@@ -134,6 +134,10 @@ body {
     #secundario {
         display: block;
     }
+
+    [id*="terciario"] {
+        float: none;
+    }
 }
 
 .modal {
