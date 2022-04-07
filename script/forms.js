@@ -25,7 +25,6 @@ function validateForm() {
         document.getElementById("custom").action = "/customizer";
         return false;
     } else {
-        //document.getElementById("custom").action = "/account/customize";
         return true;
     }
 }
