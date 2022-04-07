@@ -70,28 +70,28 @@
             </div>
         </nav>
         <div class="flotante">
-            <div class="invisible alineadorLateral"></div>
-            <div class="jumbotron" id="semi-transparente">
-                <p class="navbar-brand text-black">Precio total:</p>
-                <p class="text-black" id="total">0€</p>
-            </div>
-            <div class="jumbotron" id="semi-transparente">
-                <form id="custom" class="text-black" name="myForm" method="POST" onsubmit="validateForm()"
-                        action="./account/customize">
-                <!--<p class="text-black">Por último, necesitamos que introduzcas tus datos para dar tu pedido por
+            <form id="custom" class="text-black" name="myForm" method="POST" onsubmit="validateForm()"
+                action="./account/test">
+                <div class="invisible alineadorLateral"></div>
+                <div class="jumbotron" id="semi-transparente">
+                    <p class="navbar-brand text-black">Precio total:</p>
+                    <p class="text-black" id="total">0€</p>
+                </div>
+                <div class="jumbotron" id="semi-transparente">
+                    <!--<p class="text-black">Por último, necesitamos que introduzcas tus datos para dar tu pedido por
                     válido:</p>-->
-                <label for="nombre" class="text-black">Tu nombre: <b style="color: red;">*</b></label><br>
-                <input name="nombre" type="text" class="text-black" id="formulario" maxlength="100"
-                    placeholder="Escribe tu nombre..."><br><br>
-                <label for="email" class="text-black">Tu email: <b style="color: red;">*</b></label><br>
-                <input name="email" type="text" class="text-black" id="formulario" maxlength="100"
-                    placeholder="Escribe tu email..."><br><br>
-                <label for="paypal" class="text-black">Tu PayPal: <b style="color: red;">*</b></label><br>
-                <input name="paypal" type="text" class="text-black" id="formulario" maxlength="100"
-                    placeholder="Escribe tu nombre..."><br><br>
-                <!--<input name="precio" value="100" type="hidden">-->
-                <input type="submit" class="text-black" value="Enviar">
-            </div>
+                    <label for="nombre" class="text-black">Tu nombre: <b style="color: red;">*</b></label><br>
+                    <input name="nombre" type="text" class="text-black" id="formulario" maxlength="100"
+                        placeholder="Escribe tu nombre..."><br><br>
+                    <label for="email" class="text-black">Tu email: <b style="color: red;">*</b></label><br>
+                    <input name="email" type="text" class="text-black" id="formulario" maxlength="100"
+                        placeholder="Escribe tu email..."><br><br>
+                    <label for="paypal" class="text-black">Tu PayPal: <b style="color: red;">*</b></label><br>
+                    <input name="paypal" type="text" class="text-black" id="formulario" maxlength="100"
+                        placeholder="Escribe tu nombre..."><br><br>
+                    <!--<input name="precio" value="100" type="hidden">-->
+                    <input type="submit" class="text-black" value="Enviar">
+                </div>
         </div>
         <hr>
         <div class="row">
@@ -102,502 +102,501 @@
                         Selecciona los componentes que deseas para tu PC:
                     </h2>
                     <br>
-
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="cpu" class="text-black">CPU:</label><br>
-                        <select name="cpu" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Intel" class="text-black">
-                                <option value="Core i5-10600K - 268.36€" class="text-black">Core i5-10600K - 268.36€
-                                </option>
-                                <option value="Core i7-11800H - 346.49€" class="text-black">Core i7-11800H - 346.49€
-                                </option>
-                            </optgroup>
-                            <optgroup label="AMD" class="text-black">
-                                <option value="Ryzen 5 3600 - 310.00€" class="text-black">Ryzen 5 3600 - 310.00€
-                                </option>
-                                <option value="Ryzen 7 5800X - 375.00€" class="text-black">Ryzen 7 5800X - 375.00€
-                                </option>
-                            </optgroup>
-                        </select>
-                        <br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="refri" class="text-black">Refrigeración de CPU:</label><br>
-                        <select name="refri" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="De Serie" class="text-black">
-                                <option value="De Serie" class="text-black">Disipador de Serie (incluido con CPU) -
-                                    0.00€</option>
-                            </optgroup>
-                            <optgroup label="Refrigeración Líquida para Intel" class="text-black">
-                                <option value="Asus ROG Ryujin 360 - 238.85€" class="text-black">Asus ROG Ryujin 360 -
-                                    238.85€
-                                </option>
-                                <option value="Cooler Master MasterLiquid ML240L RGB - 65.91€" class="text-black">Cooler
-                                    Master MasterLiquid ML240L RGB - 65.91€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Refrigeración Líquida para AMD" class="text-black">
-                                <option value="Nfortec Hydrus V2 - 54.51€" class="text-black">Nfortec Hydrus V2 - 54.51€
-                                </option>
-                                <option value="Arctic Liquid Freezer II - 119.99€" class="text-black">Arctic Liquid
-                                    Freezer II - 119.99€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Refrigeración por Aire para Intel" class="text-black">
-                                <option value="Nfortec Sculptor Black - 42.34€" class="text-black">Nfortec Sculptor
-                                    Black - 42.34€
-                                </option>
-                                <option value="HidiTec C12 ARGB PWM 120mm - 31.73€" class="text-black">HidiTec C12 ARGB
-                                    PWM 120mm - 31.73€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Refrigeración por Aire para AMD" class="text-black">
-                                <option value="Nfortec Sculptor Black - 42.34€" class="text-black">Nfortec Sculptor
-                                    Black - 42.34€
-                                </option>
-                                <option value="HidiTec C12 ARGB PWM 120mm - 31.73€" class="text-black">HidiTec C12 ARGB
-                                    PWM 120mm - 31.73€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="ram" class="text-black">Memoria RAM:</label><br>
-                        <select name="ram" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Memoria RAM" class="text-black">
-                                <option value="Kingston FURY Beast RGB DDR4 3600 MHz 16GB 2x8GB CL17 - 91.57€"
-                                    class="text-black">Kingston FURY Beast RGB DDR4 3600 MHz 16GB 2x8GB CL17 - 91.57€
-                                </option>
-                                <option value="Kingston FURY Beast RGB DDR4 2666 MHz 32GB 4x8GB CL16 - 160.87€"
-                                    class="text-black">Kingston FURY Beast RGB DDR4 2666 MHz 32GB 4x8GB CL16 - 160.87€
-                                </option>
-                                <option value="Kingston FURY Beast RGB DDR4 2666 MHz 16GB 2x8GB CL16 - 91.62€"
-                                    class="text-black">Kingston FURY Beast RGB DDR4 2666 MHz 16GB 2x8GB CL16 - 91.62€
-                                </option>
-                                <option value="Kingston FURY Beast RGB DDR4 3733 MHz 8GB CL19 - 49.36€"
-                                    class="text-black">Kingston FURY Beast RGB DDR4 3733 MHz 8GB CL19 - 49.36€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="placa" class="text-black">Placa Base:</label><br>
-                        <select name="placa" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Chipset B560" class="text-black">
-                                <option value="MSI B560M PRO-VDH - 99.98€" class="text-black">MSI B560M PRO-VDH - 99.98€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Chipset B550" class="text-black">
-                                <option value="MSI MPG B550 GAMING PLUS  - 139.89€" class="text-black">MSI MPG B550
-                                    GAMING PLUS - 139.89€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Chipset H510" class="text-black">
-                                <option value="MSI H510M-A Pro - 68.91€" class="text-black">MSI H510M-A Pro - 68.91€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Chipset Z690" class="text-black">
-                                <option value="MSI Z690 TORPEDO - 285.60€" class="text-black">MSI Z690 TORPEDO - 285.60€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="disco1" class="text-black">Disco Duro 1:</label><br>
-                        <select name="disco1" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="HDD 1TB" class="text-black">
-                                <option value='Seagate BarraCuda 3.5" 1TB SATA3 - 36.63€' class="text-black">Seagate
-                                    BarraCuda 3.5" 1TB SATA3 - 36.63€
-                                </option>
-                            </optgroup>
-                            <optgroup label="HDD 2TB" class="text-black">
-                                <option value='Seagate BarraCuda 3.5" 2TB SATA 3 - 47.48€' class="text-black">Seagate
-                                    BarraCuda 3.5" 2TB SATA 3 - 47.48€
-                                </option>
-                            </optgroup>
-                            <optgroup label="SSD 1TB" class="text-black">
-                                <option value='Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280 - 106.20€'
-                                    class="text-black">Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280 - 106.20€
-                                </option>
-                            </optgroup>
-                            <optgroup label="SSD 2TB" class="text-black">
-                                <option value='Samsung 870 QVO SSD 2TB SATA3 - 188.81€' class="text-black">Samsung 870
-                                    QVO SSD 2TB SATA3 - 188.81€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="disco2" class="text-black">Disco Duro 2:</label><br>
-                        <select name="disco2" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="HDD 1TB" class="text-black">
-                                <option value='Seagate BarraCuda 3.5" 1TB SATA3 - 36.63€' class="text-black">Seagate
-                                    BarraCuda 3.5" 1TB SATA3 - 36.63€
-                                </option>
-                            </optgroup>
-                            <optgroup label="HDD 2TB" class="text-black">
-                                <option value='Seagate BarraCuda 3.5" 2TB SATA 3 - 47.48€' class="text-black">Seagate
-                                    BarraCuda 3.5" 2TB SATA 3 - 47.48€
-                                </option>
-                            </optgroup>
-                            <optgroup label="SSD 1TB" class="text-black">
-                                <option value='Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280 - 106.20€'
-                                    class="text-black">Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280 - 106.20€
-                                </option>
-                            </optgroup>
-                            <optgroup label="SSD 2TB" class="text-black">
-                                <option value='Samsung 870 QVO SSD 2TB SATA3 - 188.81€' class="text-black">Samsung 870
-                                    QVO SSD 2TB SATA3 - 188.81€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="caja" class="text-black">Caja:</label><br>
-                        <select name="caja" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Barebone" class="text-black">
-                                <option value='Silverstone Raven RVZ03B-ARGB USB 3.0 Negra - 90.99€' class="text-black">
-                                    Silverstone Raven RVZ03B-ARGB USB 3.0 Negra - 90.99€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Minitorre" class="text-black">
-                                <option value='Aerocool Atomic ARGB Cristal Templado USB 3.0 Negra - 60.89€'
-                                    class="text-black">Aerocool Atomic ARGB Cristal Templado USB 3.0 Negra - 60.89€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Sobremesa" class="text-black">
-                                <option value='Forgeon Mithril ARGB Cristal Templado USB 3.2 Blanca - 149.99€'
-                                    class="text-black">Forgeon Mithril ARGB Cristal Templado USB 3.2 Blanca - 149.99€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Semitorre" class="text-black">
-                                <option value='MSI MAG Vampiric 010M Cristal Templado USB 3.2 RGB Negra - 56.41€'
-                                    class="text-black">MSI MAG Vampiric 010M Cristal Templado USB 3.2 RGB Negra -
-                                    56.41€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="psu" class="text-black">Fuente de Alimentación:</label><br>
-                        <select name="psu" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="650W" class="text-black">
-                                <option value='Nfortec Sagitta RGB 650W 80 Plus Gold Full Modular - 79.94€'
-                                    class="text-black">Nfortec Sagitta RGB 650W 80 Plus Gold Full Modular - 79.94€
-                                </option>
-                            </optgroup>
-                            <optgroup label="750W" class="text-black">
-                                <option value='Corsair RM Series RM750 750W 80 Plus Gold Full Modular - 89.90€'
-                                    class="text-black">Corsair RM Series RM750 750W 80 Plus Gold Full Modular - 89.90€
-                                </option>
-                            </optgroup>
-                            <optgroup label="1000W" class="text-black">
-                                <option value='Seasonic Focus+ 1000W 80 Plus Gold Modular - 145.99€' class="text-black">
-                                    Seasonic Focus+ 1000W 80 Plus Gold Modular - 145.99€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="gpu" class="text-black">Tarjeta Gráfica:</label><br>
-                        <select name="gpu" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="AMD" class="text-black">
-                                <option value='MAXSUN AMD Radeon RX 550 4 GB GDDR5 - 239.99€' class="text-black">MAXSUN
-                                    AMD Radeon RX 550 4 GB GDDR5 - 239.99€
-                                </option>
-                                <option value='XFX Radeon RX 5700 XT THICC III Ultra 8GB GDDR6 - 604.88€'
-                                    class="text-black">XFX Radeon RX 5700 XT THICC III Ultra 8GB GDDR6 - 604.88€
-                                </option>
-                                <option value='ASUS ROG Strix AMD Radeon RX 6700 XT OC Edition - 1299.00€'
-                                    class="text-black">ASUS ROG Strix AMD Radeon RX 6700 XT OC Edition - 1299.00€
-                                </option>
-                                <option value='MSI Radeon RX 6800 XT GAMING Z TRIO 16GB GDDR6 - 1249.89€'
-                                    class="text-black">MSI Radeon RX 6800 XT GAMING Z TRIO 16GB GDDR6 - 1249.89€
-                                </option>
-                            </optgroup>
-                            <optgroup label="NVIDIA" class="text-black">
-                                <option value='MSI GeForce GTX 1650 SUPER GAMING X 4GB GDDR6 - 255.77€'
-                                    class="text-black">MSI GeForce GTX 1650 SUPER GAMING X 4GB GDDR6 - 255.77€
-                                </option>
-                                <option value='MSI GeForce RTX 2060 VENTUS GP OC 6GB GDDR6 - 493.08€'
-                                    class="text-black">MSI GeForce RTX 2060 VENTUS GP OC 6GB GDDR6 - 493.08€
-                                </option>
-                                <option value='Gigabyte GeForce RTX 3060 Ti VISION OC 8GB GDDR6 Rev 2.0 - 765.19€'
-                                    class="text-black">Gigabyte GeForce RTX 3060 Ti VISION OC 8GB GDDR6 Rev 2.0 -
-                                    765.19€
-                                </option>
-                                <option value='Gigabyte AORUS GeForce RTX 3070 MASTER 8GB GDDR6 - 1291.74€'
-                                    class="text-black">Gigabyte AORUS GeForce RTX 3070 MASTER 8GB GDDR6 - 1291.74€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="audio" class="text-black">Tarjeta de Audio:</label><br>
-                        <select name="audio" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Tarjetas de Audio PCIe" class="text-black">
-                                <option
-                                    value='Creative Sound Blaster Z SE Tarjeta de Sonido y DAC PCI-e para Juegos - 67.99€'
-                                    class="text-black">Creative Sound Blaster Z SE Tarjeta de Sonido y DAC PCI-e para
-                                    Juegos - 67.99€
-                                </option>
-                                <option value='Creative Sound Blaster Audigy RX - 45.00€' class="text-black">Creative
-                                    Sound Blaster Audigy RX - 45.00€
-                                </option>
-                                <option value='Creative Sound Blaster Audigy FX PCI Express - 35.11€'
-                                    class="text-black">Creative Sound Blaster Audigy FX PCI Express - 35.11€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Tarjetas de Audio USB" class="text-black">
-                                <option value='Creative Sound Blaster Play! 3 Tarjeta de Sonido USB - 20.47€'
-                                    class="text-black">Creative Sound Blaster Play! 3 Tarjeta de Sonido USB - 20.47€
-                                </option>
-                                <option value='Creative Sound BlasterX G1 USB 7.1 - 29.72€' class="text-black">Creative
-                                    Sound BlasterX G1 USB 7.1 - 29.72€
-                                </option>
-                                <option
-                                    value='Creative Sound Blaster G3 Amplificador Portátil Plug-and-Play USB-C DAC para PS4/Switch/PC/Mac - 32.80€'
-                                    class="text-black">Creative Sound Blaster G3 Amplificador Portátil Plug-and-Play
-                                    USB-C DAC para PS4/Switch/PC/Mac - 32.80€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="lector" class="text-black">Lector de Tarjetas:</label><br>
-                        <select name="lector" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Lectores de Tarjetas USB" class="text-black">
-                                <option value='Trust Primo Lector DNIe Negro - 10.97€' class="text-black">Trust Primo
-                                    Lector DNIe Negro - 10.97€
-                                </option>
-                                <option value='Ewent EW1052 Lector de Tarjetas Inteligentes USB - 5.38€'
-                                    class="text-black">Ewent EW1052 Lector de Tarjetas Inteligentes USB - 5.38€
-                                </option>
-                                <option value='Woxter Lector DNI-e USB Negro - 10.41€' class="text-black">Woxter Lector
-                                    DNI-e USB Negro - 10.41€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="dvd" class="text-black">DVD:</label><br>
-                        <select name="dvd" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="DVDs Internos" class="text-black">
-                                <option value='Asus DRW-24D5MT Grabadora DVD 24X - 15.84€' class="text-black">Asus
-                                    DRW-24D5MT Grabadora DVD 24X - 15.84€
-                                </option>
-                                <option value='Hitachi-LG GH24NSD5 Grabadora DVD-RW Interna Negra - 13.87€'
-                                    class="text-black">Hitachi-LG GH24NSD5 Grabadora DVD-RW Interna Negra - 13.87€
-                                </option>
-                            </optgroup>
-                            <optgroup label="DVDs USB" class="text-black">
-                                <option value='Asus SDRW-08D2S-U Lite Grabadora DVD Slim Externa USB Negra - 32.68€'
-                                    class="text-black">Asus SDRW-08D2S-U Lite Grabadora DVD Slim Externa USB Negra -
-                                    32.68€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="monitor" class="text-black">Monitor:</label><br>
-                        <select name="monitor" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Monitores 144Hz" class="text-black">
-                                <option value='Samsung C24RG52FQR 24" 1080p 144Hz - 199.99€' class="text-black">Samsung
-                                    C24RG52FQR 24" 1080p 144Hz - 199.99€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Monitores 165Hz" class="text-black">
-                                <option value='Acer KG241QS 23.6" 1080p 165Hz - 189.44€' class="text-black">Acer KG241QS
-                                    23.6" 1080p 165Hz - 189.44€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Monitores 240Hz" class="text-black">
-                                <option value='Ozone DSP24 240 24" 1080p 240Hz - 219.90€' class="text-black">Ozone DSP24
-                                    240 24" 1080p 240Hz - 219.90€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="teclado" class="text-black">Teclado:</label><br>
-                        <select name="teclado" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Logitech" class="text-black">
-                                <option value="Logitech 920G Pro - 60.75€" class="text-black">Logitech 920G Pro - 60.75€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Redragon" class="text-black">
-                                <option value="Redragon K552 - 31.28€" class="text-black">Redragon K552 - 31.28€
-                                </option>
-                            </optgroup>
-                            <optgroup label="XTRFY" class="text-black">
-                                <option value="XTRFY K4 TKL RGB - 99.00€" class="text-black">XTRFY K4 TKL RGB - 99.00€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="raton" class="text-black">Ratón:</label><br>
-                        <select name="raton" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Razer" class="text-black">
-                                <option value="Razer Deathadder Essential 2021 - 19.99€" class="text-black">Razer
-                                    Deathadder Essential 2021 - 19.99€</option>
-                                <option value="Razer Deathadder Essential White Edition - 19.99€" class="text-black">
-                                    Razer Deathadder Essential White Edition - 19.99€</option>
-                            </optgroup>
-                            <optgroup label="Logitech" class="text-black">
-                                <option value="Logitech G502 Hero KDA Edition - 64.54€" class="text-black">Logitech G502
-                                    Hero KDA Edition - 64.54€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="altavoces" class="text-black">Altavoces:</label><br>
-                        <select name="altavoces" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Altavoces USB" class="text-black">
-                                <option value='Tempest Gaming M8 2.0 Speaker System Altavoces 10W RMS - 19.99€'
-                                    class="text-black">Tempest Gaming M8 2.0 Speaker System Altavoces 10W RMS - 19.99€
-                                </option>
-                                <option value='Tempest M6 Rez 2.0 Gaming Speakers - 13.00€' class="text-black">Tempest
-                                    M6 Rez 2.0 Gaming Speakers - 13.00€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Altavoces Bluetooth" class="text-black">
-                                <option value='Newskill Vamana RGB Barra de Sonido Bluetooth 10W - 36.00€'
-                                    class="text-black">Newskill Vamana RGB Barra de Sonido Bluetooth 10W - 36.00€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="tv" class="text-black">Tarjeta de TV:</label><br>
-                        <select name="tv" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Tarjetas de TV" class="text-black">
-                                <option value='-' class="text-black" disabled>(No disponible por el momento)
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="red" class="text-black">Adaptador de Red/Wi-Fi:</label><br>
-                        <select name="red" class="text-black form">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Adaptadores USB" class="text-black">
-                                <option
-                                    value='TP-Link Archer T3U Plus Adaptador USB Inalámbrico Banda Dual AC1300 Alta Ganancia - 18.79€'
-                                    class="text-black">TP-Link Archer T3U Plus Adaptador USB Inalámbrico Banda Dual
-                                    AC1300 Alta Ganancia - 18.79€
-                                </option>
-                                <option value='Tenda U3 Adaptador USB WiFi 300Mbps - 5.99€' class="text-black">Tenda U3
-                                    Adaptador USB WiFi 300Mbps - 5.99€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Adaptadores PCIe" class="text-black">
-                                <option value='TP-Link Archer T5E Adaptador AC1200 Wi-Fi Bluetooth 4.2 PCIe - 27.99€'
-                                    class="text-black">TP-Link Archer T5E Adaptador AC1200 Wi-Fi Bluetooth 4.2 PCIe -
-                                    27.99€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <hr><br>
-                        <label for="montaje" class="text-black">Montaje:</label><br>
-                        <input name="montaje" value="0" type="hidden">
-                        <input name="montaje" type="checkbox" class="text-black" id="checkit" maxlength="9"
-                            placeholder="Elige Montaje" onchange="calc()">&nbsp;<small class="text-black">(Elige si
-                            quieres que te
-                            montemos el PC nosotros (+25€) o si prefieres los componentes por separado)</small><br><br>
-                        <hr><br>
-                        <div style="float: right;"><img src="img/transparent.png"></div>
-                        <label for="so" class="text-black">Sistema Operativo:</label><br>
-                        <select id="so" name="so" class="text-black form" onchange="checkIt(), sistema(), calc()">
-                            <optgroup label="Sin Selección" class="text-black">
-                                <option value="-" class="text-black">-</option>
-                            </optgroup>
-                            <optgroup label="Windows 10" class="text-black">
-                                <option value="Windows 10 Home - 145.00€" class="text-black">Windows 10 Home - 145.00€
-                                </option>
-                                <option value="Windows 10 Pro - 259.00€" class="text-black">Windows 10 Pro - 259.00€
-                                </option>
-                            </optgroup>
-                            <optgroup label="Windows 11" class="text-black">
-                                <option value="Windows 11 Home - 170.00€" class="text-black">Windows 11 Home - 170.00€
-                                </option>
-                                <option value="Windows 11 Pro - 280.00€" class="text-black">Windows 11 Pro - 280.00€
-                                </option>
-                            </optgroup>
-                        </select><br><br>
-                        <small><i class="text-black">NOTA: Cuando seleccionas como sistema operativo alguna de las
-                                versiones de Windows 11,<br>
-                                el montaje del equipo es OBLIGATORIO, ya que requiere configuración extra que Windows 10
-                                no.</i></small>
-                        <hr>
-                        <br>
-                        <p class="text-black">Por último, necesitamos que introduzcas tus datos para dar tu pedido por
-                            válido:</p>
-                        <label for="nombre" class="text-black">Tu nombre: <b style="color: red;">*</b></label><br>
-                        <input name="nombre" type="text" class="text-black form" id="formulario" maxlength="100"
-                            placeholder="Escribe tu nombre..."><br><br>
-                        <label for="email" class="text-black">Tu email: <b style="color: red;">*</b></label><br>
-                        <input name="email" type="text" class="text-black form" id="formulario" maxlength="100"
-                            placeholder="Escribe tu email..."><br><br>
-                        <label for="paypal" class="text-black">Tu PayPal: <b style="color: red;">*</b></label><br>
-                        <input name="paypal" type="text" class="text-black form" id="formulario" maxlength="100"
-                            placeholder="Escribe tu nombre..."><br><br>
-                        <!--<input name="precio" value="100" type="hidden">-->
-                        <input type="submit" class="text-black" value="Enviar">
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="cpu" class="text-black">CPU:</label><br>
+                    <select name="cpu" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Intel" class="text-black">
+                            <option value="Core i5-10600K - 268.36€" class="text-black">Core i5-10600K - 268.36€
+                            </option>
+                            <option value="Core i7-11800H - 346.49€" class="text-black">Core i7-11800H - 346.49€
+                            </option>
+                        </optgroup>
+                        <optgroup label="AMD" class="text-black">
+                            <option value="Ryzen 5 3600 - 310.00€" class="text-black">Ryzen 5 3600 - 310.00€
+                            </option>
+                            <option value="Ryzen 7 5800X - 375.00€" class="text-black">Ryzen 7 5800X - 375.00€
+                            </option>
+                        </optgroup>
+                    </select>
+                    <br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="refri" class="text-black">Refrigeración de CPU:</label><br>
+                    <select name="refri" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="De Serie" class="text-black">
+                            <option value="De Serie" class="text-black">Disipador de Serie (incluido con CPU) -
+                                0.00€</option>
+                        </optgroup>
+                        <optgroup label="Refrigeración Líquida para Intel" class="text-black">
+                            <option value="Asus ROG Ryujin 360 - 238.85€" class="text-black">Asus ROG Ryujin 360 -
+                                238.85€
+                            </option>
+                            <option value="Cooler Master MasterLiquid ML240L RGB - 65.91€" class="text-black">Cooler
+                                Master MasterLiquid ML240L RGB - 65.91€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Refrigeración Líquida para AMD" class="text-black">
+                            <option value="Nfortec Hydrus V2 - 54.51€" class="text-black">Nfortec Hydrus V2 - 54.51€
+                            </option>
+                            <option value="Arctic Liquid Freezer II - 119.99€" class="text-black">Arctic Liquid
+                                Freezer II - 119.99€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Refrigeración por Aire para Intel" class="text-black">
+                            <option value="Nfortec Sculptor Black - 42.34€" class="text-black">Nfortec Sculptor
+                                Black - 42.34€
+                            </option>
+                            <option value="HidiTec C12 ARGB PWM 120mm - 31.73€" class="text-black">HidiTec C12 ARGB
+                                PWM 120mm - 31.73€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Refrigeración por Aire para AMD" class="text-black">
+                            <option value="Nfortec Sculptor Black - 42.34€" class="text-black">Nfortec Sculptor
+                                Black - 42.34€
+                            </option>
+                            <option value="HidiTec C12 ARGB PWM 120mm - 31.73€" class="text-black">HidiTec C12 ARGB
+                                PWM 120mm - 31.73€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="ram" class="text-black">Memoria RAM:</label><br>
+                    <select name="ram" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Memoria RAM" class="text-black">
+                            <option value="Kingston FURY Beast RGB DDR4 3600 MHz 16GB 2x8GB CL17 - 91.57€"
+                                class="text-black">Kingston FURY Beast RGB DDR4 3600 MHz 16GB 2x8GB CL17 - 91.57€
+                            </option>
+                            <option value="Kingston FURY Beast RGB DDR4 2666 MHz 32GB 4x8GB CL16 - 160.87€"
+                                class="text-black">Kingston FURY Beast RGB DDR4 2666 MHz 32GB 4x8GB CL16 - 160.87€
+                            </option>
+                            <option value="Kingston FURY Beast RGB DDR4 2666 MHz 16GB 2x8GB CL16 - 91.62€"
+                                class="text-black">Kingston FURY Beast RGB DDR4 2666 MHz 16GB 2x8GB CL16 - 91.62€
+                            </option>
+                            <option value="Kingston FURY Beast RGB DDR4 3733 MHz 8GB CL19 - 49.36€" class="text-black">
+                                Kingston FURY Beast RGB DDR4 3733 MHz 8GB CL19 - 49.36€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="placa" class="text-black">Placa Base:</label><br>
+                    <select name="placa" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Chipset B560" class="text-black">
+                            <option value="MSI B560M PRO-VDH - 99.98€" class="text-black">MSI B560M PRO-VDH - 99.98€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Chipset B550" class="text-black">
+                            <option value="MSI MPG B550 GAMING PLUS  - 139.89€" class="text-black">MSI MPG B550
+                                GAMING PLUS - 139.89€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Chipset H510" class="text-black">
+                            <option value="MSI H510M-A Pro - 68.91€" class="text-black">MSI H510M-A Pro - 68.91€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Chipset Z690" class="text-black">
+                            <option value="MSI Z690 TORPEDO - 285.60€" class="text-black">MSI Z690 TORPEDO - 285.60€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="disco1" class="text-black">Disco Duro 1:</label><br>
+                    <select name="disco1" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="HDD 1TB" class="text-black">
+                            <option value='Seagate BarraCuda 3.5" 1TB SATA3 - 36.63€' class="text-black">Seagate
+                                BarraCuda 3.5" 1TB SATA3 - 36.63€
+                            </option>
+                        </optgroup>
+                        <optgroup label="HDD 2TB" class="text-black">
+                            <option value='Seagate BarraCuda 3.5" 2TB SATA 3 - 47.48€' class="text-black">Seagate
+                                BarraCuda 3.5" 2TB SATA 3 - 47.48€
+                            </option>
+                        </optgroup>
+                        <optgroup label="SSD 1TB" class="text-black">
+                            <option value='Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280 - 106.20€' class="text-black">
+                                Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280 - 106.20€
+                            </option>
+                        </optgroup>
+                        <optgroup label="SSD 2TB" class="text-black">
+                            <option value='Samsung 870 QVO SSD 2TB SATA3 - 188.81€' class="text-black">Samsung 870
+                                QVO SSD 2TB SATA3 - 188.81€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="disco2" class="text-black">Disco Duro 2:</label><br>
+                    <select name="disco2" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="HDD 1TB" class="text-black">
+                            <option value='Seagate BarraCuda 3.5" 1TB SATA3 - 36.63€' class="text-black">Seagate
+                                BarraCuda 3.5" 1TB SATA3 - 36.63€
+                            </option>
+                        </optgroup>
+                        <optgroup label="HDD 2TB" class="text-black">
+                            <option value='Seagate BarraCuda 3.5" 2TB SATA 3 - 47.48€' class="text-black">Seagate
+                                BarraCuda 3.5" 2TB SATA 3 - 47.48€
+                            </option>
+                        </optgroup>
+                        <optgroup label="SSD 1TB" class="text-black">
+                            <option value='Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280 - 106.20€' class="text-black">
+                                Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280 - 106.20€
+                            </option>
+                        </optgroup>
+                        <optgroup label="SSD 2TB" class="text-black">
+                            <option value='Samsung 870 QVO SSD 2TB SATA3 - 188.81€' class="text-black">Samsung 870
+                                QVO SSD 2TB SATA3 - 188.81€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="caja" class="text-black">Caja:</label><br>
+                    <select name="caja" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Barebone" class="text-black">
+                            <option value='Silverstone Raven RVZ03B-ARGB USB 3.0 Negra - 90.99€' class="text-black">
+                                Silverstone Raven RVZ03B-ARGB USB 3.0 Negra - 90.99€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Minitorre" class="text-black">
+                            <option value='Aerocool Atomic ARGB Cristal Templado USB 3.0 Negra - 60.89€'
+                                class="text-black">Aerocool Atomic ARGB Cristal Templado USB 3.0 Negra - 60.89€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Sobremesa" class="text-black">
+                            <option value='Forgeon Mithril ARGB Cristal Templado USB 3.2 Blanca - 149.99€'
+                                class="text-black">Forgeon Mithril ARGB Cristal Templado USB 3.2 Blanca - 149.99€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Semitorre" class="text-black">
+                            <option value='MSI MAG Vampiric 010M Cristal Templado USB 3.2 RGB Negra - 56.41€'
+                                class="text-black">MSI MAG Vampiric 010M Cristal Templado USB 3.2 RGB Negra -
+                                56.41€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="psu" class="text-black">Fuente de Alimentación:</label><br>
+                    <select name="psu" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="650W" class="text-black">
+                            <option value='Nfortec Sagitta RGB 650W 80 Plus Gold Full Modular - 79.94€'
+                                class="text-black">Nfortec Sagitta RGB 650W 80 Plus Gold Full Modular - 79.94€
+                            </option>
+                        </optgroup>
+                        <optgroup label="750W" class="text-black">
+                            <option value='Corsair RM Series RM750 750W 80 Plus Gold Full Modular - 89.90€'
+                                class="text-black">Corsair RM Series RM750 750W 80 Plus Gold Full Modular - 89.90€
+                            </option>
+                        </optgroup>
+                        <optgroup label="1000W" class="text-black">
+                            <option value='Seasonic Focus+ 1000W 80 Plus Gold Modular - 145.99€' class="text-black">
+                                Seasonic Focus+ 1000W 80 Plus Gold Modular - 145.99€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="gpu" class="text-black">Tarjeta Gráfica:</label><br>
+                    <select name="gpu" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="AMD" class="text-black">
+                            <option value='MAXSUN AMD Radeon RX 550 4 GB GDDR5 - 239.99€' class="text-black">MAXSUN
+                                AMD Radeon RX 550 4 GB GDDR5 - 239.99€
+                            </option>
+                            <option value='XFX Radeon RX 5700 XT THICC III Ultra 8GB GDDR6 - 604.88€'
+                                class="text-black">XFX Radeon RX 5700 XT THICC III Ultra 8GB GDDR6 - 604.88€
+                            </option>
+                            <option value='ASUS ROG Strix AMD Radeon RX 6700 XT OC Edition - 1299.00€'
+                                class="text-black">ASUS ROG Strix AMD Radeon RX 6700 XT OC Edition - 1299.00€
+                            </option>
+                            <option value='MSI Radeon RX 6800 XT GAMING Z TRIO 16GB GDDR6 - 1249.89€'
+                                class="text-black">MSI Radeon RX 6800 XT GAMING Z TRIO 16GB GDDR6 - 1249.89€
+                            </option>
+                        </optgroup>
+                        <optgroup label="NVIDIA" class="text-black">
+                            <option value='MSI GeForce GTX 1650 SUPER GAMING X 4GB GDDR6 - 255.77€' class="text-black">
+                                MSI GeForce GTX 1650 SUPER GAMING X 4GB GDDR6 - 255.77€
+                            </option>
+                            <option value='MSI GeForce RTX 2060 VENTUS GP OC 6GB GDDR6 - 493.08€' class="text-black">MSI
+                                GeForce RTX 2060 VENTUS GP OC 6GB GDDR6 - 493.08€
+                            </option>
+                            <option value='Gigabyte GeForce RTX 3060 Ti VISION OC 8GB GDDR6 Rev 2.0 - 765.19€'
+                                class="text-black">Gigabyte GeForce RTX 3060 Ti VISION OC 8GB GDDR6 Rev 2.0 -
+                                765.19€
+                            </option>
+                            <option value='Gigabyte AORUS GeForce RTX 3070 MASTER 8GB GDDR6 - 1291.74€'
+                                class="text-black">Gigabyte AORUS GeForce RTX 3070 MASTER 8GB GDDR6 - 1291.74€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="audio" class="text-black">Tarjeta de Audio:</label><br>
+                    <select name="audio" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Tarjetas de Audio PCIe" class="text-black">
+                            <option
+                                value='Creative Sound Blaster Z SE Tarjeta de Sonido y DAC PCI-e para Juegos - 67.99€'
+                                class="text-black">Creative Sound Blaster Z SE Tarjeta de Sonido y DAC PCI-e para
+                                Juegos - 67.99€
+                            </option>
+                            <option value='Creative Sound Blaster Audigy RX - 45.00€' class="text-black">Creative
+                                Sound Blaster Audigy RX - 45.00€
+                            </option>
+                            <option value='Creative Sound Blaster Audigy FX PCI Express - 35.11€' class="text-black">
+                                Creative Sound Blaster Audigy FX PCI Express - 35.11€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Tarjetas de Audio USB" class="text-black">
+                            <option value='Creative Sound Blaster Play! 3 Tarjeta de Sonido USB - 20.47€'
+                                class="text-black">Creative Sound Blaster Play! 3 Tarjeta de Sonido USB - 20.47€
+                            </option>
+                            <option value='Creative Sound BlasterX G1 USB 7.1 - 29.72€' class="text-black">Creative
+                                Sound BlasterX G1 USB 7.1 - 29.72€
+                            </option>
+                            <option
+                                value='Creative Sound Blaster G3 Amplificador Portátil Plug-and-Play USB-C DAC para PS4/Switch/PC/Mac - 32.80€'
+                                class="text-black">Creative Sound Blaster G3 Amplificador Portátil Plug-and-Play
+                                USB-C DAC para PS4/Switch/PC/Mac - 32.80€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="lector" class="text-black">Lector de Tarjetas:</label><br>
+                    <select name="lector" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Lectores de Tarjetas USB" class="text-black">
+                            <option value='Trust Primo Lector DNIe Negro - 10.97€' class="text-black">Trust Primo
+                                Lector DNIe Negro - 10.97€
+                            </option>
+                            <option value='Ewent EW1052 Lector de Tarjetas Inteligentes USB - 5.38€' class="text-black">
+                                Ewent EW1052 Lector de Tarjetas Inteligentes USB - 5.38€
+                            </option>
+                            <option value='Woxter Lector DNI-e USB Negro - 10.41€' class="text-black">Woxter Lector
+                                DNI-e USB Negro - 10.41€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="dvd" class="text-black">DVD:</label><br>
+                    <select name="dvd" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="DVDs Internos" class="text-black">
+                            <option value='Asus DRW-24D5MT Grabadora DVD 24X - 15.84€' class="text-black">Asus
+                                DRW-24D5MT Grabadora DVD 24X - 15.84€
+                            </option>
+                            <option value='Hitachi-LG GH24NSD5 Grabadora DVD-RW Interna Negra - 13.87€'
+                                class="text-black">Hitachi-LG GH24NSD5 Grabadora DVD-RW Interna Negra - 13.87€
+                            </option>
+                        </optgroup>
+                        <optgroup label="DVDs USB" class="text-black">
+                            <option value='Asus SDRW-08D2S-U Lite Grabadora DVD Slim Externa USB Negra - 32.68€'
+                                class="text-black">Asus SDRW-08D2S-U Lite Grabadora DVD Slim Externa USB Negra -
+                                32.68€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="monitor" class="text-black">Monitor:</label><br>
+                    <select name="monitor" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Monitores 144Hz" class="text-black">
+                            <option value='Samsung C24RG52FQR 24" 1080p 144Hz - 199.99€' class="text-black">Samsung
+                                C24RG52FQR 24" 1080p 144Hz - 199.99€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Monitores 165Hz" class="text-black">
+                            <option value='Acer KG241QS 23.6" 1080p 165Hz - 189.44€' class="text-black">Acer KG241QS
+                                23.6" 1080p 165Hz - 189.44€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Monitores 240Hz" class="text-black">
+                            <option value='Ozone DSP24 240 24" 1080p 240Hz - 219.90€' class="text-black">Ozone DSP24
+                                240 24" 1080p 240Hz - 219.90€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="teclado" class="text-black">Teclado:</label><br>
+                    <select name="teclado" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Logitech" class="text-black">
+                            <option value="Logitech 920G Pro - 60.75€" class="text-black">Logitech 920G Pro - 60.75€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Redragon" class="text-black">
+                            <option value="Redragon K552 - 31.28€" class="text-black">Redragon K552 - 31.28€
+                            </option>
+                        </optgroup>
+                        <optgroup label="XTRFY" class="text-black">
+                            <option value="XTRFY K4 TKL RGB - 99.00€" class="text-black">XTRFY K4 TKL RGB - 99.00€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="raton" class="text-black">Ratón:</label><br>
+                    <select name="raton" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Razer" class="text-black">
+                            <option value="Razer Deathadder Essential 2021 - 19.99€" class="text-black">Razer
+                                Deathadder Essential 2021 - 19.99€</option>
+                            <option value="Razer Deathadder Essential White Edition - 19.99€" class="text-black">
+                                Razer Deathadder Essential White Edition - 19.99€</option>
+                        </optgroup>
+                        <optgroup label="Logitech" class="text-black">
+                            <option value="Logitech G502 Hero KDA Edition - 64.54€" class="text-black">Logitech G502
+                                Hero KDA Edition - 64.54€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="altavoces" class="text-black">Altavoces:</label><br>
+                    <select name="altavoces" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Altavoces USB" class="text-black">
+                            <option value='Tempest Gaming M8 2.0 Speaker System Altavoces 10W RMS - 19.99€'
+                                class="text-black">Tempest Gaming M8 2.0 Speaker System Altavoces 10W RMS - 19.99€
+                            </option>
+                            <option value='Tempest M6 Rez 2.0 Gaming Speakers - 13.00€' class="text-black">Tempest
+                                M6 Rez 2.0 Gaming Speakers - 13.00€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Altavoces Bluetooth" class="text-black">
+                            <option value='Newskill Vamana RGB Barra de Sonido Bluetooth 10W - 36.00€'
+                                class="text-black">Newskill Vamana RGB Barra de Sonido Bluetooth 10W - 36.00€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="tv" class="text-black">Tarjeta de TV:</label><br>
+                    <select name="tv" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Tarjetas de TV" class="text-black">
+                            <option value='-' class="text-black" disabled>(No disponible por el momento)
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="red" class="text-black">Adaptador de Red/Wi-Fi:</label><br>
+                    <select name="red" class="text-black form">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Adaptadores USB" class="text-black">
+                            <option
+                                value='TP-Link Archer T3U Plus Adaptador USB Inalámbrico Banda Dual AC1300 Alta Ganancia - 18.79€'
+                                class="text-black">TP-Link Archer T3U Plus Adaptador USB Inalámbrico Banda Dual
+                                AC1300 Alta Ganancia - 18.79€
+                            </option>
+                            <option value='Tenda U3 Adaptador USB WiFi 300Mbps - 5.99€' class="text-black">Tenda U3
+                                Adaptador USB WiFi 300Mbps - 5.99€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Adaptadores PCIe" class="text-black">
+                            <option value='TP-Link Archer T5E Adaptador AC1200 Wi-Fi Bluetooth 4.2 PCIe - 27.99€'
+                                class="text-black">TP-Link Archer T5E Adaptador AC1200 Wi-Fi Bluetooth 4.2 PCIe -
+                                27.99€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <hr><br>
+                    <label for="montaje" class="text-black">Montaje:</label><br>
+                    <input name="montaje" value="0" type="hidden">
+                    <input name="montaje" type="checkbox" class="text-black" id="checkit" maxlength="9"
+                        placeholder="Elige Montaje" onchange="calc()">&nbsp;<small class="text-black">(Elige si
+                        quieres que te
+                        montemos el PC nosotros (+25€) o si prefieres los componentes por separado)</small><br><br>
+                    <hr><br>
+                    <div style="float: right;"><img src="img/transparent.png"></div>
+                    <label for="so" class="text-black">Sistema Operativo:</label><br>
+                    <select id="so" name="so" class="text-black form" onchange="checkIt(), sistema(), calc()">
+                        <optgroup label="Sin Selección" class="text-black">
+                            <option value="-" class="text-black">-</option>
+                        </optgroup>
+                        <optgroup label="Windows 10" class="text-black">
+                            <option value="Windows 10 Home - 145.00€" class="text-black">Windows 10 Home - 145.00€
+                            </option>
+                            <option value="Windows 10 Pro - 259.00€" class="text-black">Windows 10 Pro - 259.00€
+                            </option>
+                        </optgroup>
+                        <optgroup label="Windows 11" class="text-black">
+                            <option value="Windows 11 Home - 170.00€" class="text-black">Windows 11 Home - 170.00€
+                            </option>
+                            <option value="Windows 11 Pro - 280.00€" class="text-black">Windows 11 Pro - 280.00€
+                            </option>
+                        </optgroup>
+                    </select><br><br>
+                    <small><i class="text-black">NOTA: Cuando seleccionas como sistema operativo alguna de las
+                            versiones de Windows 11,<br>
+                            el montaje del equipo es OBLIGATORIO, ya que requiere configuración extra que Windows 10
+                            no.</i></small>
+                    <hr>
+                    <br>
+                    <p class="text-black">Por último, necesitamos que introduzcas tus datos para dar tu pedido por
+                        válido:</p>
+                    <label for="nombre" class="text-black">Tu nombre: <b style="color: red;">*</b></label><br>
+                    <input name="nombre" type="text" class="text-black form" id="formulario" maxlength="100"
+                        placeholder="Escribe tu nombre..."><br><br>
+                    <label for="email" class="text-black">Tu email: <b style="color: red;">*</b></label><br>
+                    <input name="email" type="text" class="text-black form" id="formulario" maxlength="100"
+                        placeholder="Escribe tu email..."><br><br>
+                    <label for="paypal" class="text-black">Tu PayPal: <b style="color: red;">*</b></label><br>
+                    <input name="paypal" type="text" class="text-black form" id="formulario" maxlength="100"
+                        placeholder="Escribe tu nombre..."><br><br>
+                    <!--<input name="precio" value="100" type="hidden">-->
+                    <input type="submit" class="text-black" value="Enviar">
                     </form>
                     <hr>
                     <b style="color: red;">*: Campos OBLIGATORIOS</b>

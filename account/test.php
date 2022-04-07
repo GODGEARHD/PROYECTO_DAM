@@ -10,7 +10,11 @@ if ($test == 'on') {
     echo $test;
 }*/
 
-echo 'hola';
+//echo 'hola';
+
+$test = $_POST['total'];
+
+echo $test;
 
 ?>
 
