@@ -75,7 +75,7 @@
                 <div class="invisible alineadorLateral"></div>
                 <div class="jumbotron" id="semi-transparente">
                     <p class="navbar-brand text-black">Precio total:</p>
-                    <p class="text-black" id="total">0€</p>
+                    <p class="text-black" id="totalMuestra">0€</p>
                 </div>
                 <div class="jumbotron" id="semi-transparente">
                     <!--<p class="text-black">Por último, necesitamos que introduzcas tus datos para dar tu pedido por
@@ -89,7 +89,7 @@
                     <label for="paypal" class="text-black">Tu PayPal: <b style="color: red;">*</b></label><br>
                     <input name="paypal" type="text" class="text-black" id="formulario" maxlength="100"
                         placeholder="Escribe tu nombre..."><br><br>
-                    <!--<input name="precio" value="100" type="hidden">-->
+                    <input id="totalOculto" name="precio" value="0" type="hidden">
                     <input type="submit" class="text-black" value="Enviar">
                 </div>
         </div>
@@ -596,7 +596,7 @@
                     <input name="paypal" type="text" class="text-black form" id="formulario" maxlength="100"
                         placeholder="Escribe tu nombre..."><br><br>-->
                     <!--<input name="precio" value="100" type="hidden">-->
-                    <input type="submit" class="text-black" value="Enviar">
+                    <!--<input type="submit" class="text-black" value="Enviar">-->
                     </form>
                     <hr>
                     <b style="color: red;">*: Campos OBLIGATORIOS</b>
