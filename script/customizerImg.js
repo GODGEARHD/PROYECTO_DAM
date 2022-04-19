@@ -1,5 +1,5 @@
 function procesador() {
-    document.getElementsByName("cpu");
+    document.getElementById("cpu");
     
     console.log("works");
 }
