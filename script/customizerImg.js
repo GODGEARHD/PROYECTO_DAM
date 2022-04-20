@@ -1,6 +1,6 @@
 function procesador() {
     document.getElementById("cpu");
-    var selectedCPU = cpu.options[cpu.selectedIndex];
+     var selectedCPU = cpu.options[cpu.selectedIndex];
     if (selectedCPU.value == "Core i5-10600K") {
         document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
     }
