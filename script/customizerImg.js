@@ -1,6 +1,21 @@
 function procesador() {
     document.getElementById("cpu");
-    
+    var selectedCPU = cpu.options[cpu.selectedIndex];
+    if (selectedCPU.value == "Core i5-10600K") {
+        document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
+    }
+    if (selectedCPU.value == "Core i7-11700F") {
+        document.getElementById("imgCPU").src = "../img/intel-core-i7-11700f.png";
+    }
+    if (selectedCPU.value == "Ryzen 5 3600") {
+        document.getElementById("imgCPU").src = "../img/ryzen-5-3600.png";
+    }
+    if (selectedCPU.value == "Ryzen 7 5800X") {
+        document.getElementById("imgCPU").src = "../img/ryzen-7-5800x.png";
+    }
+    if (selectedCPU.value == "-") {
+        document.getElementById("imgCPU").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
