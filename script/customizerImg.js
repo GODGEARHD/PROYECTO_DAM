@@ -1,11 +1,8 @@
-var num = 0;
 function procesador() {
-    var total = 0;
     var cpu = document.getElementById("cpu");
     var selectedCPU = cpu.options[cpu.selectedIndex];
     if (selectedCPU.value == "Core i5-10600K") {
         document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
-        muestraTotal();
     }
     if (selectedCPU.value == "Core i7-11700F") {
         document.getElementById("imgCPU").src = "../img/intel-core-i7-11700f.png";
@@ -91,9 +88,4 @@ function antena() {
 
 function sistema() {
     console.log("works");
-}
-
-function muestraTotal() {
-    console.log("works" + num);
-    num++;
 }
