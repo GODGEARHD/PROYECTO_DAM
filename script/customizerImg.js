@@ -24,7 +24,7 @@ function procesador() {
     }
     if (selectedCPU.value == "-") {
         document.getElementById("imgCPU").src = "../img/transparent.png";
-        $("optgroup").siblings("#Intel").prop("disabled", true);
+        $("optgroup").siblings("#Intel").prop("disabled", false);
         $("optgroup").siblings("#AMD").prop("disabled", false);
     }
 }
