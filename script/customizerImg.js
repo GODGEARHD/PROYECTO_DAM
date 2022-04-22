@@ -48,14 +48,16 @@ function procesador() {
         document.getElementById("imgCPU").src = "../img/ryzen-7-5800x.png";
         $("optgroup").siblings("#Intel").prop("disabled", true);
         $("optgroup").siblings("#AMD").prop("disabled", false);
-        if (selectedRefri.id === "Intel") {
+        if (selectedPlaca.id && selectedRefri.id === "Intel") {
             refri.value = "-";
             document.getElementById("imgRefri").src = "../img/transparent.png";
-        }
-        if (selectedPlaca.id === "Intel") {
             placa.value = "-";
             document.getElementById("imgPlaca").src = "../img/transparent.png";
         }
+        /*if (selectedPlaca.id === "Intel") {
+            placa.value = "-";
+            document.getElementById("imgPlaca").src = "../img/transparent.png";
+        }*/
     }
     if (selectedCPU.value == "-") {
         document.getElementById("imgCPU").src = "../img/transparent.png";
