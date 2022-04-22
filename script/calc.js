@@ -22,10 +22,10 @@ function calc() {
     var sistema = document.getElementById('so');
     
 
-    /*//Select de Procesador
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
+    //Select de Procesador
+    var selectedProcesador = procesador.options[procesador.selectedIndex];
+    if (selectedProcesador.value == "Core i5-10600K") {
+        total+=268.36;
     } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
         total+=259;
     } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
@@ -36,7 +36,7 @@ function calc() {
         total+=0;
     }
 
-    //Select de Ventilador
+    /*//Select de Ventilador
     var selectedSistema = sistema.options[sistema.selectedIndex];
     if (selectedSistema.value == "Windows 10 Home - 145.00€") {
         total+=145;
