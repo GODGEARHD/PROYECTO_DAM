@@ -4,6 +4,7 @@ function procesador() {
     var selectedCPU = cpu.options[cpu.selectedIndex];
     if (selectedCPU.value == "Core i5-10600K") {
         document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
+        $("#AMD").prop("disabled", true);
         /*document.getElementById("AMD").setAttribute("disabled", "disabled");
         document.getElementsByName("AMD").forEach(Element => {
             console.log("work in process");
@@ -28,7 +29,7 @@ function procesador() {
             if () {
 
             }
-        };*/
+        };
         $( function() {
             $("#cpu").change( function() {
                 if ($(this).val() === "Core i5-10600K") {
@@ -38,7 +39,7 @@ function procesador() {
                 }
             });
         });
-        //document.getElementById("AMD").nextSibling;
+        document.getElementById("AMD").nextSibling;*/
     }
     if (selectedCPU.value == "Core i7-11700F") {
         document.getElementById("imgCPU").src = "../img/intel-core-i7-11700f.png";
