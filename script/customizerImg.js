@@ -9,11 +9,9 @@ function procesador() {
         document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
         $("optgroup").siblings("#AMD").prop("disabled", true);
         $("optgroup").siblings("#Intel").prop("disabled", false);
-        if (selectedRefri.id === "AMD") {
+        if (selectedPlaca.id && selectedRefri.id === "AMD") {
             refri.value = "-";
             document.getElementById("imgRefri").src = "../img/transparent.png";
-        }
-        if (selectedPlaca.id === "AMD") {
             placa.value = "-";
             document.getElementById("imgPlaca").src = "../img/transparent.png";
         }
@@ -22,11 +20,9 @@ function procesador() {
         document.getElementById("imgCPU").src = "../img/intel-core-i7-11700f.png";
         $("optgroup").siblings("#AMD").prop("disabled", true);
         $("optgroup").siblings("#Intel").prop("disabled", false);
-        if (selectedRefri.id === "AMD") {
+        if (selectedPlaca.id && selectedRefri.id === "AMD") {
             refri.value = "-";
             document.getElementById("imgRefri").src = "../img/transparent.png";
-        }
-        if (selectedPlaca.id === "AMD") {
             placa.value = "-";
             document.getElementById("imgPlaca").src = "../img/transparent.png";
         }
@@ -35,11 +31,9 @@ function procesador() {
         document.getElementById("imgCPU").src = "../img/ryzen-5-3600.png";
         $("optgroup").siblings("#Intel").prop("disabled", true);
         $("optgroup").siblings("#AMD").prop("disabled", false);
-        if (selectedRefri.id === "AMD") {
+        if (selectedPlaca.id && selectedRefri.id === "AMD") {
             refri.value = "-";
             document.getElementById("imgRefri").src = "../img/transparent.png";
-        }
-        if (selectedPlaca.id === "AMD") {
             placa.value = "-";
             document.getElementById("imgPlaca").src = "../img/transparent.png";
         }
@@ -54,10 +48,6 @@ function procesador() {
             placa.value = "-";
             document.getElementById("imgPlaca").src = "../img/transparent.png";
         }
-        /*if (selectedPlaca.id === "Intel") {
-            placa.value = "-";
-            document.getElementById("imgPlaca").src = "../img/transparent.png";
-        }*/
     }
     if (selectedCPU.value == "-") {
         document.getElementById("imgCPU").src = "../img/transparent.png";
