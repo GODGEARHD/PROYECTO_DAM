@@ -4,22 +4,41 @@ function procesador() {
     var selectedCPU = cpu.options[cpu.selectedIndex];
     if (selectedCPU.value == "Core i5-10600K") {
         document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
-        document.getElementsByClassName("AMD").setAttribute("disabled", "disabled");
-        /*document.querySelectorAll("[id=AMD]").forEach(element=> 
+        /*document.getElementById("AMD").setAttribute("disabled", "disabled");
+        document.getElementsByName("AMD").forEach(Element => {
+            console.log("work in process");
+        });
+        document.querySelectorAll("[id=AMD]").forEach(element=> 
             document.write(element);
-        );*/
-        /*document.querySelectorAll('[id=AMD]').forEach(document.getElementById("AMD"), 
-            document.getElementById("AMD").setAttribute("disabled", "disabled"));*/
-        /*array.forEach(element => {
+        );
+        document.querySelectorAll('[id=AMD]').forEach(document.getElementById("AMD"), 
+            document.getElementById("AMD").setAttribute("disabled", "disabled"));
+        array.forEach(element => {
             if (element.id === "AMD") {
                 
             }
-        });*/
-        /*for (let opcion in allElements) {
+        });
+        for (let opcion in allElements) {
             if (opcion.id === "AMD") {
                 opcion.setAttribute("disabled", "disabled");
             }
-        }*/
+        }
+        var amd = document.getElementById("AMD");
+        for (let i in HTMLOptGroupElement) {
+            if () {
+
+            }
+        };*/
+        $( function() {
+            $("#cpu").change( function() {
+                if ($(this).val() === "Core i5-10600K") {
+                    $("#AMD").prop("disabled", true);
+                } else {
+                    $("#AMD").prop("disabled", false);
+                }
+            });
+        });
+        //document.getElementById("AMD").nextSibling;
     }
     if (selectedCPU.value == "Core i7-11700F") {
         document.getElementById("imgCPU").src = "../img/intel-core-i7-11700f.png";
