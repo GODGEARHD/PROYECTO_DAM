@@ -1,3 +1,4 @@
+const allElements = document.getElementsByTagName("*");
 function procesador() {
     var cpu = document.getElementById("cpu");
     var selectedCPU = cpu.options[cpu.selectedIndex];
@@ -7,8 +8,19 @@ function procesador() {
         /*document.querySelectorAll("[id=AMD]").forEach(element=> 
             document.write(element);
         );*/
-        document.querySelectorAll('[id=AMD]').forEach(document.getElementById("AMD"), 
-            document.getElementById("AMD").setAttribute("disabled", "disabled"));
+        /*document.querySelectorAll('[id=AMD]').forEach(document.getElementById("AMD"), 
+            document.getElementById("AMD").setAttribute("disabled", "disabled"));*/
+        /*array.forEach(element => {
+            if (element.id === "AMD") {
+                
+            }
+        });*/
+
+        for (let opcion in allElements) {
+            if (opcion.id === "AMD") {
+                opcion.setAttribute("disabled", "disabled");
+            }
+        }
     }
     if (selectedCPU.value == "Core i7-11700F") {
         document.getElementById("imgCPU").src = "../img/intel-core-i7-11700f.png";
