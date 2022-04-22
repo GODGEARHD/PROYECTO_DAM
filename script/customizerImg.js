@@ -8,7 +8,7 @@ function procesador() {
             document.write(element);
         );*/
         document.querySelectorAll('[id=AMD]').forEach(document.getElementById("AMD"), 
-            setAttribute("disabled", "disabled"));
+            document.getElementById("AMD").setAttribute("disabled", "disabled"));
     }
     if (selectedCPU.value == "Core i7-11700F") {
         document.getElementById("imgCPU").src = "../img/intel-core-i7-11700f.png";
