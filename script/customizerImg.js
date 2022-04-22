@@ -2,10 +2,16 @@ const allElements = document.getElementsByTagName("*");
 function procesador() {
     var cpu = document.getElementById("cpu");
     var selectedCPU = cpu.options[cpu.selectedIndex];
+    var refri = document.getElementById("refri");
+    var selectedRefri = refri.options[refri.selectedIndex];
     if (selectedCPU.value == "Core i5-10600K") {
         document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
         $("optgroup").siblings("#AMD").prop("disabled", true);
         $("optgroup").siblings("#Intel").prop("disabled", false);
+        if (selectedRefri.value != "-" || "De Serie") {
+            refri.value = "-";
+            document.getElementById("imgRefri").src = "../img/transparent.png";
+        }
     }
     if (selectedCPU.value == "Core i7-11700F") {
         document.getElementById("imgCPU").src = "../img/intel-core-i7-11700f.png";
