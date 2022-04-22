@@ -129,7 +129,7 @@
                     <hr><br>
                     <div style="float: right;"><img id="imgRefri" src="img/transparent.png"></div>
                     <label for="refri" class="text-black">Refrigeración de CPU:</label><br>
-                    <select name="refri" class="text-black form">
+                    <select name="refri" class="text-black form" onchange="ventilador(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
                             <option value="-" class="text-black">-</option>
                         </optgroup>
@@ -138,33 +138,33 @@
                                 0.00€</option>
                         </optgroup>
                         <optgroup label="Refrigeración Líquida para Intel" class="text-black">
-                            <option value="Asus ROG Ryujin 360 - 238.85€" class="text-black">Asus ROG Ryujin 360 -
+                            <option value="Asus ROG Ryujin 360" class="text-black">Asus ROG Ryujin 360 -
                                 238.85€
                             </option>
-                            <option value="Cooler Master MasterLiquid ML240L RGB - 65.91€" class="text-black">Cooler
+                            <option value="Cooler Master MasterLiquid ML240L RGB" class="text-black">Cooler
                                 Master MasterLiquid ML240L RGB - 65.91€
                             </option>
                         </optgroup>
                         <optgroup label="Refrigeración Líquida para AMD" class="text-black">
-                            <option value="Nfortec Hydrus V2 - 54.51€" class="text-black">Nfortec Hydrus V2 - 54.51€
+                            <option value="Nfortec Hydrus V2" class="text-black">Nfortec Hydrus V2 - 54.51€
                             </option>
-                            <option value="Arctic Liquid Freezer II - 119.99€" class="text-black">Arctic Liquid
+                            <option value="Arctic Liquid Freezer II" class="text-black">Arctic Liquid
                                 Freezer II - 119.99€
                             </option>
                         </optgroup>
                         <optgroup label="Refrigeración por Aire para Intel" class="text-black">
-                            <option value="Nfortec Sculptor Black - 42.34€" class="text-black">Nfortec Sculptor
+                            <option value="Nfortec Sculptor Black (Intel)" class="text-black">Nfortec Sculptor
                                 Black - 42.34€
                             </option>
-                            <option value="HidiTec C12 ARGB PWM 120mm - 31.73€" class="text-black">HidiTec C12 ARGB
+                            <option value="HidiTec C12 ARGB PWM 120mm (Intel)" class="text-black">HidiTec C12 ARGB
                                 PWM 120mm - 31.73€
                             </option>
                         </optgroup>
                         <optgroup label="Refrigeración por Aire para AMD" class="text-black">
-                            <option value="Nfortec Sculptor Black - 42.34€" class="text-black">Nfortec Sculptor
+                            <option value="Nfortec Sculptor Black (AMD)" class="text-black">Nfortec Sculptor
                                 Black - 42.34€
                             </option>
-                            <option value="HidiTec C12 ARGB PWM 120mm - 31.73€" class="text-black">HidiTec C12 ARGB
+                            <option value="HidiTec C12 ARGB PWM 120mm (AMD)" class="text-black">HidiTec C12 ARGB
                                 PWM 120mm - 31.73€
                             </option>
                         </optgroup>

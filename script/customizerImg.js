@@ -19,6 +19,38 @@ function procesador() {
 }
 
 function ventilador() {
+    var refri = document.getElementById("refri");
+    var selectedRefri = refri.options[refri.selectedIndex];
+    if (selectedRefri.value == "Asus ROG Ryujin 360") {
+        document.getElementById("imgRefri").src = "../img/intel-core-i5-10600k.png";
+    }
+    if (selectedRefri.value == "Cooler Master MasterLiquid ML240L RGB") {
+        document.getElementById("imgRefri").src = "../img/intel-core-i7-11700f.png";
+    }
+    if (selectedRefri.value == "Nfortec Hydrus V2") {
+        document.getElementById("imgRefri").src = "../img/ryzen-5-3600.png";
+    }
+    if (selectedRefri.value == "Arctic Liquid Freezer II") {
+        document.getElementById("imgRefri").src = "../img/ryzen-7-5800x.png";
+    }
+    if (selectedRefri.value == "Nfortec Sculptor Black (Intel)") {
+        document.getElementById("imgRefri").src = "../img/transparent.png";
+    }
+    if (selectedRefri.value == "HidiTec C12 ARGB PWM 120mm (Intel)") {
+        document.getElementById("imgRefri").src = "../img/transparent.png";
+    }
+    if (selectedRefri.value == "Nfortec Sculptor Black (AMD)") {
+        document.getElementById("imgRefri").src = "../img/transparent.png";
+    }
+    if (selectedRefri.value == "HidiTec C12 ARGB PWM 120mm (AMD)") {
+        document.getElementById("imgRefri").src = "../img/transparent.png";
+    }
+    if (selectedRefri.value == "De Serie") {
+        document.getElementById("imgRefri").src = "../img/transparent.png";
+    }
+    if (selectedRefri.value == "-") {
+        document.getElementById("imgRefri").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 

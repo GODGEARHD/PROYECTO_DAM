@@ -36,21 +36,29 @@ function calc() {
         total+=0;
     }
 
-    /*//Select de Ventilador
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
-    } else if (selectedSistema.value == "-") {
+    //Select de Ventilador
+    var selectedRefri = ventilador.options[ventilador.selectedIndex];
+    if (selectedRefri.value == "Asus ROG Ryujin 360") {
+        total+=238.85;
+    } else if (selectedRefri.value == "Cooler Master MasterLiquid ML240L RGB") {
+        total+=65.91;
+    } else if (selectedRefri.value == "Nfortec Hydrus V2") {
+        total+=54.51;
+    } else if (selectedRefri.value == "Arctic Liquid Freezer II") {
+        total+=119.99;
+    } else if (selectedRefri.value == "Nfortec Sculptor Black (Intel)") {
+        total+=42.34;
+    } else if (selectedRefri.value == "HidiTec C12 ARGB PWM 120mm (Intel)") {
+        total+=31.73;
+    } else if (selectedRefri.value == "Nfortec Sculptor Black (AMD)") {
+        total+=42.34;
+    } else if (selectedRefri.value == "HidiTec C12 ARGB PWM 120mm (AMD)") {
+        total+=31.73;
+    } else if ((selectedRefri.value == "De Serie") || (selectedRefri.value == "-")) {
         total+=0;
     }
 
-    //Select de Memoria
+    /*//Select de Memoria
     var selectedSistema = sistema.options[sistema.selectedIndex];
     if (selectedSistema.value == "Windows 10 Home - 145.00€") {
         total+=145;
