@@ -3,7 +3,8 @@ function procesador() {
     var selectedCPU = cpu.options[cpu.selectedIndex];
     if (selectedCPU.value == "Core i5-10600K") {
         document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
-        document.getElementsByName("AMD").setAttribute("disabled", "disabled");
+        //document.getElementById("AMD").setAttribute("disabled", "disabled");
+        document.querySelectorAll("[id=AMD]");
     }
     if (selectedCPU.value == "Core i7-11700F") {
         document.getElementById("imgCPU").src = "../img/intel-core-i7-11700f.png";
