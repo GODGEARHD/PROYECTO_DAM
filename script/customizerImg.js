@@ -24,7 +24,7 @@ function procesador() {
         $("optgroup").siblings("#Intel").prop("disabled", false);
         if (selectedRefri.id === "AMD") {
             refri.value = "-";
-            //document.getElementById("imgRefri").src = "../img/transparent.png";
+            document.getElementById("imgRefri").src = "../img/transparent.png";
         }
         if (selectedPlaca.id === "AMD") {
             placa.value = "-";
