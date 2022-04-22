@@ -8,7 +8,7 @@ function procesador() {
         document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
         $("optgroup").siblings("#AMD").prop("disabled", true);
         $("optgroup").siblings("#Intel").prop("disabled", false);
-        if (selectedRefri.value != "-" || "De Serie") {
+        if (selectedRefri.id === "AMD") {
             refri.value = "-";
             document.getElementById("imgRefri").src = "../img/transparent.png";
         }
