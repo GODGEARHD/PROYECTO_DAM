@@ -4,7 +4,11 @@ function procesador() {
     if (selectedCPU.value == "Core i5-10600K") {
         document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
         //document.getElementById("AMD").setAttribute("disabled", "disabled");
-        document.querySelectorAll("[id=AMD]");
+        /*document.querySelectorAll("[id=AMD]").forEach(element=> 
+            document.write(element);
+        );*/
+        document.querySelectorAll('[id=AMD]').forEach(element=> 
+            document.getElementById("AMD").setAttribute("disabled", "disabled"));
     }
     if (selectedCPU.value == "Core i7-11700F") {
         document.getElementById("imgCPU").src = "../img/intel-core-i7-11700f.png";
