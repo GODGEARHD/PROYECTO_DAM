@@ -4,7 +4,8 @@ function procesador() {
     var selectedCPU = cpu.options[cpu.selectedIndex];
     if (selectedCPU.value == "Core i5-10600K") {
         document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
-        $("#AMD").nextAll().prop("disabled", true);
+        //$("#AMD").nextAll().prop("disabled", true);
+        $("optgroup").siblings("#AMD").prop("disabled", true);
         /*document.getElementById("AMD").setAttribute("disabled", "disabled");
         document.getElementsByName("AMD").forEach(Element => {
             console.log("work in process");
