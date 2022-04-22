@@ -1,5 +1,6 @@
 function procesador() {
-    document.getElementById("cpu");
+    var total = 0;
+    var cpu = document.getElementById("cpu");
     var selectedCPU = cpu.options[cpu.selectedIndex];
     if (selectedCPU.value == "Core i5-10600K") {
         document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
@@ -16,7 +17,6 @@ function procesador() {
     if (selectedCPU.value == "-") {
         document.getElementById("imgCPU").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function ventilador() {
