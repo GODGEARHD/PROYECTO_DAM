@@ -1,3 +1,4 @@
+var num = 0;
 function procesador() {
     var total = 0;
     var cpu = document.getElementById("cpu");
@@ -93,5 +94,6 @@ function sistema() {
 }
 
 function muestraTotal() {
-    console.log("works");
+    console.log("works" + num);
+    num++;
 }
