@@ -26,13 +26,13 @@ function calc() {
     var selectedProcesador = procesador.options[procesador.selectedIndex];
     if (selectedProcesador.value == "Core i5-10600K") {
         total+=268.36;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
-    } else if (selectedSistema.value == "-") {
+    } else if (selectedProcesador.value == "Core i7-11700F") {
+        total+=346.49;
+    } else if (selectedProcesador.value == "Ryzen 5 3600") {
+        total+=310;
+    } else if (selectedProcesador.value == "Ryzen 7 5800X") {
+        total+=375;
+    } else if (selectedProcesador.value == "-") {
         total+=0;
     }
 
