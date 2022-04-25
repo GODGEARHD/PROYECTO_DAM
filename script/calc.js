@@ -62,13 +62,13 @@ function calc() {
     var selectedRAM = memoria.options[memoria.selectedIndex];
     if (selectedRAM.value == "Kingston FURY Beast RGB DDR4 3600 MHz 16GB 2x8GB CL17") {
         total+=91.57;
-    } else if (selectedSistema.value == "Kingston FURY Beast RGB DDR4 2666 MHz 32GB 4x8GB CL16") {
+    } else if (selectedRAM.value == "Kingston FURY Beast RGB DDR4 2666 MHz 32GB 4x8GB CL16") {
         total+=160.87;
-    } else if (selectedSistema.value == "Kingston FURY Beast RGB DDR4 2666 MHz 16GB 2x8GB CL16") {
+    } else if (selectedRAM.value == "Kingston FURY Beast RGB DDR4 2666 MHz 16GB 2x8GB CL16") {
         total+=91.62;
-    } else if (selectedSistema.value == "Kingston FURY Beast RGB DDR4 3733 MHz 8GB CL19") {
+    } else if (selectedRAM.value == "Kingston FURY Beast RGB DDR4 3733 MHz 8GB CL19") {
         total+=49.36;
-    } else if (selectedSistema.value == "-") {
+    } else if (selectedRAM.value == "-") {
         total+=0;
     }
 
