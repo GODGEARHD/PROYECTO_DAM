@@ -131,10 +131,9 @@ body {
 
 [id*="principal"] {
     display: block;
-    padding-top: 35px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 30px;
     margin-top: 0px;
-    scroll-margin-bottom: 10%;
 }
 
 #secundario {
