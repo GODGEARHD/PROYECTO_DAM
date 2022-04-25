@@ -74,14 +74,14 @@ function calc() {
 
     //Select de PlacaBase
     var selectedPlaca = placaBase.options[placaBase.selectedIndex];
-    if (selectedPlaca.value == "Windows 10 Home - 145.00€") {
+    if (selectedPlaca.value == "MSI B560M PRO-VDH") {
         total+=99.98;
-    } else if (selectedPlaca.value == "Windows 10 Pro - 259.00€") {
+    } else if (selectedPlaca.value == "MSI MPG B550 GAMING PLUS") {
         total+=139.89;
-    } else if (selectedPlaca.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedPlaca.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
+    } else if (selectedPlaca.value == "MSI H510M-A Pro") {
+        total+=68.91;
+    } else if (selectedPlaca.value == "MSI Z690 TORPEDO") {
+        total+=285.60;
     } else if (selectedPlaca.value == "-") {
         total+=0;
     }
