@@ -130,7 +130,7 @@ body {
 }
 
 #noSpace {
-    margin-bottom: 0.5rem;
+    /*margin-bottom: 0.5rem;*/
 }
 
 [id*="principal"] {
