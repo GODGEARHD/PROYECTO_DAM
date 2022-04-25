@@ -18,12 +18,24 @@ if ($checkbox == 'on') {
 
 $message = '';
 
-if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['paypal'])) {
+if ((!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['paypal'])) || (!empty($_POST['nombre2']) && !empty($_POST['email2']) && !empty($_POST['paypal2'])) ) {
   $sql = "INSERT INTO custom_cfg (nombre_usuario, email, paypal, precio_total, cpu, refri_cpu, ram, placa_base, disco_duro_1, disco_duro_2, caja, psu, gpu, tarjeta_sonido, lector_tarjetas, dvd, monitor, teclado, raton, altavoces, tarjeta_tv, adaptador_eth_wifi, montaje, sistema_operativo) VALUES (:nombre, :email, :paypal, :precio, :cpu, :refri, :ram, :placa, :disco1, :disco2, :caja, :psu, :gpu, :audio, :lector, :dvd, :monitor, :teclado, :raton, :altavoces, :tv, :red, :montaje, :so)";
   $stmt = $conn->prepare($sql);
-  $stmt->bindParam(':nombre', $_POST['nombre']);
-  $stmt->bindParam(':email', $_POST['email']);
-  $stmt->bindParam(':paypal', $_POST['paypal']);
+  if (empty($_POST['nombre'])) {
+    $stmt->bindParam(':nombre', $_POST['nombre2']);
+  } else {
+    $stmt->bindParam(':nombre', $_POST['nombre']);
+  }
+  if (empty($_POST['email'])) {
+    $stmt->bindParam(':email', $_POST['email2']);
+  } else {
+    $stmt->bindParam(':email', $_POST['email']);
+  }
+  if (empty($_POST['paypal'])) {
+    $stmt->bindParam(':paypal', $_POST['paypal2']);
+  } else {
+    $stmt->bindParam(':paypal', $_POST['paypal']);
+  }
   $stmt->bindParam(':precio', $_POST['totalOculto']);
   $stmt->bindParam(':cpu', $_POST['cpu']);
   $stmt->bindParam(':refri', $_POST['refri']);
