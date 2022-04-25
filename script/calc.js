@@ -140,21 +140,29 @@ function calc() {
         total+=0;
     }
 
-    /*//Select de Gráfica
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
-    } else if (selectedSistema.value == "-") {
+    //Select de Gráfica
+    var selectedGPU = grafica.options[grafica.selectedIndex];
+    if (selectedGPU.value == "MAXSUN AMD Radeon RX 550 4 GB GDDR5") {
+        total+=239.99;
+    } else if (selectedGPU.value == "XFX Radeon RX 5700 XT THICC III Ultra 8GB GDDR6") {
+        total+=604.88;
+    } else if (selectedGPU.value == "ASUS ROG Strix AMD Radeon RX 6700 XT OC Edition") {
+        total+=1299;
+    } else if (selectedGPU.value == "MSI Radeon RX 6800 XT GAMING Z TRIO 16GB GDDR6") {
+        total+=1249.89;
+    } else if (selectedGPU.value == "MSI GeForce GTX 1650 SUPER GAMING X 4GB GDDR6") {
+        total+=255.77;
+    } else if (selectedGPU.value == "MSI GeForce RTX 2060 VENTUS GP OC 6GB GDDR6") {
+        total+=493.08;
+    } else if (selectedGPU.value == "Gigabyte GeForce RTX 3060 Ti VISION OC 8GB GDDR6 Rev 2.0") {
+        total+=765.19;
+    } else if (selectedGPU.value == "Gigabyte AORUS GeForce RTX 3070 MASTER 8GB GDDR6") {
+        total+=1291.74;
+    } else if (selectedGPU.value == "-") {
         total+=0;
     }
 
-    //Select de Tarjeta
+    /*//Select de Tarjeta
     var selectedSistema = sistema.options[sistema.selectedIndex];
     if (selectedSistema.value == "Windows 10 Home - 145.00€") {
         total+=145;

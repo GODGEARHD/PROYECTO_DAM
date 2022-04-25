@@ -334,36 +334,36 @@
                     <hr><br>
                     <div style="float: right;"><img id="imgGPU" src="img/transparent.png"></div>
                     <label for="gpu" class="text-black">Tarjeta Gráfica:</label><br>
-                    <select name="gpu" class="text-black form">
+                    <select id="gpu" name="gpu" class="text-black form" onchange="grafica(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
                             <option value="-" class="text-black">-</option>
                         </optgroup>
                         <optgroup label="AMD" class="text-black">
-                            <option value='MAXSUN AMD Radeon RX 550 4 GB GDDR5 - 239.99€' class="text-black">MAXSUN
+                            <option value='MAXSUN AMD Radeon RX 550 4 GB GDDR5' class="text-black">MAXSUN
                                 AMD Radeon RX 550 4 GB GDDR5 - 239.99€
                             </option>
-                            <option value='XFX Radeon RX 5700 XT THICC III Ultra 8GB GDDR6 - 604.88€'
+                            <option value='XFX Radeon RX 5700 XT THICC III Ultra 8GB GDDR6'
                                 class="text-black">XFX Radeon RX 5700 XT THICC III Ultra 8GB GDDR6 - 604.88€
                             </option>
-                            <option value='ASUS ROG Strix AMD Radeon RX 6700 XT OC Edition - 1299.00€'
+                            <option value='ASUS ROG Strix AMD Radeon RX 6700 XT OC Edition'
                                 class="text-black">ASUS ROG Strix AMD Radeon RX 6700 XT OC Edition - 1299.00€
                             </option>
-                            <option value='MSI Radeon RX 6800 XT GAMING Z TRIO 16GB GDDR6 - 1249.89€'
+                            <option value='MSI Radeon RX 6800 XT GAMING Z TRIO 16GB GDDR6'
                                 class="text-black">MSI Radeon RX 6800 XT GAMING Z TRIO 16GB GDDR6 - 1249.89€
                             </option>
                         </optgroup>
                         <optgroup label="NVIDIA" class="text-black">
-                            <option value='MSI GeForce GTX 1650 SUPER GAMING X 4GB GDDR6 - 255.77€' class="text-black">
+                            <option value='MSI GeForce GTX 1650 SUPER GAMING X 4GB GDDR6' class="text-black">
                                 MSI GeForce GTX 1650 SUPER GAMING X 4GB GDDR6 - 255.77€
                             </option>
-                            <option value='MSI GeForce RTX 2060 VENTUS GP OC 6GB GDDR6 - 493.08€' class="text-black">MSI
+                            <option value='MSI GeForce RTX 2060 VENTUS GP OC 6GB GDDR6' class="text-black">MSI
                                 GeForce RTX 2060 VENTUS GP OC 6GB GDDR6 - 493.08€
                             </option>
-                            <option value='Gigabyte GeForce RTX 3060 Ti VISION OC 8GB GDDR6 Rev 2.0 - 765.19€'
+                            <option value='Gigabyte GeForce RTX 3060 Ti VISION OC 8GB GDDR6 Rev 2.0'
                                 class="text-black">Gigabyte GeForce RTX 3060 Ti VISION OC 8GB GDDR6 Rev 2.0 -
                                 765.19€
                             </option>
-                            <option value='Gigabyte AORUS GeForce RTX 3070 MASTER 8GB GDDR6 - 1291.74€'
+                            <option value='Gigabyte AORUS GeForce RTX 3070 MASTER 8GB GDDR6'
                                 class="text-black">Gigabyte AORUS GeForce RTX 3070 MASTER 8GB GDDR6 - 1291.74€
                             </option>
                         </optgroup>
