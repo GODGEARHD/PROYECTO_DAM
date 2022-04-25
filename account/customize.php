@@ -1,19 +1,22 @@
 <?php
 
-error_reporting(0);
+/*error_reporting(-1);
+
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');*/
 
 require 'database.php';
 
-$montaje = 0;
+$montaje = "No Especificado";
 
 $checkbox = $_POST['montaje'];
 
 if ($checkbox == 'on') {
 
-  $montaje = 1;
+  $montaje = "Sí";
 } else {
 
-  $montaje = 0;
+  $montaje = "No";
 }
 
 $message = '';
@@ -62,6 +65,8 @@ if ((!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['paypa
     $message = '¡Gracias por tus comentarios!';
   } else {
     $message = 'Lo sentimos, se ha debido de producir algun error al procesar tus comentarios. Comprueba que has introducido todos los datos correctamente.';
+    /*echo "\nPDO::errorInfo():\n";
+    print_r($stmt->errorInfo());*/
   }
 }
 
