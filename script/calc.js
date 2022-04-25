@@ -305,6 +305,6 @@ function calc() {
 
     var totalCentimos = total.toFixed(2);
 
-    document.getElementById("totalMuestra").innerHTML =totalCentimos + "€";
-    document.getElementById("totalOculto").value =totalCentimos;
+    document.getElementById("totalMuestra").innerHTML = totalCentimos + "€";
+    document.getElementById("totalOculto").value = totalCentimos;
 }
