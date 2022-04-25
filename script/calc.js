@@ -100,21 +100,21 @@ function calc() {
         total+=0;
     }
 
-    /*//Select de HDD2
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
-    } else if (selectedSistema.value == "-") {
+    //Select de HDD2
+    var selectedHDD2 = hdd2.options[hdd2.selectedIndex];
+    if (selectedHDD2.value == 'Seagate BarraCuda 3.5" 1TB SATA3') {
+        total+=36.63;
+    } else if (selectedHDD2.value == 'Seagate BarraCuda 3.5" 2TB SATA 3') {
+        total+=47.48;
+    } else if (selectedHDD2.value == 'Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280') {
+        total+=106.20;
+    } else if (selectedHDD2.value == 'Samsung 870 QVO SSD 2TB SATA3') {
+        total+=188.81;
+    } else if (selectedHDD2.value == "-") {
         total+=0;
     }
 
-    //Select de Gabinete
+    /*//Select de Gabinete
     var selectedSistema = sistema.options[sistema.selectedIndex];
     if (selectedSistema.value == "Windows 10 Home - 145.00€") {
         total+=145;
