@@ -114,21 +114,21 @@ function calc() {
         total+=0;
     }
 
-    /*//Select de Gabinete
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
-    } else if (selectedSistema.value == "-") {
+    //Select de Gabinete
+    var selectedCaja = gabinete.options[gabinete.selectedIndex];
+    if (selectedCaja.value == "Silverstone Raven RVZ03B-ARGB USB 3.0 Negra") {
+        total+=90.99;
+    } else if (selectedCaja.value == "Aerocool Atomic ARGB Cristal Templado USB 3.0 Negra") {
+        total+=60.89;
+    } else if (selectedCaja.value == "Forgeon Mithril ARGB Cristal Templado USB 3.2 Blanca") {
+        total+=149.99;
+    } else if (selectedCaja.value == "MSI MAG Vampiric 010M Cristal Templado USB 3.2 RGB Negra") {
+        total+=56.41;
+    } else if (selectedCaja.value == "-") {
         total+=0;
     }
 
-    //Select de Fuente
+    /*//Select de Fuente
     var selectedSistema = sistema.options[sistema.selectedIndex];
     if (selectedSistema.value == "Windows 10 Home - 145.00€") {
         total+=145;
