@@ -72,21 +72,21 @@ function calc() {
         total+=0;
     }
 
-    /*//Select de PlacaBase
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
+    //Select de PlacaBase
+    var selectedPlaca = placaBase.options[placaBase.selectedIndex];
+    if (selectedPlaca.value == "Windows 10 Home - 145.00€") {
+        total+=99.98;
+    } else if (selectedPlaca.value == "Windows 10 Pro - 259.00€") {
+        total+=139.89;
+    } else if (selectedPlaca.value == "Windows 11 Home - 170.00€") {
         total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
+    } else if (selectedPlaca.value == "Windows 11 Pro - 280.00€") {
         total+=280;
-    } else if (selectedSistema.value == "-") {
+    } else if (selectedPlaca.value == "-") {
         total+=0;
     }
 
-    //Select de HDD1
+    /*//Select de HDD1
     var selectedSistema = sistema.options[sistema.selectedIndex];
     if (selectedSistema.value == "Windows 10 Home - 145.00€") {
         total+=145;

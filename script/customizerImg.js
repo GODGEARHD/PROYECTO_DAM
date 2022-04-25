@@ -97,7 +97,6 @@ function ventilador() {
     if (selectedRefri.value == "-") {
         document.getElementById("imgRefri").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function memoria() {
