@@ -311,7 +311,7 @@
                     <hr><br>
                     <div style="float: right;"><img id="imgPSU" src="img/transparent.png"></div>
                     <label for="psu" class="text-black">Fuente de Alimentación:</label><br>
-                    <select name="psu" class="text-black form">
+                    <select id="psu" name="psu" class="text-black form" onchange="fuente(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
                             <option value="-" class="text-black">-</option>
                         </optgroup>
