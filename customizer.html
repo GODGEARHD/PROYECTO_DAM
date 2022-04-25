@@ -226,27 +226,27 @@
                     <hr><br>
                     <div style="float: right;"><img id="imgHDD1" src="img/transparent.png"></div>
                     <label for="disco1" class="text-black">Disco Duro 1:</label><br>
-                    <select name="disco1" class="text-black form">
+                    <select id="disco1" name="disco1" class="text-black form" onchange="hdd1(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
                             <option value="-" class="text-black">-</option>
                         </optgroup>
                         <optgroup label="HDD 1TB" class="text-black">
-                            <option value='Seagate BarraCuda 3.5" 1TB SATA3 - 36.63€' class="text-black">Seagate
+                            <option value='Seagate BarraCuda 3.5" 1TB SATA3' class="text-black">Seagate
                                 BarraCuda 3.5" 1TB SATA3 - 36.63€
                             </option>
                         </optgroup>
                         <optgroup label="HDD 2TB" class="text-black">
-                            <option value='Seagate BarraCuda 3.5" 2TB SATA 3 - 47.48€' class="text-black">Seagate
+                            <option value='Seagate BarraCuda 3.5" 2TB SATA 3' class="text-black">Seagate
                                 BarraCuda 3.5" 2TB SATA 3 - 47.48€
                             </option>
                         </optgroup>
                         <optgroup label="SSD 1TB" class="text-black">
-                            <option value='Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280 - 106.20€' class="text-black">
+                            <option value='Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280' class="text-black">
                                 Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280 - 106.20€
                             </option>
                         </optgroup>
                         <optgroup label="SSD 2TB" class="text-black">
-                            <option value='Samsung 870 QVO SSD 2TB SATA3 - 188.81€' class="text-black">Samsung 870
+                            <option value='Samsung 870 QVO SSD 2TB SATA3' class="text-black">Samsung 870
                                 QVO SSD 2TB SATA3 - 188.81€
                             </option>
                         </optgroup>
