@@ -20,7 +20,10 @@ function validateForm() {
     var w = document.forms["myForm"]["nombre"].value;
     var x = document.forms["myForm"]["email"].value;
     var y = document.forms["myForm"]["paypal"].value;
-    if ((w == "") || (x == "") || (y == "")) {
+    var a = document.forms["myForm"]["nombre2"].value;
+    var b = document.forms["myForm"]["email2"].value;
+    var c = document.forms["myForm"]["paypal2"].value;
+    if (((w == "") || (x == "") || (y == "")) && ((a == "") || (b == "") || (c == ""))) {
         alert("Asegúrate de rellenar todos los campos necesarios (marcados con *)");
         document.getElementById("custom").action = "/customizer";
         return false;
