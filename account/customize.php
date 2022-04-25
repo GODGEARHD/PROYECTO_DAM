@@ -62,7 +62,7 @@ if ((!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['paypa
   $stmt->bindParam(':so', $_POST['so']);
 
   if ($stmt->execute()) {
-    $message = '¡Gracias por tus comentarios!';
+    $message = '¡Gracias por comprar con nosotros!';
   } else {
     $message = 'Lo sentimos, se ha debido de producir algun error al procesar tus comentarios. Comprueba que has introducido todos los datos correctamente.';
     /*echo "\nPDO::errorInfo():\n";
