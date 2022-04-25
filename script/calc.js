@@ -128,21 +128,19 @@ function calc() {
         total+=0;
     }
 
-    /*//Select de Fuente
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
-    } else if (selectedSistema.value == "-") {
+    //Select de Fuente
+    var selectedFuente = fuente.options[fuente.selectedIndex];
+    if (selectedFuente.value == "Nfortec Sagitta RGB 650W 80 Plus Gold Full Modular") {
+        total+=79.94;
+    } else if (selectedFuente.value == "Corsair RM Series RM750 750W 80 Plus Gold Full Modular") {
+        total+=89.90;
+    } else if (selectedFuente.value == "Seasonic Focus+ 1000W 80 Plus Gold Modular") {
+        total+=145.99;
+    } else if (selectedFuente.value == "-") {
         total+=0;
     }
 
-    //Select de Gráfica
+    /*//Select de Gráfica
     var selectedSistema = sistema.options[sistema.selectedIndex];
     if (selectedSistema.value == "Windows 10 Home - 145.00€") {
         total+=145;
