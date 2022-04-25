@@ -303,6 +303,8 @@ function calc() {
         total+=0;
     }
 
-    document.getElementById("totalMuestra").innerHTML =total + "€";
-    document.getElementById("totalOculto").value =total;
+    var totalCentimos = total.toFixed(2);
+
+    document.getElementById("totalMuestra").innerHTML =totalCentimos + "€";
+    document.getElementById("totalOculto").value =totalCentimos;
 }
