@@ -58,21 +58,21 @@ function calc() {
         total+=0;
     }
 
-    /*//Select de Memoria
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
+    //Select de Memoria
+    var selectedRAM = memoria.options[memoria.selectedIndex];
+    if (selectedRAM.value == "Kingston FURY Beast RGB DDR4 3600 MHz 16GB 2x8GB CL17") {
+        total+=91.57;
+    } else if (selectedSistema.value == "Kingston FURY Beast RGB DDR4 2666 MHz 32GB 4x8GB CL16") {
+        total+=160.87;
+    } else if (selectedSistema.value == "Kingston FURY Beast RGB DDR4 2666 MHz 16GB 2x8GB CL16") {
+        total+=91.62;
+    } else if (selectedSistema.value == "Kingston FURY Beast RGB DDR4 3733 MHz 8GB CL19") {
+        total+=49.36;
     } else if (selectedSistema.value == "-") {
         total+=0;
     }
 
-    //Select de PlacaBase
+    /*//Select de PlacaBase
     var selectedSistema = sistema.options[sistema.selectedIndex];
     if (selectedSistema.value == "Windows 10 Home - 145.00€") {
         total+=145;
