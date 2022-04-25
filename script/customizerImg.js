@@ -31,7 +31,7 @@ function procesador() {
         document.getElementById("imgCPU").src = "../img/ryzen-5-3600.png";
         $("optgroup").siblings("#Intel").prop("disabled", true);
         $("optgroup").siblings("#AMD").prop("disabled", false);
-        if (selectedPlaca.id && selectedRefri.id === "AMD") {
+        if (selectedPlaca.id && selectedRefri.id === "Intel") {
             refri.value = "-";
             document.getElementById("imgRefri").src = "../img/transparent.png";
             placa.value = "-";
