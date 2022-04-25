@@ -198,7 +198,7 @@
                     <hr><br>
                     <div style="float: right;"><img id="imgPlaca" src="img/transparent.png"></div>
                     <label for="placa" class="text-black">Placa Base:</label><br>
-                    <select id="placa" name="placa" class="text-black form">
+                    <select id="placa" name="placa" class="text-black form" onchange="placaBase(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
                             <option value="-" class="text-black">-</option>
                         </optgroup>
