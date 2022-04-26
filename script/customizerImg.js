@@ -1,10 +1,10 @@
 
 
 function ventilador() {
-    var refri = document.getElementById("refri");
-    var selectedRefri = refri.options[refri.selectedIndex];
     var cpu = document.getElementById("cpu");
     var selectedCPU = cpu.options[cpu.selectedIndex];
+    var refri = document.getElementById("refri");
+    var selectedRefri = refri.options[refri.selectedIndex];
     if (selectedRefri.value == "Asus ROG Ryujin 360") {
         document.getElementById("imgRefri").src = "../img/intel-core-i5-10600k.png";
         document.getElementById("imgRefri").style = "width: 120px;";
