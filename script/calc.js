@@ -162,21 +162,25 @@ function calc() {
         total+=0;
     }
 
-    /*//Select de Tarjeta
+    //Select de Tarjeta
     var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
+    if (selectedSistema.value == "Creative Sound Blaster Z SE Tarjeta de Sonido y DAC PCI-e para Juegos") {
+        total+=67.99;
+    } else if (selectedSistema.value == "Creative Sound Blaster Audigy RX") {
+        total+=45.00;
+    } else if (selectedSistema.value == "Creative Sound Blaster Audigy FX PCI Express") {
+        total+=35.11;
+    } else if (selectedSistema.value == "Creative Sound Blaster Play! 3 Tarjeta de Sonido USB") {
+        total+=20.47;
+    } else if (selectedSistema.value == "Creative Sound BlasterX G1 USB 7.1") {
+        total+=29.72;
+    } else if (selectedSistema.value == "Creative Sound Blaster G3 Amplificador Portátil Plug-and-Play USB-C DAC para PS4/Switch/PC/Mac") {
+        total+=32.80;
     } else if (selectedSistema.value == "-") {
         total+=0;
     }
 
-    //Select de Leer
+    /*//Select de Leer
     var selectedSistema = sistema.options[sistema.selectedIndex];
     if (selectedSistema.value == "Windows 10 Home - 145.00€") {
         total+=145;
