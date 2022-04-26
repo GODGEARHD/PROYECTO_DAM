@@ -104,8 +104,21 @@ function ventilador() {
         document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "De Serie") {
-        document.getElementById("imgRefri").src = "../img/transparent.png";
-        document.getElementById("imgRefri").style = "width: 120px;";
+        if (selectedCPU.id === "Intel") {
+            document.getElementById("imgRefri").src = "../img/intel-serial-ref.png";
+            document.getElementById("imgRefri").style = "width: 120px;";
+        } else if (selectedCPU.id === "AMD") {
+            if (selectedCPU.value == "Ryzen 5 3600") {
+                document.getElementById("imgRefri").src = "../img/amd-serial-ref-low.png";
+                document.getElementById("imgRefri").style = "width: 120px;";
+            } else if (selectedCPU.value == "Ryzen 7 5800X") {
+                document.getElementById("imgRefri").src = "../img/amd-serial-ref-high.png";
+                document.getElementById("imgRefri").style = "width: 120px;";
+            } else {
+                document.getElementById("imgRefri").src = "../img/transparent.png";
+                document.getElementById("imgRefri").style = "width: 120px;";
+            }
+        }
     }
     if (selectedRefri.value == "-") {
         document.getElementById("imgRefri").src = "../img/transparent.png";
@@ -138,6 +151,27 @@ function memoria() {
 }
 
 function placaBase() {
+    var placa = document.getElementById("placa");
+    var selectedPlaca = placa.options[placa.selectedIndex];
+    if (selectedPlaca.value == "MSI B560M PRO-VDH") {
+        document.getElementById("imgPlaca").src = "../img/kingston-fury-beast-rgb-ddr4-3600-mhz-16gb-2x8gb-cl17.png";
+        document.getElementById("imgPlaca").style = "width: 120px;";
+    }
+    if (selectedPlaca.value == "Gigabyte X570S UD") {
+        document.getElementById("imgPlaca").src = "../img/kingston-fury-beast-ddr4-2666-mhz-32gb-4x8gb-cl16.png";
+        document.getElementById("imgPlaca").style = "width: 120px;";
+    }
+    if (selectedPlaca.value == "MSI H510M-A Pro") {
+        document.getElementById("imgPlaca").src = "../img/kingston-fury-beast-rgb-ddr4-2666-mhz-16gb-2x8gb-cl16.png";
+        document.getElementById("imgPlaca").style = "width: 120px;";
+    }
+    if (selectedPlaca.value == "MSI Z690 TORPEDO") {
+        document.getElementById("imgPlaca").src = "../img/kingston-fury-beast-rgb-ddr4-3733-mhz-8gb-cl19.png";
+        document.getElementById("imgPlaca").style = "width: 120px;";
+    }
+    if (selectedPlaca.value == "-") {
+        document.getElementById("imgPlaca").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
