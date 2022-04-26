@@ -192,21 +192,19 @@ function calc() {
         total+=0;
     }
 
-    /*//Select de CDS
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
-    } else if (selectedSistema.value == "-") {
+    //Select de CDS
+    var selectedDVD = sistema.options[sistema.selectedIndex];
+    if (selectedDVD.value == "Asus DRW-24D5MT Grabadora DVD 24X") {
+        total+=15.84;
+    } else if (selectedDVD.value == "Hitachi-LG GH24NSD5 Grabadora DVD-RW Interna Negra") {
+        total+=13.87;
+    } else if (selectedDVD.value == "Asus SDRW-08D2S-U Lite Grabadora DVD Slim Externa USB Negra") {
+        total+=32.68;
+    } else if (selectedDVD.value == "-") {
         total+=0;
     }
 
-    //Select de Pantalla
+    /*//Select de Pantalla
     var selectedSistema = sistema.options[sistema.selectedIndex];
     if (selectedSistema.value == "Windows 10 Home - 145.00€") {
         total+=145;
