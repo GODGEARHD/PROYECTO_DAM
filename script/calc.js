@@ -267,7 +267,7 @@ function calc() {
     }*/
 
     //Select de Antena
-    var selectedAntena = sistema.options[sistema.selectedIndex];
+    var selectedAntena = antena.options[antena.selectedIndex];
     if (selectedAntena.value == "TP-Link Archer T3U Plus Adaptador USB Inalámbrico Banda Dual AC1300 Alta Ganancia") {
         total+=18.79;
     } else if (selectedAntena.value == "Tenda U3 Adaptador USB WiFi 300Mbps") {
