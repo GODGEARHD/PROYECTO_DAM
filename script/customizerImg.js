@@ -147,7 +147,7 @@ function teclas() {
     console.log("works");
 }
 
-function raton() {
+function mouse() {
     console.log("works");
 }
 
