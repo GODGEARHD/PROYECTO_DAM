@@ -7,6 +7,7 @@ function procesador() {
     var selectedPlaca = placa.options[placa.selectedIndex];
     if (selectedCPU.value == "Core i5-10600K") {
         document.getElementById("imgCPU").src = "../img/intel-core-i5-10600k.png";
+        document.getElementById("imgCPU").style = "width: 120px;";
         $("optgroup").siblings("#AMD").prop("disabled", true);
         $("optgroup").siblings("#Intel").prop("disabled", false);
         if (selectedPlaca.id === "AMD") {
@@ -20,6 +21,7 @@ function procesador() {
     }
     if (selectedCPU.value == "Core i7-11700F") {
         document.getElementById("imgCPU").src = "../img/intel-core-i7-11700f.png";
+        document.getElementById("imgCPU").style = "width: 120px;";
         $("optgroup").siblings("#AMD").prop("disabled", true);
         $("optgroup").siblings("#Intel").prop("disabled", false);
         if (selectedPlaca.id === "AMD") {
@@ -33,6 +35,7 @@ function procesador() {
     }
     if (selectedCPU.value == "Ryzen 5 3600") {
         document.getElementById("imgCPU").src = "../img/ryzen-5-3600.png";
+        document.getElementById("imgCPU").style = "width: 120px;";
         $("optgroup").siblings("#Intel").prop("disabled", true);
         $("optgroup").siblings("#AMD").prop("disabled", false);
         if (selectedPlaca.id === "Intel") {
@@ -46,6 +49,7 @@ function procesador() {
     }
     if (selectedCPU.value == "Ryzen 7 5800X") {
         document.getElementById("imgCPU").src = "../img/ryzen-7-5800x.png";
+        document.getElementById("imgCPU").style = "width: 120px;";
         $("optgroup").siblings("#Intel").prop("disabled", true);
         $("optgroup").siblings("#AMD").prop("disabled", false);
         if (selectedPlaca.id === "Intel") {
@@ -69,30 +73,39 @@ function ventilador() {
     var selectedRefri = refri.options[refri.selectedIndex];
     if (selectedRefri.value == "Asus ROG Ryujin 360") {
         document.getElementById("imgRefri").src = "../img/intel-core-i5-10600k.png";
+        document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "Cooler Master MasterLiquid ML240L RGB") {
         document.getElementById("imgRefri").src = "../img/intel-core-i7-11700f.png";
+        document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "Nfortec Hydrus V2") {
         document.getElementById("imgRefri").src = "../img/ryzen-5-3600.png";
+        document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "Arctic Liquid Freezer II") {
         document.getElementById("imgRefri").src = "../img/ryzen-7-5800x.png";
+        document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "Nfortec Sculptor Black (Intel)") {
         document.getElementById("imgRefri").src = "../img/transparent.png";
+        document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "HidiTec C12 ARGB PWM 120mm (Intel)") {
         document.getElementById("imgRefri").src = "../img/transparent.png";
+        document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "Nfortec Sculptor Black (AMD)") {
         document.getElementById("imgRefri").src = "../img/transparent.png";
+        document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "HidiTec C12 ARGB PWM 120mm (AMD)") {
         document.getElementById("imgRefri").src = "../img/transparent.png";
+        document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "De Serie") {
         document.getElementById("imgRefri").src = "../img/transparent.png";
+        document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "-") {
         document.getElementById("imgRefri").src = "../img/transparent.png";

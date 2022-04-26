@@ -76,8 +76,8 @@ function calc() {
     var selectedPlaca = placaBase.options[placaBase.selectedIndex];
     if (selectedPlaca.value == "MSI B560M PRO-VDH") {
         total+=99.98;
-    } else if (selectedPlaca.value == "MSI MPG B550 GAMING PLUS") {
-        total+=139.89;
+    } else if (selectedPlaca.value == "Gigabyte X570S UD") {
+        total+=161.34;
     } else if (selectedPlaca.value == "MSI H510M-A Pro") {
         total+=68.91;
     } else if (selectedPlaca.value == "MSI Z690 TORPEDO") {
