@@ -119,7 +119,7 @@ function ventilador() {
             document.getElementById("imgRefri").style = "width: 120px;";
         }
         if (selectedCPU.value == "-") {
-            document.getElementById("imgRefri").src = "../img/transparent.png";
+            document.getElementById("imgRefri").src = "../img/seleccion.png";
             document.getElementById("imgRefri").style = "width: 120px;";
         }
     }
