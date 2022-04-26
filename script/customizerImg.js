@@ -159,19 +159,19 @@ function placaBase() {
     var placa = document.getElementById("placa");
     var selectedPlaca = placa.options[placa.selectedIndex];
     if (selectedPlaca.value == "MSI B560M PRO-VDH") {
-        document.getElementById("imgPlaca").src = "../img/kingston-fury-beast-rgb-ddr4-3600-mhz-16gb-2x8gb-cl17.png";
+        document.getElementById("imgPlaca").src = "../img/msi-b560m-pro-vdh.png";
         document.getElementById("imgPlaca").style = "width: 120px;";
     }
     if (selectedPlaca.value == "Gigabyte X570S UD") {
-        document.getElementById("imgPlaca").src = "../img/kingston-fury-beast-ddr4-2666-mhz-32gb-4x8gb-cl16.png";
+        document.getElementById("imgPlaca").src = "../img/gigabyte-x570s-ud.png";
         document.getElementById("imgPlaca").style = "width: 120px;";
     }
     if (selectedPlaca.value == "MSI H510M-A Pro") {
-        document.getElementById("imgPlaca").src = "../img/kingston-fury-beast-rgb-ddr4-2666-mhz-16gb-2x8gb-cl16.png";
+        document.getElementById("imgPlaca").src = "../img/msi-h510m-a-pro.png";
         document.getElementById("imgPlaca").style = "width: 120px;";
     }
     if (selectedPlaca.value == "MSI Z690 TORPEDO") {
-        document.getElementById("imgPlaca").src = "../img/kingston-fury-beast-rgb-ddr4-3733-mhz-8gb-cl19.png";
+        document.getElementById("imgPlaca").src = "../img/msi-z690-torpedo.png";
         document.getElementById("imgPlaca").style = "width: 120px;";
     }
     if (selectedPlaca.value == "-") {
