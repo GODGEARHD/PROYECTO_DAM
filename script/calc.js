@@ -193,7 +193,7 @@ function calc() {
     }
 
     //Select de CDS
-    var selectedDVD = sistema.options[sistema.selectedIndex];
+    var selectedDVD = cds.options[cds.selectedIndex];
     if (selectedDVD.value == "Asus DRW-24D5MT Grabadora DVD 24X") {
         total+=15.84;
     } else if (selectedDVD.value == "Hitachi-LG GH24NSD5 Grabadora DVD-RW Interna Negra") {
