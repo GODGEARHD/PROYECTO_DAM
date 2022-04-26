@@ -231,6 +231,27 @@ function hdd2() {
 }
 
 function gabinete() {
+    var caja = document.getElementById("caja");
+    var selectedCaja = caja.options[caja.selectedIndex];
+    if (selectedCaja.value == 'Silverstone Raven RVZ03B-ARGB USB 3.0 Negra') {
+        document.getElementById("imgCaja").src = "../img/silverstone-raven-rvz03b-argb-usb-30-negra.png";
+        document.getElementById("imgCaja").style = "width: 120px;";
+    }
+    if (selectedCaja.value == 'Aerocool Atomic ARGB Cristal Templado USB 3.0 Negra') {
+        document.getElementById("imgCaja").src = "../img/aerocool-atomic-argb-cristal-templado-usb-30-negra.png";
+        document.getElementById("imgCaja").style = "width: 120px;";
+    }
+    if (selectedCaja.value == 'Forgeon Mithril ARGB Cristal Templado USB 3.2 Blanca') {
+        document.getElementById("imgCaja").src = "../img/forgeon-mithril-argb-cristal-templado-usb-32-blanca.png";
+        document.getElementById("imgCaja").style = "width: 120px;";
+    }
+    if (selectedCaja.value == 'MSI MAG Vampiric 010M Cristal Templado USB 3.2 RGB Negra') {
+        document.getElementById("imgCaja").src = "../img/msi-mag-vampiric-010m-cristal-templado-usb-32-rgb-negra.png";
+        document.getElementById("imgCaja").style = "width: 120px;";
+    }
+    if (selectedCaja.value == "-") {
+        document.getElementById("imgCaja").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
