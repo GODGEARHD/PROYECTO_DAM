@@ -114,11 +114,11 @@ function ventilador() {
             document.getElementById("imgRefri").src = "../img/intel-serial-ref.png";
             document.getElementById("imgRefri").style = "width: 120px;";
         }*/
-        if (selectedCPU.value == "Ryzen 5 3600") {
+        if (selectedCPU.id == "AMD-low") {
             document.getElementById("imgRefri").src = "../img/amd-serial-ref-low.png";
             document.getElementById("imgRefri").style = "width: 120px;";
         }
-        if (selectedCPU.value == "Ryzen 7 5800X") {
+        if (selectedCPU.id == "AMD-high") {
             document.getElementById("imgRefri").src = "../img/amd-serial-ref-high.png";
             document.getElementById("imgRefri").style = "width: 120px;";
         } /*else {
