@@ -206,7 +206,7 @@ function hdd1() {
 }
 
 function hdd2() {
-    var disco2 = document.getElementById("disco1");
+    var disco2 = document.getElementById("disco2");
     var selectedDisco2 = disco2.options[disco2.selectedIndex];
     if (selectedDisco2.value == 'Seagate BarraCuda 3.5" 1TB SATA3') {
         document.getElementById("imgHDD2").src = "../img/seagate-barracuda-35-1tb-sata3.png";
