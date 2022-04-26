@@ -15,8 +15,9 @@ function procesador() {
             document.getElementById("imgPlaca").src = "../img/transparent.png";
         }
         if (selectedRefri.id === "AMD") {
-            refri.value = "-";
-            document.getElementById("imgRefri").src = "../img/transparent.png";
+            refri.value = "De Serie";
+            //document.getElementById("imgRefri").src = "../img/transparent.png";
+            ventilador();
         }
     }
     if (selectedCPU.value == "Core i7-11700F") {
@@ -29,8 +30,9 @@ function procesador() {
             document.getElementById("imgPlaca").src = "../img/transparent.png";
         }
         if (selectedRefri.id === "AMD") {
-            refri.value = "-";
-            document.getElementById("imgRefri").src = "../img/transparent.png";
+            refri.value = "De Serie";
+            //document.getElementById("imgRefri").src = "../img/transparent.png";
+            ventilador();
         }
     }
     if (selectedCPU.value == "Ryzen 5 3600") {
@@ -43,8 +45,9 @@ function procesador() {
             document.getElementById("imgPlaca").src = "../img/transparent.png";
         }
         if (selectedRefri.id === "Intel") {
-            refri.value = "-";
-            document.getElementById("imgRefri").src = "../img/transparent.png";
+            refri.value = "De Serie";
+            //document.getElementById("imgRefri").src = "../img/transparent.png";
+            ventilador();
         }
     }
     if (selectedCPU.value == "Ryzen 7 5800X") {
@@ -57,8 +60,9 @@ function procesador() {
             document.getElementById("imgPlaca").src = "../img/transparent.png";
         }
         if (selectedRefri.id === "Intel") {
-            refri.value = "-";
-            document.getElementById("imgRefri").src = "../img/transparent.png";
+            refri.value = "De Serie";
+            //document.getElementById("imgRefri").src = "../img/transparent.png";
+            ventilador();
         }
     }
     if (selectedCPU.value == "-") {
@@ -124,9 +128,9 @@ function ventilador() {
             document.getElementById("imgRefri").style = "width: 120px;";
         }
     }
-    if (selectedRefri.value == "-") {
+    /*if (selectedRefri.value == "-") {
         document.getElementById("imgRefri").src = "../img/transparent.png";
-    }
+    }*/
 }
 
 function memoria() {

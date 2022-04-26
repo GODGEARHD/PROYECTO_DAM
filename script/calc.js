@@ -66,7 +66,10 @@ function calc() {
     if (selectedRefri.value == "HidiTec C12 ARGB PWM 120mm (AMD)") {
         total+=31.73;
     }
-    if ((selectedRefri.value == "De Serie") || (selectedRefri.value == "-")) {
+    /*if ((selectedRefri.value == "De Serie") || (selectedRefri.value == "-")) {
+        total+=0;
+    }*/
+    if (selectedRefri.value == "De Serie") {
         total+=0;
     }
 
