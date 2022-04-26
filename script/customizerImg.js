@@ -106,14 +106,14 @@ function ventilador() {
         document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "De Serie") {
-        if (selectedCPU.value == "Core i5-10600K") {
+        if (selectedCPU.id == "Intel") {
             document.getElementById("imgRefri").src = "../img/intel-serial-ref.png";
             document.getElementById("imgRefri").style = "width: 120px;";
         }
-        if (selectedCPU.value == "Core i7-11700F") {
+        /*if (selectedCPU.value == "Core i7-11700F") {
             document.getElementById("imgRefri").src = "../img/intel-serial-ref.png";
             document.getElementById("imgRefri").style = "width: 120px;";
-        }
+        }*/
         if (selectedCPU.value == "Ryzen 5 3600") {
             document.getElementById("imgRefri").src = "../img/amd-serial-ref-low.png";
             document.getElementById("imgRefri").style = "width: 120px;";
@@ -121,10 +121,10 @@ function ventilador() {
         if (selectedCPU.value == "Ryzen 7 5800X") {
             document.getElementById("imgRefri").src = "../img/amd-serial-ref-high.png";
             document.getElementById("imgRefri").style = "width: 120px;";
-        } /*else {
-                document.getElementById("imgRefri").src = "../img/transparent.png";
-                document.getElementById("imgRefri").style = "width: 120px;";
-            }*/
+        } else {
+            document.getElementById("imgRefri").src = "../img/transparent.png";
+            document.getElementById("imgRefri").style = "width: 120px;";
+        }
     }
     if (selectedRefri.value == "-") {
         document.getElementById("imgRefri").src = "../img/transparent.png";
