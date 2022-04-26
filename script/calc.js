@@ -182,14 +182,12 @@ function calc() {
 
     //Select de Leer
     var selectedLector = leer.options[leer.selectedIndex];
-    if (selectedLector.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedLector.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedLector.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedLector.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
+    if (selectedLector.value == "Trust Primo Lector DNIe Negro") {
+        total+=10.97;
+    } else if (selectedLector.value == "Ewent EW1052 Lector de Tarjetas Inteligentes USB") {
+        total+=5.38;
+    } else if (selectedLector.value == "Woxter Lector DNI-e USB Negro") {
+        total+=10.41;
     } else if (selectedLector.value == "-") {
         total+=0;
     }
