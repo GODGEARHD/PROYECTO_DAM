@@ -49,7 +49,7 @@ function validateForm() {
     if (d == "-" && e == "De Serie" && f == "-" && g == "-" && h == "-" &&
         i == "-" && j == "-" && k == "-" && l == "-" && m == "-" && n == "-" &&
         o == "-" && p == "-" && q == "-" && r == "-" && s == "-" && t == "-" &&
-        u == "-" && v == "off" && z == "-") {
+        u == "-" && v == "" && z == "-") {
         alert("Lo sentimos, pero no puedes enviar un PCMR Custom vacío, " +
             "escoge al menos 1 producto y rellena todos los campos obligatorios (marcados con *)");
         document.getElementById("custom").action = "/customizer";
