@@ -108,12 +108,15 @@ function memoria() {
     }
     if (selectedRAM.value == "Kingston FURY Beast RGB DDR4 2666 MHz 32GB 4x8GB CL16") {
         document.getElementById("imgRAM").src = "../img/kingston-fury-beast-ddr4-2666-mhz-32gb-4x8gb-cl16.png";
+        document.getElementById("imgRAM").style = "width: 120px;";
     }
     if (selectedRAM.value == "Kingston FURY Beast RGB DDR4 2666 MHz 16GB 2x8GB CL16") {
         document.getElementById("imgRAM").src = "../img/kingston-fury-beast-rgb-ddr4-2666-mhz-16gb-2x8gb-cl16.png";
+        document.getElementById("imgRAM").style = "width: 120px;";
     }
     if (selectedRAM.value == "Kingston FURY Beast RGB DDR4 3733 MHz 8GB CL19") {
         document.getElementById("imgRAM").src = "../img/kingston-fury-beast-rgb-ddr4-3733-mhz-8gb-cl19.png";
+        document.getElementById("imgRAM").style = "width: 120px;";
     }
     if (selectedRAM.value == "-") {
         document.getElementById("imgRAM").src = "../img/transparent.png";
