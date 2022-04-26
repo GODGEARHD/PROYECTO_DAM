@@ -167,7 +167,7 @@ function calc() {
     if (selectedTarjeta.value == "Creative Sound Blaster Z SE Tarjeta de Sonido y DAC PCI-e para Juegos") {
         total+=67.99;
     } else if (selectedTarjeta.value == "Creative Sound Blaster Audigy RX") {
-        total+=45.00;
+        total+=45;
     } else if (selectedTarjeta.value == "Creative Sound Blaster Audigy FX PCI Express") {
         total+=35.11;
     } else if (selectedTarjeta.value == "Creative Sound Blaster Play! 3 Tarjeta de Sonido USB") {
@@ -204,89 +204,79 @@ function calc() {
         total+=0;
     }
 
-    /*//Select de Pantalla
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
-    } else if (selectedSistema.value == "-") {
+    //Select de Pantalla
+    var selectedMonitor = pantalla.options[pantalla.selectedIndex];
+    if (selectedMonitor.value == 'Samsung C24RG52FQR 24" 1080p 144Hz') {
+        total+=199.99;
+    } else if (selectedMonitor.value == 'Acer KG241QS 23.6" 1080p 165Hz') {
+        total+=189.44;
+    } else if (selectedMonitor.value == 'Ozone DSP24 240 24" 1080p 240Hz') {
+        total+=219.90;
+    } else if (selectedMonitor.value == "-") {
         total+=0;
     }
 
     //Select de Teclas
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
-    } else if (selectedSistema.value == "-") {
+    var selectedTeclado = teclas.options[teclas.selectedIndex];
+    if (selectedTeclado.value == "Logitech 920G Pro") {
+        total+=60.75;
+    } else if (selectedTeclado.value == "Redragon K552") {
+        total+=31.28;
+    } else if (selectedTeclado.value == "XTRFY K4 TKL RGB") {
+        total+=99;
+    } else if (selectedTeclado.value == "-") {
         total+=0;
     }
 
     //Select de Raton
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
-    } else if (selectedSistema.value == "-") {
+    var selectedMouse = raton.options[raton.selectedIndex];
+    if (selectedMouse.value == "Razer Deathadder Essential 2021") {
+        total+=19.99;
+    } else if (selectedMouse.value == "Razer Deathadder Essential White Edition") {
+        total+=19.99;
+    } else if (selectedMouse.value == "Logitech G502 Hero KDA Edition") {
+        total+=64.54;
+    } else if (selectedMouse.value == "-") {
         total+=0;
     }
 
     //Select de Altavoz
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
-    } else if (selectedSistema.value == "-") {
+    var selectedSpeaker = altavoz.options[altavoz.selectedIndex];
+    if (selectedSpeaker.value == "Tempest Gaming M8 2.0 Speaker System Altavoces 10W RMS") {
+        total+=19.99;
+    } else if (selectedSpeaker.value == "Tempest M6 Rez 2.0 Gaming Speakers") {
+        total+=13;
+    } else if (selectedSpeaker.value == "Newskill Vamana RGB Barra de Sonido Bluetooth 10W") {
+        total+=36;
+    } else if (selectedSpeaker.value == "-") {
         total+=0;
     }
 
-    //Select de Television
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
+    /*//Select de Television
+    var selectedTV = television.options[television.selectedIndex];
+    if (selectedTV.value == "Windows 10 Home - 145.00€") {
         total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
+    } else if (selectedTV.value == "Windows 10 Pro - 259.00€") {
         total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
+    } else if (selectedTV.value == "Windows 11 Home - 170.00€") {
         total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
+    } else if (selectedTV.value == "Windows 11 Pro - 280.00€") {
         total+=280;
-    } else if (selectedSistema.value == "-") {
-        total+=0;
-    }
-
-    //Select de Antena
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Windows 10 Home - 145.00€") {
-        total+=145;
-    } else if (selectedSistema.value == "Windows 10 Pro - 259.00€") {
-        total+=259;
-    } else if (selectedSistema.value == "Windows 11 Home - 170.00€") {
-        total+=170;
-    } else if (selectedSistema.value == "Windows 11 Pro - 280.00€") {
-        total+=280;
-    } else if (selectedSistema.value == "-") {
+    } else if (selectedTV.value == "-") {
         total+=0;
     }*/
+
+    //Select de Antena
+    var selectedAntena = sistema.options[sistema.selectedIndex];
+    if (selectedAntena.value == "TP-Link Archer T3U Plus Adaptador USB Inalámbrico Banda Dual AC1300 Alta Ganancia") {
+        total+=18.79;
+    } else if (selectedAntena.value == "Tenda U3 Adaptador USB WiFi 300Mbps") {
+        total+=5.99;
+    } else if (selectedAntena.value == "TP-Link Archer T5E Adaptador AC1200 Wi-Fi Bluetooth 4.2 PCIe") {
+        total+=27.99;
+    } else if (selectedAntena.value == "-") {
+        total+=0;
+    }
 
     //CheckBox de Montaje
     if (montaje.checked == true) {

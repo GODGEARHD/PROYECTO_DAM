@@ -443,22 +443,22 @@
                     <hr><br>
                     <div style="float: right;"><img id="imgMonitor" src="img/transparent.png"></div>
                     <label for="monitor" class="text-black">Monitor:</label><br>
-                    <select name="monitor" class="text-black form">
+                    <select id="pantalla" name="monitor" class="text-black form" onchange="pantalla(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
                             <option value="-" class="text-black">-</option>
                         </optgroup>
                         <optgroup label="Monitores 144Hz" class="text-black">
-                            <option value='Samsung C24RG52FQR 24" 1080p 144Hz - 199.99€' class="text-black">Samsung
+                            <option value='Samsung C24RG52FQR 24" 1080p 144Hz' class="text-black">Samsung
                                 C24RG52FQR 24" 1080p 144Hz - 199.99€
                             </option>
                         </optgroup>
                         <optgroup label="Monitores 165Hz" class="text-black">
-                            <option value='Acer KG241QS 23.6" 1080p 165Hz - 189.44€' class="text-black">Acer KG241QS
+                            <option value='Acer KG241QS 23.6" 1080p 165Hz' class="text-black">Acer KG241QS
                                 23.6" 1080p 165Hz - 189.44€
                             </option>
                         </optgroup>
                         <optgroup label="Monitores 240Hz" class="text-black">
-                            <option value='Ozone DSP24 240 24" 1080p 240Hz - 219.90€' class="text-black">Ozone DSP24
+                            <option value='Ozone DSP24 240 24" 1080p 240Hz' class="text-black">Ozone DSP24
                                 240 24" 1080p 240Hz - 219.90€
                             </option>
                         </optgroup>
@@ -466,38 +466,38 @@
                     <hr><br>
                     <div style="float: right;"><img id="imgTeclado" src="img/transparent.png"></div>
                     <label for="teclado" class="text-black">Teclado:</label><br>
-                    <select name="teclado" class="text-black form">
+                    <select id="teclado" name="teclado" class="text-black form" onchange="teclas(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
                             <option value="-" class="text-black">-</option>
                         </optgroup>
                         <optgroup label="Logitech" class="text-black">
-                            <option value="Logitech 920G Pro - 60.75€" class="text-black">Logitech 920G Pro - 60.75€
+                            <option value="Logitech 920G Pro" class="text-black">Logitech 920G Pro - 60.75€
                             </option>
                         </optgroup>
                         <optgroup label="Redragon" class="text-black">
-                            <option value="Redragon K552 - 31.28€" class="text-black">Redragon K552 - 31.28€
+                            <option value="Redragon K552" class="text-black">Redragon K552 - 31.28€
                             </option>
                         </optgroup>
                         <optgroup label="XTRFY" class="text-black">
-                            <option value="XTRFY K4 TKL RGB - 99.00€" class="text-black">XTRFY K4 TKL RGB - 99.00€
+                            <option value="XTRFY K4 TKL RGB" class="text-black">XTRFY K4 TKL RGB - 99.00€
                             </option>
                         </optgroup>
                     </select><br><br>
                     <hr><br>
                     <div style="float: right;"><img id="imgRaton" src="img/transparent.png"></div>
                     <label for="raton" class="text-black">Ratón:</label><br>
-                    <select name="raton" class="text-black form">
+                    <select id="raton" name="raton" class="text-black form" onchange="raton(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
                             <option value="-" class="text-black">-</option>
                         </optgroup>
                         <optgroup label="Razer" class="text-black">
-                            <option value="Razer Deathadder Essential 2021 - 19.99€" class="text-black">Razer
+                            <option value="Razer Deathadder Essential 2021" class="text-black">Razer
                                 Deathadder Essential 2021 - 19.99€</option>
-                            <option value="Razer Deathadder Essential White Edition - 19.99€" class="text-black">
+                            <option value="Razer Deathadder Essential White Edition" class="text-black">
                                 Razer Deathadder Essential White Edition - 19.99€</option>
                         </optgroup>
                         <optgroup label="Logitech" class="text-black">
-                            <option value="Logitech G502 Hero KDA Edition - 64.54€" class="text-black">Logitech G502
+                            <option value="Logitech G502 Hero KDA Edition" class="text-black">Logitech G502
                                 Hero KDA Edition - 64.54€
                             </option>
                         </optgroup>
@@ -505,20 +505,20 @@
                     <hr><br>
                     <div style="float: right;"><img id="imgAltavoces" src="img/transparent.png"></div>
                     <label for="altavoces" class="text-black">Altavoces:</label><br>
-                    <select name="altavoces" class="text-black form">
+                    <select id="altavoces" name="altavoces" class="text-black form" onchange="altavoz(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
                             <option value="-" class="text-black">-</option>
                         </optgroup>
                         <optgroup label="Altavoces USB" class="text-black">
-                            <option value='Tempest Gaming M8 2.0 Speaker System Altavoces 10W RMS - 19.99€'
+                            <option value='Tempest Gaming M8 2.0 Speaker System Altavoces 10W RMS'
                                 class="text-black">Tempest Gaming M8 2.0 Speaker System Altavoces 10W RMS - 19.99€
                             </option>
-                            <option value='Tempest M6 Rez 2.0 Gaming Speakers - 13.00€' class="text-black">Tempest
+                            <option value='Tempest M6 Rez 2.0 Gaming Speakers' class="text-black">Tempest
                                 M6 Rez 2.0 Gaming Speakers - 13.00€
                             </option>
                         </optgroup>
                         <optgroup label="Altavoces Bluetooth" class="text-black">
-                            <option value='Newskill Vamana RGB Barra de Sonido Bluetooth 10W - 36.00€'
+                            <option value='Newskill Vamana RGB Barra de Sonido Bluetooth 10W'
                                 class="text-black">Newskill Vamana RGB Barra de Sonido Bluetooth 10W - 36.00€
                             </option>
                         </optgroup>
@@ -526,7 +526,7 @@
                     <hr><br>
                     <div style="float: right;"><img id="imgTV" src="img/transparent.png"></div>
                     <label for="tv" class="text-black">Tarjeta de TV:</label><br>
-                    <select name="tv" class="text-black form">
+                    <select id="tv" name="tv" class="text-black form" onchange="television(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
                             <option value="-" class="text-black">-</option>
                         </optgroup>
@@ -538,22 +538,22 @@
                     <hr><br>
                     <div style="float: right;"><img id="imgRed" src="img/transparent.png"></div>
                     <label for="red" class="text-black">Adaptador de Red/Wi-Fi:</label><br>
-                    <select name="red" class="text-black form">
+                    <select id="red" name="red" class="text-black form" onchange="antena(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
                             <option value="-" class="text-black">-</option>
                         </optgroup>
                         <optgroup label="Adaptadores USB" class="text-black">
                             <option
-                                value='TP-Link Archer T3U Plus Adaptador USB Inalámbrico Banda Dual AC1300 Alta Ganancia - 18.79€'
+                                value='TP-Link Archer T3U Plus Adaptador USB Inalámbrico Banda Dual AC1300 Alta Ganancia'
                                 class="text-black">TP-Link Archer T3U Plus Adaptador USB Inalámbrico Banda Dual
                                 AC1300 Alta Ganancia - 18.79€
                             </option>
-                            <option value='Tenda U3 Adaptador USB WiFi 300Mbps - 5.99€' class="text-black">Tenda U3
+                            <option value='Tenda U3 Adaptador USB WiFi 300Mbps' class="text-black">Tenda U3
                                 Adaptador USB WiFi 300Mbps - 5.99€
                             </option>
                         </optgroup>
                         <optgroup label="Adaptadores PCIe" class="text-black">
-                            <option value='TP-Link Archer T5E Adaptador AC1200 Wi-Fi Bluetooth 4.2 PCIe - 27.99€'
+                            <option value='TP-Link Archer T5E Adaptador AC1200 Wi-Fi Bluetooth 4.2 PCIe'
                                 class="text-black">TP-Link Archer T5E Adaptador AC1200 Wi-Fi Bluetooth 4.2 PCIe -
                                 27.99€
                             </option>
