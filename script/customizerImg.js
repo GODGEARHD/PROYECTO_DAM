@@ -117,7 +117,8 @@ function ventilador() {
         if (selectedCPU.id == "AMD-high") {
             document.getElementById("imgRefri").src = "../img/amd-serial-ref-high.png";
             document.getElementById("imgRefri").style = "width: 120px;";
-        } else {
+        }
+        if (selectedCPU.value == "-") {
             document.getElementById("imgRefri").src = "../img/transparent.png";
             document.getElementById("imgRefri").style = "width: 120px;";
         }
