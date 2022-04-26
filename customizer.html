@@ -402,7 +402,7 @@
                     <hr><br>
                     <div style="float: right;"><img id="imgLector" src="img/transparent.png"></div>
                     <label for="lector" class="text-black">Lector de Tarjetas:</label><br>
-                    <select name="lector" class="text-black form">
+                    <select id="lector" name="lector" class="text-black form" onchange="leer(), calc()">
                         <optgroup label="Sin Selección" class="text-black">
                             <option value="-" class="text-black">-</option>
                         </optgroup>
