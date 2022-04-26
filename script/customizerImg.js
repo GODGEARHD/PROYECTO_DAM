@@ -79,35 +79,35 @@ function ventilador() {
     var refri = document.getElementById("refri");
     var selectedRefri = refri.options[refri.selectedIndex];
     if (selectedRefri.value == "Asus ROG Ryujin 360") {
-        document.getElementById("imgRefri").src = "../img/intel-core-i5-10600k.png";
+        document.getElementById("imgRefri").src = "../img/asus-rog-ryujin-360-kit-refrigeracion-liquida.png";
         document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "Cooler Master MasterLiquid ML240L RGB") {
-        document.getElementById("imgRefri").src = "../img/intel-core-i7-11700f.png";
+        document.getElementById("imgRefri").src = "../img/cooler-master-masterliquid-ml240l-rgb.png";
         document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "Nfortec Hydrus V2") {
-        document.getElementById("imgRefri").src = "../img/ryzen-5-3600.png";
+        document.getElementById("imgRefri").src = "../img/nfortec-hydrus-v2-120-red-kit-de-refrigeracion-liquida.png";
         document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "Arctic Liquid Freezer II") {
-        document.getElementById("imgRefri").src = "../img/ryzen-7-5800x.png";
+        document.getElementById("imgRefri").src = "../img/arctic-liquid-freezer-ii-360-kit-de-refrigeracion-liquida.png";
         document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "Nfortec Sculptor Black (Intel)") {
-        document.getElementById("imgRefri").src = "../img/transparent.png";
+        document.getElementById("imgRefri").src = "../img/nfortec-sculptor-black-disipador-de-alto-rendimiento-negro.png";
         document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "HidiTec C12 ARGB PWM 120mm (Intel)") {
-        document.getElementById("imgRefri").src = "../img/transparent.png";
+        document.getElementById("imgRefri").src = "../img/hiditec-c12-argb-pwm-ventilador-cpu-120mm.png";
         document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "Nfortec Sculptor Black (AMD)") {
-        document.getElementById("imgRefri").src = "../img/transparent.png";
+        document.getElementById("imgRefri").src = "../img/nfortec-sculptor-black-disipador-de-alto-rendimiento-negro.png";
         document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "HidiTec C12 ARGB PWM 120mm (AMD)") {
-        document.getElementById("imgRefri").src = "../img/transparent.png";
+        document.getElementById("imgRefri").src = "../img/hiditec-c12-argb-pwm-ventilador-cpu-120mm.png";
         document.getElementById("imgRefri").style = "width: 120px;";
     }
     if (selectedRefri.value == "De Serie") {
@@ -128,9 +128,6 @@ function ventilador() {
             document.getElementById("imgRefri").style = "width: 120px;";
         }
     }
-    /*if (selectedRefri.value == "-") {
-        document.getElementById("imgRefri").src = "../img/transparent.png";
-    }*/
 }
 
 function memoria() {
