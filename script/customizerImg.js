@@ -110,10 +110,6 @@ function ventilador() {
             document.getElementById("imgRefri").src = "../img/intel-serial-ref.png";
             document.getElementById("imgRefri").style = "width: 120px;";
         }
-        /*if (selectedCPU.value == "Core i7-11700F") {
-            document.getElementById("imgRefri").src = "../img/intel-serial-ref.png";
-            document.getElementById("imgRefri").style = "width: 120px;";
-        }*/
         if (selectedCPU.id == "AMD-low") {
             document.getElementById("imgRefri").src = "../img/amd-serial-ref-low.png";
             document.getElementById("imgRefri").style = "width: 120px;";
@@ -121,10 +117,10 @@ function ventilador() {
         if (selectedCPU.id == "AMD-high") {
             document.getElementById("imgRefri").src = "../img/amd-serial-ref-high.png";
             document.getElementById("imgRefri").style = "width: 120px;";
-        } /*else {
+        } else {
             document.getElementById("imgRefri").src = "../img/transparent.png";
             document.getElementById("imgRefri").style = "width: 120px;";
-        }*/
+        }
     }
     if (selectedRefri.value == "-") {
         document.getElementById("imgRefri").src = "../img/transparent.png";
