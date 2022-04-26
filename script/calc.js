@@ -163,20 +163,20 @@ function calc() {
     }
 
     //Select de Tarjeta
-    var selectedSistema = sistema.options[sistema.selectedIndex];
-    if (selectedSistema.value == "Creative Sound Blaster Z SE Tarjeta de Sonido y DAC PCI-e para Juegos") {
+    var selectedTarjeta = tarjeta.options[tarjeta.selectedIndex];
+    if (selectedTarjeta.value == "Creative Sound Blaster Z SE Tarjeta de Sonido y DAC PCI-e para Juegos") {
         total+=67.99;
-    } else if (selectedSistema.value == "Creative Sound Blaster Audigy RX") {
+    } else if (selectedTarjeta.value == "Creative Sound Blaster Audigy RX") {
         total+=45.00;
-    } else if (selectedSistema.value == "Creative Sound Blaster Audigy FX PCI Express") {
+    } else if (selectedTarjeta.value == "Creative Sound Blaster Audigy FX PCI Express") {
         total+=35.11;
-    } else if (selectedSistema.value == "Creative Sound Blaster Play! 3 Tarjeta de Sonido USB") {
+    } else if (selectedTarjeta.value == "Creative Sound Blaster Play! 3 Tarjeta de Sonido USB") {
         total+=20.47;
-    } else if (selectedSistema.value == "Creative Sound BlasterX G1 USB 7.1") {
+    } else if (selectedTarjeta.value == "Creative Sound BlasterX G1 USB 7.1") {
         total+=29.72;
-    } else if (selectedSistema.value == "Creative Sound Blaster G3 Amplificador Portátil Plug-and-Play USB-C DAC para PS4/Switch/PC/Mac") {
+    } else if (selectedTarjeta.value == "Creative Sound Blaster G3 Amplificador Portátil Plug-and-Play USB-C DAC para PS4/Switch/PC/Mac") {
         total+=32.80;
-    } else if (selectedSistema.value == "-") {
+    } else if (selectedTarjeta.value == "-") {
         total+=0;
     }
 
