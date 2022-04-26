@@ -237,5 +237,26 @@ function antena() {
 }
 
 function sistema() {
+    var so = document.getElementById("so");
+    var selectedSistema = so.options[so.selectedIndex];
+    if (selectedSistema.value == "Windows 10 Home") {
+        document.getElementById("imgSO").src = "../img/windows-10-home.png";
+        document.getElementById("imgSO").style = "width: 120px;";
+    }
+    if (selectedSistema.value == "Windows 10 Pro") {
+        document.getElementById("imgSO").src = "../img/windows-10-pro.png";
+        document.getElementById("imgSO").style = "width: 120px;";
+    }
+    if (selectedSistema.value == "Windows 11 Home") {
+        document.getElementById("imgSO").src = "../img/windows-11-home.png";
+        document.getElementById("imgSO").style = "width: 120px;";
+    }
+    if (selectedSistema.value == "Windows 11 Pro") {
+        document.getElementById("imgSO").src = "../img/windows-11-pro.png";
+        document.getElementById("imgSO").style = "width: 120px;";
+    }
+    if (selectedSistema.value == "-") {
+        document.getElementById("imgSO").src = "../img/transparent.png";
+    }
     console.log("works");
 }
