@@ -66,7 +66,7 @@ function procesador() {
         $("optgroup").siblings("#Intel").prop("disabled", false);
         $("optgroup").siblings("#AMD").prop("disabled", false);
     }
-    if (selectedRefri.value == "De Serie") {
+    /*if (selectedRefri.value == "De Serie") {
         if (selectedCPU.id == "Intel") {
             document.getElementById("imgRefri").src = "../img/intel-serial-ref.png";
             document.getElementById("imgRefri").style = "width: 120px;";
@@ -83,7 +83,8 @@ function procesador() {
             document.getElementById("imgRefri").src = "../img/seleccion.png";
             document.getElementById("imgRefri").style = "width: 120px;";
         }
-    }
+    }*/
+    ventilador();
 }
 
 function ventilador() {
