@@ -114,6 +114,9 @@ function memoria() {
     if (selectedRAM.value == "Kingston FURY Beast RGB DDR4 3733 MHz 8GB CL19") {
         document.getElementById("imgRAM").src = "../img/kingston-fury-beast-rgb-ddr4-3733-mhz-8gb-cl19.png";
     }
+    if (selectedRAM.value == "-") {
+        document.getElementById("imgRAM").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
