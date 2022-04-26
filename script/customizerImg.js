@@ -181,10 +181,52 @@ function placaBase() {
 }
 
 function hdd1() {
+    var disco1 = document.getElementById("disco1");
+    var selectedDisco1 = disco1.options[disco1.selectedIndex];
+    if (selectedDisco1.value == 'Seagate BarraCuda 3.5" 1TB SATA3') {
+        document.getElementById("imgHDD1").src = "../img/seagate-barracuda-35-1tb-sata3.png";
+        document.getElementById("imgHDD1").style = "width: 120px;";
+    }
+    if (selectedDisco1.value == 'Seagate BarraCuda 3.5" 2TB SATA 3') {
+        document.getElementById("imgHDD1").src = "../img/seagate-barracuda-35-2tb-sata-3.png";
+        document.getElementById("imgHDD1").style = "width: 120px;";
+    }
+    if (selectedDisco1.value == 'Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280') {
+        document.getElementById("imgHDD1").src = "../img/kioxia-exceria-g2-unidad-ssd-1tb-nvme-m2-2280.png";
+        document.getElementById("imgHDD1").style = "width: 120px;";
+    }
+    if (selectedDisco1.value == 'Samsung 870 QVO SSD 2TB SATA3') {
+        document.getElementById("imgHDD1").src = "../img/samsung-870-qvo-ssd-2tb-sata3.png";
+        document.getElementById("imgHDD1").style = "width: 120px;";
+    }
+    if (selectedDisco1.value == "-") {
+        document.getElementById("imgHDD1").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
 function hdd2() {
+    var disco2 = document.getElementById("disco1");
+    var selectedDisco2 = disco2.options[disco2.selectedIndex];
+    if (selectedDisco2.value == 'Seagate BarraCuda 3.5" 1TB SATA3') {
+        document.getElementById("imgHDD2").src = "../img/seagate-barracuda-35-1tb-sata3.png";
+        document.getElementById("imgHDD2").style = "width: 120px;";
+    }
+    if (selectedDisco2.value == 'Seagate BarraCuda 3.5" 2TB SATA 3') {
+        document.getElementById("imgHDD2").src = "../img/seagate-barracuda-35-2tb-sata-3.png";
+        document.getElementById("imgHDD2").style = "width: 120px;";
+    }
+    if (selectedDisco2.value == 'Kioxia Exceria G2 Unidad SSD 1TB NVMe M.2 2280') {
+        document.getElementById("imgHDD2").src = "../img/kioxia-exceria-g2-unidad-ssd-1tb-nvme-m2-2280.png";
+        document.getElementById("imgHDD2").style = "width: 120px;";
+    }
+    if (selectedDisco2.value == 'Samsung 870 QVO SSD 2TB SATA3') {
+        document.getElementById("imgHDD2").src = "../img/samsung-870-qvo-ssd-2tb-sata3.png";
+        document.getElementById("imgHDD2").style = "width: 120px;";
+    }
+    if (selectedDisco2.value == "-") {
+        document.getElementById("imgHDD2").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
