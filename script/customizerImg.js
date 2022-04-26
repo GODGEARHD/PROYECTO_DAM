@@ -121,10 +121,10 @@ function ventilador() {
         if (selectedCPU.value == "Ryzen 7 5800X") {
             document.getElementById("imgRefri").src = "../img/amd-serial-ref-high.png";
             document.getElementById("imgRefri").style = "width: 120px;";
-        } else {
+        } /*else {
             document.getElementById("imgRefri").src = "../img/transparent.png";
             document.getElementById("imgRefri").style = "width: 120px;";
-        }
+        }*/
     }
     if (selectedRefri.value == "-") {
         document.getElementById("imgRefri").src = "../img/transparent.png";
