@@ -334,10 +334,44 @@ function pantalla() {
 }
 
 function teclas() {
+    var teclado = document.getElementById("teclado");
+    var selectedTeclado = teclado.options[teclado.selectedIndex];
+    if (selectedTeclado.value == 'Logitech 920G Pro') {
+        document.getElementById("imgTeclado").src = "../img/logitech-920-g-pro.png";
+        document.getElementById("imgTeclado").style = "width: 120px;";
+    }
+    if (selectedTeclado.value == 'Redragon K552') {
+        document.getElementById("imgTeclado").src = "../img/redragon-k552.png";
+        document.getElementById("imgTeclado").style = "width: 120px;";
+    }
+    if (selectedTeclado.value == 'XTRFY K4 TKL RGB') {
+        document.getElementById("imgTeclado").src = "../img/xtrfy-k4-tkl-rgb.png";
+        document.getElementById("imgTeclado").style = "width: 120px;";
+    }
+    if (selectedTeclado.value == "-") {
+        document.getElementById("imgTeclado").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
 function mouse() {
+    var raton = document.getElementById("raton");
+    var selectedMouse = raton.options[raton.selectedIndex];
+    if (selectedMouse.value == 'Razer Deathadder Essential 2021') {
+        document.getElementById("imgRaton").src = "../img/razer_deathadder_essential_2021.png";
+        document.getElementById("imgRaton").style = "width: 120px;";
+    }
+    if (selectedMouse.value == 'Razer Deathadder Essential White Edition') {
+        document.getElementById("imgRaton").src = "../img/razer_deathadder_essential_white.png";
+        document.getElementById("imgRaton").style = "width: 120px;";
+    }
+    if (selectedMouse.value == 'Logitech G502 Hero KDA Edition') {
+        document.getElementById("imgRaton").src = "../img/logitech_g502_hero_kda.png";
+        document.getElementById("imgRaton").style = "width: 120px;";
+    }
+    if (selectedMouse.value == "-") {
+        document.getElementById("imgRaton").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
