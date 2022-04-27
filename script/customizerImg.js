@@ -277,42 +277,42 @@ function fuente() {
 }
 
 function grafica() {
-    var caja = document.getElementById("caja");
-    var selectedCaja = caja.options[caja.selectedIndex];
-    if (selectedCaja.value == 'Silverstone Raven RVZ03B-ARGB USB 3.0 Negra') {
-        document.getElementById("imgCaja").src = "../img/silverstone-raven-rvz03b-argb-usb-30-negra.png";
-        document.getElementById("imgCaja").style = "width: 120px;";
+    var gpu = document.getElementById("gpu");
+    var selectedGPU = gpu.options[gpu.selectedIndex];
+    if (selectedGPU.value == 'MAXSUN AMD Radeon RX 550 4 GB GDDR5') {
+        document.getElementById("imgGPU").src = "../img/silverstone-raven-rvz03b-argb-usb-30-negra.png";
+        document.getElementById("imgGPU").style = "width: 120px;";
     }
-    if (selectedCaja.value == 'Aerocool Atomic ARGB Cristal Templado USB 3.0 Negra') {
-        document.getElementById("imgCaja").src = "../img/aerocool-atomic-argb-cristal-templado-usb-30-negra.png";
-        document.getElementById("imgCaja").style = "width: 120px;";
+    if (selectedGPU.value == 'XFX Radeon RX 5700 XT THICC III Ultra 8GB GDDR6') {
+        document.getElementById("imgGPU").src = "../img/aerocool-atomic-argb-cristal-templado-usb-30-negra.png";
+        document.getElementById("imgGPU").style = "width: 120px;";
     }
-    if (selectedCaja.value == 'Forgeon Mithril ARGB Cristal Templado USB 3.2 Blanca') {
-        document.getElementById("imgCaja").src = "../img/forgeon-mithril-argb-cristal-templado-usb-32-blanca.png";
-        document.getElementById("imgCaja").style = "width: 120px;";
+    if (selectedGPU.value == 'ASUS ROG Strix AMD Radeon RX 6700 XT OC Edition') {
+        document.getElementById("imgGPU").src = "../img/forgeon-mithril-argb-cristal-templado-usb-32-blanca.png";
+        document.getElementById("imgGPU").style = "width: 120px;";
     }
-    if (selectedCaja.value == 'MSI MAG Vampiric 010M Cristal Templado USB 3.2 RGB Negra') {
-        document.getElementById("imgCaja").src = "../img/msi-mag-vampiric-010m-cristal-templado-usb-32-rgb-negra.png";
-        document.getElementById("imgCaja").style = "width: 120px;";
+    if (selectedGPU.value == 'MSI Radeon RX 6800 XT GAMING Z TRIO 16GB GDDR6') {
+        document.getElementById("imgGPU").src = "../img/msi-mag-vampiric-010m-cristal-templado-usb-32-rgb-negra.png";
+        document.getElementById("imgGPU").style = "width: 120px;";
     }
-    if (selectedCaja.value == 'Silverstone Raven RVZ03B-ARGB USB 3.0 Negra') {
-        document.getElementById("imgCaja").src = "../img/silverstone-raven-rvz03b-argb-usb-30-negra.png";
-        document.getElementById("imgCaja").style = "width: 120px;";
+    if (selectedGPU.value == 'MSI GeForce GTX 1650 SUPER GAMING X 4GB GDDR6') {
+        document.getElementById("imgGPU").src = "../img/silverstone-raven-rvz03b-argb-usb-30-negra.png";
+        document.getElementById("imgGPU").style = "width: 120px;";
     }
-    if (selectedCaja.value == 'Aerocool Atomic ARGB Cristal Templado USB 3.0 Negra') {
-        document.getElementById("imgCaja").src = "../img/aerocool-atomic-argb-cristal-templado-usb-30-negra.png";
-        document.getElementById("imgCaja").style = "width: 120px;";
+    if (selectedGPU.value == 'MSI GeForce RTX 2060 VENTUS GP OC 6GB GDDR6') {
+        document.getElementById("imgGPU").src = "../img/aerocool-atomic-argb-cristal-templado-usb-30-negra.png";
+        document.getElementById("imgGPU").style = "width: 120px;";
     }
-    if (selectedCaja.value == 'Forgeon Mithril ARGB Cristal Templado USB 3.2 Blanca') {
-        document.getElementById("imgCaja").src = "../img/forgeon-mithril-argb-cristal-templado-usb-32-blanca.png";
-        document.getElementById("imgCaja").style = "width: 120px;";
+    if (selectedGPU.value == 'Gigabyte GeForce RTX 3060 Ti VISION OC 8GB GDDR6 Rev 2.0') {
+        document.getElementById("imgGPU").src = "../img/forgeon-mithril-argb-cristal-templado-usb-32-blanca.png";
+        document.getElementById("imgGPU").style = "width: 120px;";
     }
-    if (selectedCaja.value == 'MSI MAG Vampiric 010M Cristal Templado USB 3.2 RGB Negra') {
-        document.getElementById("imgCaja").src = "../img/msi-mag-vampiric-010m-cristal-templado-usb-32-rgb-negra.png";
-        document.getElementById("imgCaja").style = "width: 120px;";
+    if (selectedGPU.value == 'Gigabyte AORUS GeForce RTX 3070 MASTER 8GB GDDR6') {
+        document.getElementById("imgGPU").src = "../img/msi-mag-vampiric-010m-cristal-templado-usb-32-rgb-negra.png";
+        document.getElementById("imgGPU").style = "width: 120px;";
     }
-    if (selectedCaja.value == "-") {
-        document.getElementById("imgCaja").src = "../img/transparent.png";
+    if (selectedGPU.value == "-") {
+        document.getElementById("imgGPU").src = "../img/transparent.png";
     }
     console.log("works");
 }
