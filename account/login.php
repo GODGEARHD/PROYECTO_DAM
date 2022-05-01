@@ -20,7 +20,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
     $_SESSION['user_id'] = $results['id'];
     header("Location: ./index");
   } else {
-    $message = 'Lo sentimos, pero las credenciales que has proporcionado no existen o no son correctas.';
+    $message = 'Lo sentimos, pero las credenciales que has proporcionado no existen o son incorrectas.';
   }
 }
 
