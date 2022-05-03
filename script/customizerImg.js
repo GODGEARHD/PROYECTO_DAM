@@ -256,22 +256,22 @@ function gabinete() {
 }
 
 function fuente() {
-    var caja = document.getElementById("caja");
-    var selectedCaja = caja.options[caja.selectedIndex];
-    if (selectedCaja.value == 'Silverstone Raven RVZ03B-ARGB USB 3.0 Negra') {
-        document.getElementById("imgCaja").src = "../img/silverstone-raven-rvz03b-argb-usb-30-negra.png";
-        document.getElementById("imgCaja").style = "width: 120px;";
+    var psu = document.getElementById("psu");
+    var selectedPSU = psu.options[psu.selectedIndex];
+    if (selectedPSU.value == 'Nfortec Sagitta RGB 650W 80 Plus Gold Full Modular') {
+        document.getElementById("imgPSU").src = "../img/nfortec-sagitta-rgb-650w-80-plus-gold-full-modular.png";
+        document.getElementById("imgPSU").style = "width: 120px;";
     }
-    if (selectedCaja.value == 'Aerocool Atomic ARGB Cristal Templado USB 3.0 Negra') {
-        document.getElementById("imgCaja").src = "../img/aerocool-atomic-argb-cristal-templado-usb-30-negra.png";
-        document.getElementById("imgCaja").style = "width: 120px;";
+    if (selectedPSU.value == 'Corsair RM Series RM750 750W 80 Plus Gold Full Modular') {
+        document.getElementById("imgPSU").src = "../img/corsair-rm-series-rm750-750w-80-plus-gold-full-modular.png";
+        document.getElementById("imgPSU").style = "width: 120px;";
     }
-    if (selectedCaja.value == 'Forgeon Mithril ARGB Cristal Templado USB 3.2 Blanca') {
-        document.getElementById("imgCaja").src = "../img/forgeon-mithril-argb-cristal-templado-usb-32-blanca.png";
-        document.getElementById("imgCaja").style = "width: 120px;";
+    if (selectedPSU.value == 'Seasonic Focus+ 1000W 80 Plus Gold Modular') {
+        document.getElementById("imgPSU").src = "../img/seasonic-focus-1000w-80-plus-gold-modular.png";
+        document.getElementById("imgPSU").style = "width: 120px;";
     }
-    if (selectedCaja.value == "-") {
-        document.getElementById("imgCaja").src = "../img/transparent.png";
+    if (selectedPSU.value == "-") {
+        document.getElementById("imgPSU").src = "../img/transparent.png";
     }
     console.log("works");
 }
@@ -279,36 +279,36 @@ function fuente() {
 function grafica() {
     var gpu = document.getElementById("gpu");
     var selectedGPU = gpu.options[gpu.selectedIndex];
-    if (selectedGPU.value == 'MAXSUN AMD Radeon RX 550 4 GB GDDR5') {
-        document.getElementById("imgGPU").src = "../img/silverstone-raven-rvz03b-argb-usb-30-negra.png";
+    if (selectedGPU.value == 'Biostar Radeon RX 550 Gaming 4GB GDDR5') {
+        document.getElementById("imgGPU").src = "../img/biostar-radeon-rx-550-gaming-4gb-gddr5.png";
         document.getElementById("imgGPU").style = "width: 120px;";
     }
     if (selectedGPU.value == 'XFX Radeon RX 5700 XT THICC III Ultra 8GB GDDR6') {
-        document.getElementById("imgGPU").src = "../img/aerocool-atomic-argb-cristal-templado-usb-30-negra.png";
+        document.getElementById("imgGPU").src = "../img/xfx-radeon-rx-5700-xt-thicc-iii-ultra-8gb-gddr6.png";
         document.getElementById("imgGPU").style = "width: 120px;";
     }
     if (selectedGPU.value == 'ASUS ROG Strix AMD Radeon RX 6700 XT OC Edition') {
-        document.getElementById("imgGPU").src = "../img/forgeon-mithril-argb-cristal-templado-usb-32-blanca.png";
+        document.getElementById("imgGPU").src = "../img/asus-rog-strix-radeon-rx-6700-xt-oc-edition-12gb-gddr6.png";
         document.getElementById("imgGPU").style = "width: 120px;";
     }
     if (selectedGPU.value == 'MSI Radeon RX 6800 XT GAMING Z TRIO 16GB GDDR6') {
-        document.getElementById("imgGPU").src = "../img/msi-mag-vampiric-010m-cristal-templado-usb-32-rgb-negra.png";
+        document.getElementById("imgGPU").src = "../img/msi-radeon-rx-6800-xt-gaming-z-trio-16gb-gddr6.png";
         document.getElementById("imgGPU").style = "width: 120px;";
     }
     if (selectedGPU.value == 'MSI GeForce GTX 1650 SUPER GAMING X 4GB GDDR6') {
-        document.getElementById("imgGPU").src = "../img/silverstone-raven-rvz03b-argb-usb-30-negra.png";
+        document.getElementById("imgGPU").src = "../img/msi-geforce-gtx-1650-super-gaming-x-4gb-gddr6.png";
         document.getElementById("imgGPU").style = "width: 120px;";
     }
     if (selectedGPU.value == 'MSI GeForce RTX 2060 VENTUS GP OC 6GB GDDR6') {
-        document.getElementById("imgGPU").src = "../img/aerocool-atomic-argb-cristal-templado-usb-30-negra.png";
+        document.getElementById("imgGPU").src = "../img/msi-geforce-rtx-2060-ventus-gp-oc-6gb-gddr6.png";
         document.getElementById("imgGPU").style = "width: 120px;";
     }
     if (selectedGPU.value == 'Gigabyte GeForce RTX 3060 Ti VISION OC 8GB GDDR6 Rev 2.0') {
-        document.getElementById("imgGPU").src = "../img/forgeon-mithril-argb-cristal-templado-usb-32-blanca.png";
+        document.getElementById("imgGPU").src = "../img/gigabyte-geforce-rtx-3060-ti-vision-oc-8gb-gddr6-rev-20.png";
         document.getElementById("imgGPU").style = "width: 120px;";
     }
     if (selectedGPU.value == 'Gigabyte AORUS GeForce RTX 3070 MASTER 8GB GDDR6') {
-        document.getElementById("imgGPU").src = "../img/msi-mag-vampiric-010m-cristal-templado-usb-32-rgb-negra.png";
+        document.getElementById("imgGPU").src = "../img/gigabyte-aorus-geforce-rtx-3070-master-8gb-gddr6.png";
         document.getElementById("imgGPU").style = "width: 120px;";
     }
     if (selectedGPU.value == "-") {
@@ -330,6 +330,23 @@ function cds() {
 }
 
 function pantalla() {
+    var monitor = document.getElementById("monitor");
+    var selectedMonitor = monitor.options[monitor.selectedIndex];
+    if (selectedMonitor.value == 'Samsung C24RG52FQR 24" 1080p 144Hz') {
+        document.getElementById("imgMonitor").src = "../img/Samsung-C24RG52FQR-1920x1080-FreeSync-Flicker-Free_dp_B08ZSKKLNL.png";
+        document.getElementById("imgMonitor").style = "width: 120px;";
+    }
+    if (selectedMonitor.value == 'Acer KG241QS 23.6" 1080p 165Hz') {
+        document.getElementById("imgMonitor").src = "../img/acer-kg241qs-236-led-fullhd-165hz-freesync.png";
+        document.getElementById("imgMonitor").style = "width: 120px;";
+    }
+    if (selectedMonitor.value == 'Ozone DSP24 240 24" 1080p 240Hz') {
+        document.getElementById("imgMonitor").src = "../img/ozone-dsp24-240-245-led-fullhd-240hz-hdr-freesync.png";
+        document.getElementById("imgMonitor").style = "width: 120px;";
+    }
+    if (selectedMonitor.value == "-") {
+        document.getElementById("imgMonitor").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
