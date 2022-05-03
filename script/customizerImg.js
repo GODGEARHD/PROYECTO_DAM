@@ -152,7 +152,6 @@ function memoria() {
     if (selectedRAM.value == "-") {
         document.getElementById("imgRAM").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function placaBase() {
@@ -177,7 +176,6 @@ function placaBase() {
     if (selectedPlaca.value == "-") {
         document.getElementById("imgPlaca").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function hdd1() {
@@ -202,7 +200,6 @@ function hdd1() {
     if (selectedDisco1.value == "-") {
         document.getElementById("imgHDD1").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function hdd2() {
@@ -227,7 +224,6 @@ function hdd2() {
     if (selectedDisco2.value == "-") {
         document.getElementById("imgHDD2").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function gabinete() {
@@ -252,7 +248,6 @@ function gabinete() {
     if (selectedCaja.value == "-") {
         document.getElementById("imgCaja").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function fuente() {
@@ -273,7 +268,6 @@ function fuente() {
     if (selectedPSU.value == "-") {
         document.getElementById("imgPSU").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function grafica() {
@@ -314,7 +308,6 @@ function grafica() {
     if (selectedGPU.value == "-") {
         document.getElementById("imgGPU").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function tarjeta() {
@@ -347,7 +340,6 @@ function tarjeta() {
     if (selectedAudio.value == "-") {
         document.getElementById("imgAudio").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function leer() {
@@ -368,7 +360,6 @@ function leer() {
     if (selectedLector.value == "-") {
         document.getElementById("imgLector").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function cds() {
@@ -389,7 +380,6 @@ function cds() {
     if (selectedDVD.value == "-") {
         document.getElementById("imgDVD").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function pantalla() {
@@ -410,7 +400,6 @@ function pantalla() {
     if (selectedMonitor.value == "-") {
         document.getElementById("imgMonitor").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function teclas() {
@@ -431,7 +420,6 @@ function teclas() {
     if (selectedTeclado.value == "-") {
         document.getElementById("imgTeclado").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function mouse() {
@@ -452,7 +440,6 @@ function mouse() {
     if (selectedMouse.value == "-") {
         document.getElementById("imgRaton").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function altavoz() {
@@ -473,11 +460,14 @@ function altavoz() {
     if (selectedAltavoces.value == "-") {
         document.getElementById("imgAltavoces").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function television() {
-    console.log("works");
+    var tv = document.getElementById("tv");
+    var selectedTV = tv.options[tv.selectedIndex];
+    if (selectedTV.value == "-") {
+        document.getElementById("imgTV").src = "../img/transparent.png";
+    }
 }
 
 function antena() {
@@ -498,7 +488,6 @@ function antena() {
     if (selectedAntena.value == "-") {
         document.getElementById("imgRed").src = "../img/transparent.png";
     }
-    console.log("works");
 }
 
 function sistema() {
@@ -523,5 +512,4 @@ function sistema() {
     if (selectedSistema.value == "-") {
         document.getElementById("imgSO").src = "../img/transparent.png";
     }
-    console.log("works");
 }
