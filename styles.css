@@ -129,9 +129,9 @@ body {
     margin-bottom: 10px;
 }
 
-#noSpace {
-    /*margin-bottom: 0.5rem;*/
-}
+/*#noSpace {
+    margin-bottom: 0.5rem;
+}*/
 
 [id*="principal"] {
     display: block;

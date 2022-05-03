@@ -322,6 +322,23 @@ function tarjeta() {
 }
 
 function leer() {
+    var lector = document.getElementById("lector");
+    var selectedLector = lector.options[lector.selectedIndex];
+    if (selectedLector.value == 'Trust Primo Lector DNIe Negro') {
+        document.getElementById("imgLector").src = "../img/Samsung-C24RG52FQR-1920x1080-FreeSync-Flicker-Free_dp_B08ZSKKLNL.png";
+        document.getElementById("imgLector").style = "width: 120px;";
+    }
+    if (selectedLector.value == 'Ewent EW1052 Lector de Tarjetas Inteligentes USB') {
+        document.getElementById("imgLector").src = "../img/acer-kg241qs-236-led-fullhd-165hz-freesync.png";
+        document.getElementById("imgLector").style = "width: 120px;";
+    }
+    if (selectedLector.value == 'Woxter Lector DNI-e USB Negro') {
+        document.getElementById("imgLector").src = "../img/ozone-dsp24-240-245-led-fullhd-240hz-hdr-freesync.png";
+        document.getElementById("imgLector").style = "width: 120px;";
+    }
+    if (selectedLector.value == "-") {
+        document.getElementById("imgLector").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
