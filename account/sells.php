@@ -6,7 +6,7 @@ require 'database.php';
 
 $message = '';
 
-if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['paypal']) && !empty($_REQUEST['product'])) {
+if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['paypal']) && !empty($_POST['product'])) {
   $sql = "INSERT INTO sells (name, email, paypal, product) VALUES (:name, :email, :paypal, :product)";
   $stmt = $conn->prepare($sql);
   $stmt->bindParam(':name', $_POST['name']);
@@ -18,9 +18,9 @@ if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['paypal']
     $message = "Thanks for your purchase! We'll send you an email with the image you've just purchased";
   } else {
     $message = 'Sorry, there must have been an issue while saving your comments';
+    echo "\nPDO::errorInfo():\n";
+    print_r($stmt->errorInfo());
   }
-  echo "\nPDO::errorInfo():\n";
-  print_r($stmt->errorInfo());
 }
 
 ?>
