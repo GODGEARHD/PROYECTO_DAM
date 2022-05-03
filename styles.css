@@ -133,6 +133,10 @@ body {
     margin-bottom: 0.5rem;
 }*/
 
+#no-left-padding {
+    padding-left: 0px !important;
+}
+
 [id*="principal"] {
     display: block;
     padding-top: 25px;
@@ -173,6 +177,10 @@ body {
         padding-bottom: 9%;
         margin-bottom: 0%;
         background-color: #f8f9fa;
+    }
+
+    #no-left-padding {
+        padding-left: 15px !important;
     }
 }
 
