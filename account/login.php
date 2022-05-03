@@ -32,6 +32,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 <head>
   <meta charset="utf-8">
   <title>PCMR World - Iniciar Sesión</title>
+  <link rel="icon" href="../img/favicon.png" type="image/gif" sizes="512x512">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>

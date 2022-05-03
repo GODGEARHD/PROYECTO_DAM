@@ -25,6 +25,7 @@ if (isset($_SESSION['user_id'])) {
 <head>
 <meta charset='utf-8'>
 <title>PCMR World - Cuentas</title>
+<link rel="icon" href="../img/favicon.png" type="image/gif" sizes="512x512">
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <link rel='stylesheet' href='assets/css/style.css'>
 <link rel="icon" href="../img/favicon.png" type="image/gif" sizes="16x16">
