@@ -325,15 +325,15 @@ function leer() {
     var lector = document.getElementById("lector");
     var selectedLector = lector.options[lector.selectedIndex];
     if (selectedLector.value == 'Trust Primo Lector DNIe Negro') {
-        document.getElementById("imgLector").src = "../img/Samsung-C24RG52FQR-1920x1080-FreeSync-Flicker-Free_dp_B08ZSKKLNL.png";
+        document.getElementById("imgLector").src = "../img/trust-primo-lector-dnie-negro.png";
         document.getElementById("imgLector").style = "width: 120px;";
     }
     if (selectedLector.value == 'Ewent EW1052 Lector de Tarjetas Inteligentes USB') {
-        document.getElementById("imgLector").src = "../img/acer-kg241qs-236-led-fullhd-165hz-freesync.png";
+        document.getElementById("imgLector").src = "../img/ewent-ew1052-lector-de-tarjetas-inteligentes-usb.png";
         document.getElementById("imgLector").style = "width: 120px;";
     }
     if (selectedLector.value == 'Woxter Lector DNI-e USB Negro') {
-        document.getElementById("imgLector").src = "../img/ozone-dsp24-240-245-led-fullhd-240hz-hdr-freesync.png";
+        document.getElementById("imgLector").src = "../img/woxter-lector-dni-e-usb-negro.png";
         document.getElementById("imgLector").style = "width: 120px;";
     }
     if (selectedLector.value == "-") {
@@ -343,6 +343,23 @@ function leer() {
 }
 
 function cds() {
+    var dvd = document.getElementById("dvd");
+    var selectedDVD = dvd.options[dvd.selectedIndex];
+    if (selectedDVD.value == 'Asus DRW-24D5MT Grabadora DVD 24X') {
+        document.getElementById("imgDVD").src = "../img/asus-drw-24d5mt-grabadora-dvd-24x.png";
+        document.getElementById("imgDVD").style = "width: 120px;";
+    }
+    if (selectedDVD.value == 'Hitachi-LG GH24NSD5 Grabadora DVD-RW Interna Negra') {
+        document.getElementById("imgDVD").src = "../img/hitachi-lg-gh24nsd5-grabadora-dvd-rw-interna-negra.png";
+        document.getElementById("imgDVD").style = "width: 120px;";
+    }
+    if (selectedDVD.value == 'Asus SDRW-08D2S-U Lite Grabadora DVD Slim Externa USB Negra') {
+        document.getElementById("imgDVD").src = "../img/asus-sdrw-08d2s-u-lite-grabadora-dvd-slim-externa-usb-negra.png";
+        document.getElementById("imgDVD").style = "width: 120px;";
+    }
+    if (selectedDVD.value == "-") {
+        document.getElementById("imgDVD").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
@@ -410,6 +427,23 @@ function mouse() {
 }
 
 function altavoz() {
+    var altavoces = document.getElementById("altavoces");
+    var selectedAltavoces = altavoces.options[altavoces.selectedIndex];
+    if (selectedAltavoces.value == 'Tempest Gaming M8 2.0 Speaker System Altavoces 10W RMS') {
+        document.getElementById("imgAltavoces").src = "../img/tempest-gaming-m8-20-speaker-system-altavoces-10w-rms.png";
+        document.getElementById("imgAltavoces").style = "width: 120px;";
+    }
+    if (selectedAltavoces.value == 'Tempest M6 Rez 2.0 Gaming Speakers') {
+        document.getElementById("imgAltavoces").src = "../img/tempest-m6-rez-20-gaming-speakers.png";
+        document.getElementById("imgAltavoces").style = "width: 120px;";
+    }
+    if (selectedAltavoces.value == 'Newskill Vamana RGB Barra de Sonido Bluetooth 10W') {
+        document.getElementById("imgAltavoces").src = "../img/newskill-vamana-rgb-barra-de-sonido-bluetooth-10w.png";
+        document.getElementById("imgAltavoces").style = "width: 120px;";
+    }
+    if (selectedAltavoces.value == "-") {
+        document.getElementById("imgAltavoces").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
@@ -418,6 +452,23 @@ function television() {
 }
 
 function antena() {
+    var red = document.getElementById("red");
+    var selectedAntena = red.options[red.selectedIndex];
+    if (selectedAntena.value == 'TP-Link Archer T3U Plus Adaptador USB Inalámbrico Banda Dual AC1300 Alta Ganancia') {
+        document.getElementById("imgRed").src = "../img/tp-link-archer-t3u-plus-adaptador-usb-inalambrico-banda-dual-ac1300-alta-ganancia.png";
+        document.getElementById("imgRed").style = "width: 120px;";
+    }
+    if (selectedAntena.value == 'Tenda U3 Adaptador USB WiFi 300Mbps') {
+        document.getElementById("imgRed").src = "../img/tenda-u3-adaptador-usb-wifi-300mbps.png";
+        document.getElementById("imgRed").style = "width: 120px;";
+    }
+    if (selectedAntena.value == 'TP-Link Archer T5E Adaptador AC1200 Wi-Fi Bluetooth 4.2 PCIe') {
+        document.getElementById("imgRed").src = "../img/tp-link-archer-t5e-adaptador-ac1200-wi-fi-bluetooth-42-pcie.png";
+        document.getElementById("imgRed").style = "width: 120px;";
+    }
+    if (selectedAntena.value == "-") {
+        document.getElementById("imgRed").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
