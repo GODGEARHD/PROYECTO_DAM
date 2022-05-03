@@ -318,6 +318,35 @@ function grafica() {
 }
 
 function tarjeta() {
+    var audio = document.getElementById("audio");
+    var selectedAudio = audio.options[audio.selectedIndex];
+    if (selectedAudio.value == 'Creative Sound Blaster Z SE Tarjeta de Sonido y DAC PCI-e para Juegos') {
+        document.getElementById("imgAudio").src = "../img/creative-sound-blaster-z-se-tarjeta-de-sonido-y-dac-pci-e-para-juegos.png";
+        document.getElementById("imgAudio").style = "width: 120px;";
+    }
+    if (selectedAudio.value == 'Creative Sound Blaster Audigy RX') {
+        document.getElementById("imgAudio").src = "../img/creative-sound-blaster-audigy-rx.png";
+        document.getElementById("imgAudio").style = "width: 120px;";
+    }
+    if (selectedAudio.value == 'Creative Sound Blaster Audigy FX PCI Express') {
+        document.getElementById("imgAudio").src = "../img/creative-sound-blaster-audigy-fx-pci-express.png";
+        document.getElementById("imgAudio").style = "width: 120px;";
+    }
+    if (selectedAudio.value == 'Creative Sound Blaster Play! 3 Tarjeta de Sonido USB') {
+        document.getElementById("imgAudio").src = "../img/creative-sound-blaster-play-3-tarjeta-de-sonido-usb.png";
+        document.getElementById("imgAudio").style = "width: 120px;";
+    }
+    if (selectedAudio.value == 'Creative Sound BlasterX G1 USB 7.1') {
+        document.getElementById("imgAudio").src = "../img/creative-sound-blasterx-g1-usb-71.png";
+        document.getElementById("imgAudio").style = "width: 120px;";
+    }
+    if (selectedAudio.value == 'Creative Sound Blaster G3 Amplificador Portátil Plug-and-Play USB-C DAC para PS4/Switch/PC/Mac') {
+        document.getElementById("imgAudio").src = "../img/creative-sound-blaster-g3-amplificador-portatil-plug-and-play-usb-c-dac-para-ps4-switch-pc-mac.png";
+        document.getElementById("imgAudio").style = "width: 120px;";
+    }
+    if (selectedAudio.value == "-") {
+        document.getElementById("imgAudio").src = "../img/transparent.png";
+    }
     console.log("works");
 }
 
