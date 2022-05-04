@@ -301,7 +301,7 @@ body {
     position: sticky;
     position: -webkit-sticky;
     top: 4%;
-    z-index: 6;
+    z-index: 5;
 }
 
 [class*=alineadorCentro] {
