@@ -29,7 +29,7 @@ if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['paypal
 <head>
   <meta charset="utf-8">
   <title>PCMR World - ¡Gracias!</title>
-  <link rel="icon" href="../img/favicon.png" type="image/gif" sizes="512x512">
+  <link rel="icon" href="../img/favicon.png" type="image/gif" sizes="64x64">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
